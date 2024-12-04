@@ -15,12 +15,20 @@ config/features=PackedStringArray("4.3")
 boot_splash/bg_color=Color(0.472897, 0.833981, 0.913152, 1)
 config/icon="res://icon.svg"
 
+[autoload]
+
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
 window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [rendering]
 

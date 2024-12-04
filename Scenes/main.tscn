@@ -1,3 +1,377 @@
-[gd_scene format=3 uid="uid://jiuvw2j680ro"]
+[gd_scene load_steps=71 format=3 uid="uid://jiuvw2j680ro"]
 
-[node name="Main" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://brcggvuowbaew" path="res://Art/Test/bg.png" id="1_5kc13"]
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_jl562"]
+[ext_resource type="Texture2D" uid="uid://csb0xc12iv2u3" path="res://Art/Test/bg_clock.png" id="1_xrvjf"]
+[ext_resource type="Texture2D" uid="uid://cf24nsci6uu86" path="res://Art/Test/namedaybackground.png" id="3_ojgk0"]
+[ext_resource type="Texture2D" uid="uid://b1vescykb3jot" path="res://Art/Test/datepanel.png" id="4_1n8ah"]
+[ext_resource type="Texture2D" uid="uid://b8q1ceubp25tm" path="res://Art/Test/rightbutton.png" id="5_ej1k6"]
+[ext_resource type="Texture2D" uid="uid://6y2pdescnva8" path="res://Art/Test/right_button_down.png" id="6_5qlof"]
+[ext_resource type="Texture2D" uid="uid://bmybrfis11mj8" path="res://Art/Test/middlebutton.png" id="7_u63cj"]
+[ext_resource type="Texture2D" uid="uid://dwg63ejkv8dsj" path="res://Art/Test/middle_button_down.png" id="8_iw6i6"]
+[ext_resource type="Texture2D" uid="uid://cr2kwgida4ghf" path="res://Art/Test/leftbutton.png" id="9_g3wg8"]
+[ext_resource type="Texture2D" uid="uid://dvqvb8pt5pv8l" path="res://Art/Test/left_button_down.png" id="10_red8a"]
+[ext_resource type="Texture2D" uid="uid://bqs3bv3a6sknh" path="res://Art/Test/hour_hand.png" id="11_mv5xu"]
+[ext_resource type="Texture2D" uid="uid://cvqdya86ybgow" path="res://Art/Test/month_hand.png" id="12_0srbg"]
+[ext_resource type="Texture2D" uid="uid://bmpnw5chlanse" path="res://Art/Test/minute_hand.png" id="13_31uc2"]
+[ext_resource type="Texture2D" uid="uid://b24ljcye6g0j0" path="res://Art/Test/Dates/Untitled_Artwork-1.png" id="15_isawe"]
+[ext_resource type="Texture2D" uid="uid://x47c8nqeiduh" path="res://Art/Test/Dates/Untitled_Artwork-2.png" id="16_0wflk"]
+[ext_resource type="Texture2D" uid="uid://dhcqcs87o4avw" path="res://Art/Test/Dates/Untitled_Artwork-3.png" id="17_24t8l"]
+[ext_resource type="Texture2D" uid="uid://c1ymxho8hfbx0" path="res://Art/Test/Dates/Untitled_Artwork-4.png" id="18_xh6ij"]
+[ext_resource type="Texture2D" uid="uid://cdqi8rnp7584i" path="res://Art/Test/Dates/Untitled_Artwork-5.png" id="19_lxj7e"]
+[ext_resource type="Texture2D" uid="uid://cxnpycilca7ed" path="res://Art/Test/Dates/Untitled_Artwork-6.png" id="20_m6ow1"]
+[ext_resource type="Texture2D" uid="uid://b32ed6gx0c0rv" path="res://Art/Test/Dates/Untitled_Artwork-7.png" id="21_85qar"]
+[ext_resource type="Texture2D" uid="uid://bmgh27xdk6gnu" path="res://Art/Test/Dates/Untitled_Artwork-8.png" id="22_1713u"]
+[ext_resource type="Texture2D" uid="uid://c87a7riatq55j" path="res://Art/Test/Dates/Untitled_Artwork-9.png" id="23_mn0wc"]
+[ext_resource type="Texture2D" uid="uid://h4d582byft8y" path="res://Art/Test/Dates/Untitled_Artwork-10.png" id="24_pv6tm"]
+[ext_resource type="Texture2D" uid="uid://urog7x2i6mam" path="res://Art/Test/Dates/Untitled_Artwork-11.png" id="25_281ja"]
+[ext_resource type="Texture2D" uid="uid://b6ou6w8bfhgtv" path="res://Art/Test/Dates/Untitled_Artwork-12.png" id="26_0bfho"]
+[ext_resource type="Texture2D" uid="uid://b77e730rqw5nf" path="res://Art/Test/Dates/Untitled_Artwork-13.png" id="27_fnnah"]
+[ext_resource type="Texture2D" uid="uid://djoggivedwjm" path="res://Art/Test/Dates/Untitled_Artwork-14.png" id="28_wxjm5"]
+[ext_resource type="Texture2D" uid="uid://cokyksymjkv2q" path="res://Art/Test/Dates/Untitled_Artwork-15.png" id="29_a4uqx"]
+[ext_resource type="Texture2D" uid="uid://ftucyr1be3fg" path="res://Art/Test/Dates/Untitled_Artwork-16.png" id="30_qxavh"]
+[ext_resource type="Texture2D" uid="uid://culrray4cnpcl" path="res://Art/Test/Dates/Untitled_Artwork-17.png" id="31_nsk7d"]
+[ext_resource type="Texture2D" uid="uid://cvfg3i1ksd4tw" path="res://Art/Test/Dates/Untitled_Artwork-18.png" id="32_74f28"]
+[ext_resource type="Texture2D" uid="uid://cemfx21vldwp2" path="res://Art/Test/Dates/Untitled_Artwork-19.png" id="33_s65bi"]
+[ext_resource type="Texture2D" uid="uid://bd1fuacis8l3d" path="res://Art/Test/Dates/Untitled_Artwork-20.png" id="34_v3grr"]
+[ext_resource type="Texture2D" uid="uid://d2n8mdal0rf8t" path="res://Art/Test/Dates/Untitled_Artwork-21.png" id="35_7xe86"]
+[ext_resource type="Texture2D" uid="uid://q64xwtc2j4sl" path="res://Art/Test/Dates/Untitled_Artwork-22.png" id="36_5b2qd"]
+[ext_resource type="Texture2D" uid="uid://b3f2dllyyaf7k" path="res://Art/Test/Dates/Untitled_Artwork-23.png" id="37_36jiv"]
+[ext_resource type="Texture2D" uid="uid://bbbulal4l0pox" path="res://Art/Test/Dates/Untitled_Artwork-24.png" id="38_0i2qy"]
+[ext_resource type="Texture2D" uid="uid://b4jsng7w6shcf" path="res://Art/Test/Dates/Untitled_Artwork-25.png" id="39_w4fb4"]
+[ext_resource type="Texture2D" uid="uid://b0amoy5lj4bqn" path="res://Art/Test/Dates/Untitled_Artwork-26.png" id="40_2uw50"]
+[ext_resource type="Texture2D" uid="uid://l7axqosshkpp" path="res://Art/Test/Dates/Untitled_Artwork-27.png" id="41_mwlcu"]
+[ext_resource type="Texture2D" uid="uid://gojnpv2a66lb" path="res://Art/Test/Dates/Untitled_Artwork-28.png" id="42_q7jl0"]
+[ext_resource type="Texture2D" uid="uid://bi2px8dbxt226" path="res://Art/Test/Dates/Untitled_Artwork-29.png" id="43_jpgip"]
+[ext_resource type="Texture2D" uid="uid://qstfe4ffvdw6" path="res://Art/Test/Dates/Untitled_Artwork-30.png" id="44_el86t"]
+[ext_resource type="Texture2D" uid="uid://cwwdawminmuhs" path="res://Art/Test/button/button_up_trim.png" id="44_s4a1e"]
+[ext_resource type="Texture2D" uid="uid://de8qqq2j5f6h6" path="res://Art/Test/button/button_down_trim.png" id="45_d26xu"]
+[ext_resource type="Texture2D" uid="uid://vccw4scd41ja" path="res://Art/Test/Dates/Untitled_Artwork-31.png" id="45_i2h1j"]
+[ext_resource type="Texture2D" uid="uid://mk73mysg57ce" path="res://Art/Test/weekname/sun.png" id="46_jiw8q"]
+[ext_resource type="Texture2D" uid="uid://bdkcojn7cipyx" path="res://Art/Test/weekname/mon.png" id="47_7p8do"]
+[ext_resource type="Texture2D" uid="uid://6ou5odjhrjl8" path="res://Art/Test/weekname/tue.png" id="48_dbr3h"]
+[ext_resource type="Texture2D" uid="uid://bktsnbde667ym" path="res://Art/Test/weekname/wed.png" id="49_nd3ul"]
+[ext_resource type="Texture2D" uid="uid://c45skggiwj4mn" path="res://Art/Test/weekname/thu.png" id="50_vijhk"]
+[ext_resource type="Texture2D" uid="uid://g2wam0jh0xfk" path="res://Art/Test/weekname/fri.png" id="51_1ya5y"]
+[ext_resource type="Texture2D" uid="uid://cxvw3yypk83d4" path="res://Art/Test/weekname/sat.png" id="52_bjcp6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w2aop"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_jiw8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_7p8do")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_dbr3h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_nd3ul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_vijhk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_1ya5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_bjcp6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v1j1n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_isawe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0wflk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_24t8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_xh6ij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_lxj7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_m6ow1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_85qar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_1713u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_mn0wc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_pv6tm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_281ja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_0bfho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_fnnah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_wxjm5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_a4uqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_qxavh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_nsk7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_74f28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_s65bi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_v3grr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_7xe86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_5b2qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_36jiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_0i2qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_w4fb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_2uw50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_mwlcu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_q7jl0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_jpgip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_el86t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_i2h1j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yjag7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ej1k6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5qlof")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8aadh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_u63cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_iw6i6")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oyfop"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_g3wg8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_red8a")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ahm4o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_phun2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_076t6"]
+texture = ExtResource("44_s4a1e")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xpa04"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l4cml"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pp0ow"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ibybv"]
+texture = ExtResource("44_s4a1e")
+modulate_color = Color(0.908756, 0.257394, 0.496102, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sq60p"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nlpt0"]
+texture = ExtResource("45_d26xu")
+modulate_color = Color(0.909804, 0.258824, 0.498039, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dhkaj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dxeav"]
+texture = ExtResource("44_s4a1e")
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("second", "minute", "hour", "datePanel", "namePanel", "days", "dates", "leftbutton", "midbutton", "rightbutton")]
+script = ExtResource("1_jl562")
+second = NodePath("Clock/SecHand")
+minute = NodePath("Clock/MinHand")
+hour = NodePath("Clock/HourHand")
+datePanel = NodePath("Clock/DatePanel")
+namePanel = NodePath("Clock/NamePanel")
+days = NodePath("Clock/NamePanel/Days")
+dates = NodePath("Clock/DatePanel/Dates")
+leftbutton = NodePath("Clock/Button3")
+midbutton = NodePath("Clock/Button2")
+rightbutton = NodePath("Clock/Button")
+length_s = 1.0
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_5kc13")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Clock" type="Sprite2D" parent="."]
+position = Vector2(-15, 292)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("1_xrvjf")
+
+[node name="NamePanel" type="Sprite2D" parent="Clock"]
+texture = ExtResource("3_ojgk0")
+
+[node name="Days" type="AnimatedSprite2D" parent="Clock/NamePanel"]
+sprite_frames = SubResource("SpriteFrames_w2aop")
+autoplay = "default"
+frame_progress = 0.662411
+
+[node name="DatePanel" type="Sprite2D" parent="Clock"]
+texture = ExtResource("4_1n8ah")
+
+[node name="Dates" type="AnimatedSprite2D" parent="Clock/DatePanel"]
+sprite_frames = SubResource("SpriteFrames_v1j1n")
+autoplay = "default"
+frame_progress = 0.624288
+
+[node name="RightButton" type="AnimatedSprite2D" parent="Clock"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_yjag7")
+
+[node name="MiddleButton" type="AnimatedSprite2D" parent="Clock"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_8aadh")
+
+[node name="LeftButton" type="AnimatedSprite2D" parent="Clock"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_oyfop")
+
+[node name="Button" type="Button" parent="Clock"]
+offset_left = 316.364
+offset_top = -407.0
+offset_right = 473.364
+offset_bottom = -293.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ahm4o")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_phun2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_076t6")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_xpa04")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_l4cml")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_pp0ow")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ibybv")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_sq60p")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nlpt0")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dhkaj")
+theme_override_styles/normal = SubResource("StyleBoxTexture_dxeav")
+disabled = true
+
+[node name="Button2" type="Button" parent="Clock"]
+offset_left = -54.545
+offset_top = -407.0
+offset_right = 102.455
+offset_bottom = -293.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ahm4o")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_phun2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_076t6")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_xpa04")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_l4cml")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_pp0ow")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ibybv")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_sq60p")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nlpt0")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dhkaj")
+theme_override_styles/normal = SubResource("StyleBoxTexture_dxeav")
+disabled = true
+
+[node name="Button3" type="Button" parent="Clock"]
+offset_left = -460.0
+offset_top = -407.0
+offset_right = -303.0
+offset_bottom = -293.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ahm4o")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_phun2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_076t6")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_xpa04")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_l4cml")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_pp0ow")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ibybv")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_sq60p")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nlpt0")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dhkaj")
+theme_override_styles/normal = SubResource("StyleBoxTexture_dxeav")
+disabled = true
+
+[node name="MinHand" type="Sprite2D" parent="Clock"]
+position = Vector2(-398, 8)
+texture = ExtResource("11_mv5xu")
+offset = Vector2(398, -8)
+
+[node name="HourHand" type="Sprite2D" parent="Clock"]
+position = Vector2(-399, 8)
+texture = ExtResource("12_0srbg")
+offset = Vector2(399, -8)
+
+[node name="SecHand" type="Sprite2D" parent="Clock"]
+position = Vector2(-398, 9)
+texture = ExtResource("13_31uc2")
+offset = Vector2(398, -9)
