@@ -19,6 +19,10 @@ extends Node2D
 @export_group("Time")
 @export var length_s : float
 
+@export_group("Dialogue")
+@export var resource : DialogueResource
+@export var title : String
+
 # TWEENS
 var tween_sec : Tween
 var tween_min : Tween
@@ -35,6 +39,7 @@ func _ready() -> void:
 	await get_tree().create_timer(5).timeout
 	buttons_toggle()
 	midbutton.pressed.connect(ramp_up_time)
+	DialogueManager.show_dialogue_balloon(resource, title)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

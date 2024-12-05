@@ -1,8 +1,9 @@
-[gd_scene load_steps=71 format=3 uid="uid://jiuvw2j680ro"]
+[gd_scene load_steps=72 format=3 uid="uid://jiuvw2j680ro"]
 
 [ext_resource type="Texture2D" uid="uid://brcggvuowbaew" path="res://Art/Test/bg.png" id="1_5kc13"]
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_jl562"]
 [ext_resource type="Texture2D" uid="uid://csb0xc12iv2u3" path="res://Art/Test/bg_clock.png" id="1_xrvjf"]
+[ext_resource type="Resource" uid="uid://vcmo64qstlsd" path="res://dialogue_test.dialogue" id="2_c8vqx"]
 [ext_resource type="Texture2D" uid="uid://cf24nsci6uu86" path="res://Art/Test/namedaybackground.png" id="3_ojgk0"]
 [ext_resource type="Texture2D" uid="uid://b1vescykb3jot" path="res://Art/Test/datepanel.png" id="4_1n8ah"]
 [ext_resource type="Texture2D" uid="uid://b8q1ceubp25tm" path="res://Art/Test/rightbutton.png" id="5_ej1k6"]
@@ -268,6 +269,8 @@ leftbutton = NodePath("Clock/Button3")
 midbutton = NodePath("Clock/Button2")
 rightbutton = NodePath("Clock/Button")
 length_s = 1.0
+resource = ExtResource("2_c8vqx")
+title = "~ this_is_a_node_title"
 
 [node name="Background" type="Sprite2D" parent="."]
 texture = ExtResource("1_5kc13")
