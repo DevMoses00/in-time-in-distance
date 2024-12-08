@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqwway263ic5e"]
+
+[ext_resource type="Texture2D" uid="uid://1gjx5r7gkuac" path="res://Art/Test/test_textbox.png" id="1_8bvwm"]
+[ext_resource type="Script" path="res://Scenes/text_box.gd" id="1_blxos"]
+
+[sub_resource type="FontVariation" id="FontVariation_uc35b"]
+
+[node name="TextBox" type="MarginContainer"]
+offset_right = 192.0
+offset_bottom = 144.0
+script = ExtResource("1_blxos")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_8bvwm")
+region_rect = Rect2(27, 27, 450, 450)
+patch_margin_left = 54
+patch_margin_top = 72
+patch_margin_right = 63
+patch_margin_bottom = 63
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_uc35b")
+theme_override_font_sizes/font_size = 30
+vertical_alignment = 1
+
+[node name="LetterDisplayTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="LetterDisplayTimer" to="." method="_on_letter_display_timer_timeout"]

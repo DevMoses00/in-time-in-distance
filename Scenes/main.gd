@@ -36,6 +36,15 @@ var fadetween : Tween
 @onready var chaApos = chaA.position
 @onready var chaBpos = chaB.position
 
+@onready var textA = $Clock/DatePanel/CharacterA.position - Vector2(310,40)
+@onready var textB = $Clock/NamePanel/CharacterB.position - Vector2(-280, 30)
+
+const lines: Array[String] = [
+	"Hey I'm testing this clock thing out",
+	"Well I'm doing it for the second time wowza",
+	"This is going to be a pain in the neck that's for sure.",
+]
+
 func _ready() -> void:
 	# THE OVERALL DIRECTOR SCRIPT IS PLAYED HERE 
 	
@@ -56,6 +65,7 @@ func _ready() -> void:
 	# the speedy clock's day and date fades away and is replaced by the two characters
 	midbutton.pressed.connect(fade_tween)
 	
+	DialogueManager.dialogue_started.connect(dialogue_go)
 	#DialogueManager.show_dialogue_balloon(resource, title)
 
 
@@ -113,6 +123,8 @@ func fade_tween():
 	fadetween.finished.connect(panel_moves)
 	await get_tree().create_timer(6).timeout
 	length_s = 1.0
+	await get_tree().create_timer(3).timeout
+	DialogueManager.dialogue_started.emit()
 	
 
 func buttons_toggle():
@@ -150,3 +162,7 @@ func character_movement():
 
 func _on_timer_timeout() -> void:
 	character_movement()
+
+func dialogue_go():
+	DialogueManager.start_dialogue(textA, lines)
+	DialogueManager.start_dialogue(textB, lines)

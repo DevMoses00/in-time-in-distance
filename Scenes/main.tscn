@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://jiuvw2j680ro"]
+[gd_scene load_steps=77 format=3 uid="uid://jiuvw2j680ro"]
 
 [ext_resource type="Texture2D" uid="uid://brcggvuowbaew" path="res://Art/Test/bg.png" id="1_5kc13"]
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_jl562"]
@@ -50,6 +50,7 @@
 [ext_resource type="Texture2D" uid="uid://de8qqq2j5f6h6" path="res://Art/Test/button/button_down_trim.png" id="45_d26xu"]
 [ext_resource type="Texture2D" uid="uid://vccw4scd41ja" path="res://Art/Test/Dates/Untitled_Artwork-31.png" id="45_i2h1j"]
 [ext_resource type="Texture2D" uid="uid://mk73mysg57ce" path="res://Art/Test/weekname/sun.png" id="46_jiw8q"]
+[ext_resource type="PackedScene" uid="uid://dqwway263ic5e" path="res://Scenes/text_box.tscn" id="46_l8f6w"]
 [ext_resource type="Texture2D" uid="uid://bdkcojn7cipyx" path="res://Art/Test/weekname/mon.png" id="47_7p8do"]
 [ext_resource type="Texture2D" uid="uid://6ou5odjhrjl8" path="res://Art/Test/weekname/tue.png" id="48_dbr3h"]
 [ext_resource type="Texture2D" uid="uid://bktsnbde667ym" path="res://Art/Test/weekname/wed.png" id="49_nd3ul"]
@@ -313,6 +314,14 @@ texture = ExtResource("4_beoo0")
 sprite_frames = SubResource("SpriteFrames_v1j1n")
 autoplay = "default"
 frame_progress = 0.624288
+
+[node name="TextBox" parent="Clock/DatePanel" instance=ExtResource("46_l8f6w")]
+visible = false
+offset_left = -783.636
+offset_top = -94.5454
+offset_right = 160.364
+offset_bottom = 220.455
+scale = Vector2(1.41, 1.41)
 
 [node name="RightButton" type="AnimatedSprite2D" parent="Clock"]
 visible = false
