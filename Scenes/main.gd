@@ -10,6 +10,8 @@ extends Node2D
 @export var namePanel : Sprite2D
 @export var days : AnimatedSprite2D
 @export var dates : AnimatedSprite2D
+@export var chaA : Sprite2D
+@export var chaB : Sprite2D
 
 @export_group("Buttons")
 @export var leftbutton : Button
@@ -29,23 +31,38 @@ var tween_min : Tween
 var tween_hour : Tween
 var datetween : Tween
 var nametween : Tween
+var fadetween : Tween
 
-# Called when the node enters the scene tree for the first time.
+@onready var chaApos = chaA.position
+@onready var chaBpos = chaB.position
+
 func _ready() -> void:
+	# THE OVERALL DIRECTOR SCRIPT IS PLAYED HERE 
+	
+	# bring the clock into focus
 	title_tween()
+	
+	# standard clock rotation
 	length_s = 1.0
 	standard_clock()
 	panel_moves()
 	await get_tree().create_timer(5).timeout
+	
+	# activate buttons
 	buttons_toggle()
-	midbutton.pressed.connect(ramp_up_time)
-	DialogueManager.show_dialogue_balloon(resource, title)
+	
+	# activated when player selects the middle button
+	midbutton.pressed.connect(middle_pressed)
+	# the speedy clock's day and date fades away and is replaced by the two characters
+	midbutton.pressed.connect(fade_tween)
+	
+	#DialogueManager.show_dialogue_balloon(resource, title)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	days.speed_scale = 2/length_s
 	dates.speed_scale = 2/length_s
+
 
 func title_tween():
 	var tween = get_tree().create_tween().set_parallel()
@@ -76,11 +93,27 @@ func tween_kill():
 	nametween.kill()
 
 func ramp_up_time():
+	# kills the tweens and sets the buttons to disabled
 	tween_kill()
 	buttons_toggle()
 	length_s = 0.1
 	standard_clock()
 	panel_moves()
+
+func fade_tween():
+	# a fade tween between that blurs removes the date and time and replaces it with the character
+	await get_tree().create_timer(4.0).timeout
+	fadetween = get_tree().create_tween().set_parallel()
+	fadetween.tween_property(days,"modulate:a",0,4)
+	fadetween.tween_property(dates,"modulate:a",0,4)
+	fadetween.tween_property(chaA,"modulate:a",1,4)
+	fadetween.tween_property(chaB,"modulate:a",1,4)
+	fadetween.tween_interval(7)
+	fadetween.finished.connect(standard_clock)
+	fadetween.finished.connect(panel_moves)
+	await get_tree().create_timer(6).timeout
+	length_s = 1.0
+	
 
 func buttons_toggle():
 	if leftbutton.disabled == false: 
@@ -91,3 +124,29 @@ func buttons_toggle():
 		leftbutton.disabled = false
 		midbutton.disabled = false
 		rightbutton.disabled = false
+
+func middle_pressed():
+	# animation for when the middle button gets pressed 
+	var handtween = get_tree().create_tween()
+	handtween.tween_property($HandTestMid,"position",Vector2(0,0),1)
+	handtween.tween_callback(ramp_up_time)
+	handtween.tween_property($HandTestMid,"position",Vector2(-613,-384),1)
+
+func character_movement():
+	$Timer.wait_time = length_s
+	var posArray = [chaApos - Vector2 (-3,0), chaApos + Vector2(-1,0), chaApos, chaApos + Vector2 (3,0)]
+	for i in posArray:
+		chaA.position = i
+		await get_tree().create_timer(length_s/5).timeout
+
+	var posBrray = [chaBpos - Vector2 (-3,0), chaBpos, chaBpos + Vector2(1,0), chaBpos + Vector2 (3,0)]
+	for i in posBrray:
+		chaB.position = i
+		await get_tree().create_timer(length_s/5).timeout
+	#if chaA.position == chaApos:
+		#chaA.position += Vector2 (3,0)
+	#else:
+		#chaA.position = chaApos
+
+func _on_timer_timeout() -> void:
+	character_movement()

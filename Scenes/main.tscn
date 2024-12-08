@@ -1,11 +1,12 @@
-[gd_scene load_steps=72 format=3 uid="uid://jiuvw2j680ro"]
+[gd_scene load_steps=76 format=3 uid="uid://jiuvw2j680ro"]
 
 [ext_resource type="Texture2D" uid="uid://brcggvuowbaew" path="res://Art/Test/bg.png" id="1_5kc13"]
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_jl562"]
 [ext_resource type="Texture2D" uid="uid://csb0xc12iv2u3" path="res://Art/Test/bg_clock.png" id="1_xrvjf"]
-[ext_resource type="Resource" uid="uid://vcmo64qstlsd" path="res://dialogue_test.dialogue" id="2_c8vqx"]
 [ext_resource type="Texture2D" uid="uid://cf24nsci6uu86" path="res://Art/Test/namedaybackground.png" id="3_ojgk0"]
 [ext_resource type="Texture2D" uid="uid://b1vescykb3jot" path="res://Art/Test/datepanel.png" id="4_1n8ah"]
+[ext_resource type="Texture2D" uid="uid://bdfub8lxkthg5" path="res://Art/Test/character_test/Character_A.png" id="4_beoo0"]
+[ext_resource type="Texture2D" uid="uid://25st038ar1rs" path="res://Art/Test/character_test/Character_B.png" id="5_8leuf"]
 [ext_resource type="Texture2D" uid="uid://b8q1ceubp25tm" path="res://Art/Test/rightbutton.png" id="5_ej1k6"]
 [ext_resource type="Texture2D" uid="uid://6y2pdescnva8" path="res://Art/Test/right_button_down.png" id="6_5qlof"]
 [ext_resource type="Texture2D" uid="uid://bmybrfis11mj8" path="res://Art/Test/middlebutton.png" id="7_u63cj"]
@@ -55,6 +56,9 @@
 [ext_resource type="Texture2D" uid="uid://c45skggiwj4mn" path="res://Art/Test/weekname/thu.png" id="50_vijhk"]
 [ext_resource type="Texture2D" uid="uid://g2wam0jh0xfk" path="res://Art/Test/weekname/fri.png" id="51_1ya5y"]
 [ext_resource type="Texture2D" uid="uid://cxvw3yypk83d4" path="res://Art/Test/weekname/sat.png" id="52_bjcp6"]
+[ext_resource type="Texture2D" uid="uid://t56qqoqe4g53" path="res://Art/Test/hand_test_left.png" id="55_v332b"]
+[ext_resource type="Texture2D" uid="uid://bcb7jb37rkyv7" path="res://Art/Test/hand_test_mid.png" id="56_msuse"]
+[ext_resource type="Texture2D" uid="uid://craerp3n8d686" path="res://Art/Test/hand_test_right.png" id="57_lgasg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_w2aop"]
 animations = [{
@@ -256,7 +260,7 @@ modulate_color = Color(0.909804, 0.258824, 0.498039, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dxeav"]
 texture = ExtResource("44_s4a1e")
 
-[node name="Main" type="Node2D" node_paths=PackedStringArray("second", "minute", "hour", "datePanel", "namePanel", "days", "dates", "leftbutton", "midbutton", "rightbutton")]
+[node name="Main" type="Node2D" node_paths=PackedStringArray("second", "minute", "hour", "datePanel", "namePanel", "days", "dates", "chaA", "chaB", "leftbutton", "midbutton", "rightbutton")]
 script = ExtResource("1_jl562")
 second = NodePath("Clock/SecHand")
 minute = NodePath("Clock/MinHand")
@@ -265,12 +269,12 @@ datePanel = NodePath("Clock/DatePanel")
 namePanel = NodePath("Clock/NamePanel")
 days = NodePath("Clock/NamePanel/Days")
 dates = NodePath("Clock/DatePanel/Dates")
+chaA = NodePath("Clock/DatePanel/CharacterA")
+chaB = NodePath("Clock/NamePanel/CharacterB")
 leftbutton = NodePath("Clock/Button3")
 midbutton = NodePath("Clock/Button2")
 rightbutton = NodePath("Clock/Button")
 length_s = 1.0
-resource = ExtResource("2_c8vqx")
-title = "~ this_is_a_node_title"
 
 [node name="Background" type="Sprite2D" parent="."]
 texture = ExtResource("1_5kc13")
@@ -285,6 +289,12 @@ texture = ExtResource("1_xrvjf")
 [node name="NamePanel" type="Sprite2D" parent="Clock"]
 texture = ExtResource("3_ojgk0")
 
+[node name="CharacterB" type="Sprite2D" parent="Clock/NamePanel"]
+modulate = Color(1, 1, 1, 0)
+show_behind_parent = true
+position = Vector2(405.455, 9.091)
+texture = ExtResource("5_8leuf")
+
 [node name="Days" type="AnimatedSprite2D" parent="Clock/NamePanel"]
 sprite_frames = SubResource("SpriteFrames_w2aop")
 autoplay = "default"
@@ -292,6 +302,12 @@ frame_progress = 0.662411
 
 [node name="DatePanel" type="Sprite2D" parent="Clock"]
 texture = ExtResource("4_1n8ah")
+
+[node name="CharacterA" type="Sprite2D" parent="Clock/DatePanel"]
+modulate = Color(1, 1, 1, 0)
+show_behind_parent = true
+position = Vector2(32.7273, 18.1818)
+texture = ExtResource("4_beoo0")
 
 [node name="Dates" type="AnimatedSprite2D" parent="Clock/DatePanel"]
 sprite_frames = SubResource("SpriteFrames_v1j1n")
@@ -378,3 +394,20 @@ offset = Vector2(399, -8)
 position = Vector2(-398, 9)
 texture = ExtResource("13_31uc2")
 offset = Vector2(398, -9)
+
+[node name="HandTestLeft" type="Sprite2D" parent="."]
+position = Vector2(-639, -211)
+texture = ExtResource("55_v332b")
+
+[node name="HandTestMid" type="Sprite2D" parent="."]
+position = Vector2(-613, -384)
+texture = ExtResource("56_msuse")
+
+[node name="HandTestRight" type="Sprite2D" parent="."]
+position = Vector2(630, -268)
+texture = ExtResource("57_lgasg")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
