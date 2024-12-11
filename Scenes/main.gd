@@ -57,6 +57,7 @@ const lines: Array[String] = [
 ]
 
 func _ready() -> void:
+	
 	# THE OVERALL DIRECTOR SCRIPT IS PLAYED HERE 
 	
 	# bring the clock into focus
@@ -71,7 +72,7 @@ func _ready() -> void:
 	# activate buttons
 	buttons_enable()
 	
-	# activated when player selects the left button button
+	# activated when player first gets the button
 	leftbutton.pressed.connect(left_pressed)
 	midbutton.pressed.connect(middle_pressed)
 	rightbutton.pressed.connect(right_pressed)
@@ -81,9 +82,8 @@ func _ready() -> void:
 	DialogueManager.dialogue_started.connect(dialogue_go)
 	
 	# enabling the buttons to be pressed after the dialogue
-	
 	DialogueManager.buttons_enabled.connect(buttons_enable)
-
+	button_setup()
 
 func _process(delta: float) -> void:
 	days.speed_scale = 2/length_s
@@ -128,20 +128,22 @@ func ramp_up_time():
 	# start the animation
 	length_s = 0.1
 	clock()
-	if opening:
+	if opening == true:
+		fade_tween()
 		panel_moves()
+		await get_tree().create_timer(11).timeout
+		length_s = 1.0
+		clock()
+		panel_moves()
+		await get_tree().create_timer(3).timeout
+		opening = false
+		DialogueManager.dialogue_started.emit()
 	else:
-		# if right button is pressed:
-		rightbutton.pressed.connect(name_tween)
-		# if mid button is pressed: 
-		midbutton.pressed.connect(date_tween)
-		# if left button is pressed:
-		leftbutton.pressed.connect(panel_moves)
-	
-	await get_tree().create_timer(11).timeout
-	length_s = 1.0
-	clock()
-	panel_moves()
+		await get_tree().create_timer(11).timeout
+		length_s = 1.0
+		clock()
+		await get_tree().create_timer(3).timeout
+		DialogueManager.dialogue_started.emit()
 
 
 func name_tween():
@@ -170,13 +172,21 @@ func fade_tween():
 	fadetween.tween_interval(7)
 	fadetween.finished.connect(clock) 
 	fadetween.finished.connect(panel_moves)
-
 	await get_tree().create_timer(12).timeout
-	DialogueManager.dialogue_started.emit()
+
+
 
 
 
 # BUTTON CODE
+func button_setup():
+	if opening == false:
+		# if right button is pressed:
+		right_button_pressed.connect(name_tween)
+		# if mid button is pressed: 
+		middle_button_pressed.connect(date_tween)
+		# if left button is pressed:
+		left_button_pressed.connect(panel_moves)
 
 func buttons_enable():
 	leftbutton.disabled = false
@@ -189,33 +199,31 @@ func left_pressed():
 	handtween.tween_property($HandTestLeft,"position",Vector2(0,0),1)
 	handtween.tween_callback(ramp_up_time)
 	handtween.tween_property($HandTestLeft,"position",Vector2(-639,-211),1)
-	if opening: 
-		fade_tween()
-		opening = false
+	if opening == true: 
+		return
 	else:
 		left_button_pressed.emit()
 		# emit a signal saying that the left button has been pressed, and what to do about it?
 
 func middle_pressed():
-	if opening:
-		return
 	# animation for when the middle button gets pressed 
 	var handtween = get_tree().create_tween()
 	handtween.tween_property($HandTestMid,"position",Vector2(0,0),1)
 	handtween.tween_callback(ramp_up_time)
 	handtween.tween_property($HandTestMid,"position",Vector2(-613,-384),1)
+	if opening == true:
+		return
 	
 	# emit a signal saying that the middle button has been pressed, and what to do about it?
 	middle_button_pressed.emit()
 
 func right_pressed():
-	if opening:
-		return
 	var handtween = get_tree().create_tween()
 	handtween.tween_property($HandTestRight,"position",Vector2(0,0),1)
 	handtween.tween_callback(ramp_up_time)
 	handtween.tween_property($HandTestRight,"position",Vector2(630,-268),1)
-	
+	if opening == true:
+		return
 	# emit a signal saying that the right button has been pressed, and what to do about it?
 	right_button_pressed.emit()
 
