@@ -9,13 +9,17 @@ var text = ""
 var letter_index = 0
 
 # how many seconds will pass between each letter character displayed
-var letter_time = 0.03
-var space_time = 0.06
-var punctuation_time = 0.02
+var letter_time = 0.02
+var space_time = 0.03
+var punctuation_time = 0.01
 
 signal finished_displaying()
 
 func display_text(text_to_display: String):
+	if text_to_display.begins_with("CATHY: "):
+		text_to_display = text_to_display.trim_prefix("CATHY: ")
+	elif text_to_display.begins_with("MAC: "):
+		text_to_display = text_to_display.trim_prefix("MAC: ")
 	text = text_to_display
 	label.text = text_to_display # label expands to the full width of the text
 	

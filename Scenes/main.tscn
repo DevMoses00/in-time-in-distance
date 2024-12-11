@@ -1,8 +1,9 @@
-[gd_scene load_steps=77 format=3 uid="uid://jiuvw2j680ro"]
+[gd_scene load_steps=78 format=3 uid="uid://jiuvw2j680ro"]
 
 [ext_resource type="Texture2D" uid="uid://brcggvuowbaew" path="res://Art/Test/bg.png" id="1_5kc13"]
 [ext_resource type="Script" path="res://Scenes/main.gd" id="1_jl562"]
 [ext_resource type="Texture2D" uid="uid://csb0xc12iv2u3" path="res://Art/Test/bg_clock.png" id="1_xrvjf"]
+[ext_resource type="Script" path="res://test_dialogue.gd" id="2_cf36g"]
 [ext_resource type="Texture2D" uid="uid://cf24nsci6uu86" path="res://Art/Test/namedaybackground.png" id="3_ojgk0"]
 [ext_resource type="Texture2D" uid="uid://b1vescykb3jot" path="res://Art/Test/datepanel.png" id="4_1n8ah"]
 [ext_resource type="Texture2D" uid="uid://bdfub8lxkthg5" path="res://Art/Test/character_test/Character_A.png" id="4_beoo0"]
@@ -272,10 +273,13 @@ days = NodePath("Clock/NamePanel/Days")
 dates = NodePath("Clock/DatePanel/Dates")
 chaA = NodePath("Clock/DatePanel/CharacterA")
 chaB = NodePath("Clock/NamePanel/CharacterB")
-leftbutton = NodePath("Clock/Button3")
-midbutton = NodePath("Clock/Button2")
-rightbutton = NodePath("Clock/Button")
+leftbutton = NodePath("Clock/LeftButton3")
+midbutton = NodePath("Clock/MidButton2")
+rightbutton = NodePath("Clock/RightButton2")
 length_s = 1.0
+
+[node name="ScriptManager" type="Node" parent="."]
+script = ExtResource("2_cf36g")
 
 [node name="Background" type="Sprite2D" parent="."]
 texture = ExtResource("1_5kc13")
@@ -335,7 +339,7 @@ sprite_frames = SubResource("SpriteFrames_8aadh")
 visible = false
 sprite_frames = SubResource("SpriteFrames_oyfop")
 
-[node name="Button" type="Button" parent="Clock"]
+[node name="RightButton2" type="Button" parent="Clock"]
 offset_left = 316.364
 offset_top = -407.0
 offset_right = 473.364
@@ -353,7 +357,7 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dhkaj")
 theme_override_styles/normal = SubResource("StyleBoxTexture_dxeav")
 disabled = true
 
-[node name="Button2" type="Button" parent="Clock"]
+[node name="MidButton2" type="Button" parent="Clock"]
 offset_left = -54.545
 offset_top = -407.0
 offset_right = 102.455
@@ -371,7 +375,7 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dhkaj")
 theme_override_styles/normal = SubResource("StyleBoxTexture_dxeav")
 disabled = true
 
-[node name="Button3" type="Button" parent="Clock"]
+[node name="LeftButton3" type="Button" parent="Clock"]
 offset_left = -460.0
 offset_top = -407.0
 offset_right = -303.0
