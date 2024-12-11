@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dqwway263ic5e"]
 
 [ext_resource type="Texture2D" uid="uid://1gjx5r7gkuac" path="res://Art/Test/test_textbox.png" id="1_8bvwm"]
-[ext_resource type="Script" path="res://Scenes/text_box.gd" id="1_blxos"]
+[ext_resource type="Script" path="res://Scripts/text_box.gd" id="1_blxos"]
 
 [sub_resource type="FontVariation" id="FontVariation_uc35b"]
 
