@@ -11,9 +11,12 @@ config_version=5
 [application]
 
 config/name="in-time-in-distance"
+run/main_scene="res://Scenes/main.tscn"
 config/features=PackedStringArray("4.3")
-boot_splash/bg_color=Color(0.472897, 0.833981, 0.913152, 1)
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://Resources/temp_boot.png"
+config/icon="res://Resources/temp_icon.png"
+boot_splash/minimum_display_time=1000
 
 [autoload]
 
