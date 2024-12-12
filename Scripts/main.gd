@@ -21,10 +21,6 @@ extends Node2D
 @export_group("Time")
 @export var length_s : float
 
-@export_group("Dialogue")
-@export var resource : DialogueResource
-@export var title : String
-
 # TWEENS
 var tween_sec : Tween
 var tween_min : Tween
@@ -57,7 +53,7 @@ const lines: Array[String] = [
 ]
 
 func _ready() -> void:
-	
+	DialogueManager.readJSON("res://Dialogue/ITID_dialogue.json")
 	# THE OVERALL DIRECTOR SCRIPT IS PLAYED HERE 
 	
 	# bring the clock into focus
@@ -244,4 +240,5 @@ func _on_timer_timeout() -> void:
 
 
 func dialogue_go():
-	DialogueManager.start_dialogue(lines)
+	#DialogueManager.start_dialogue(lines)
+	DialogueManager.dialogue_player("A25B25")

@@ -1,9 +1,22 @@
 extends Node
 
+# JSON Variables
+#var json = JSON.new()
+#var dialogue_string = FileAccess.get_file_as_string("res://Dialogue/.ITID_dialogue.json")
+#var dialogue_dict = JSON.parse_string(dialogue_string)
+var finish 
+
+func readJSON(json_file_path):
+	var file = FileAccess.open(json_file_path, FileAccess.READ)
+	var content = file.get_as_text()
+	var json = JSON.new()
+	finish = json.parse_string(content)
+	return finish
 
 @onready var text_box_scene = preload("res://Scenes/text_box.tscn")
 
-var dialogue_lines: Array[String] = []
+
+var dialogue_lines
 var current_line_index = 0
 
 var text_box
@@ -14,9 +27,8 @@ var is_dialogue_active = false
 var can_advance_line = false
 
 signal buttons_enabled 
-
-
 signal dialogue_started
+
 
 # maybe I replace the position parameter with which dialogue text box I want to call
 func start_dialogue(lines: Array[String]):
@@ -31,14 +43,15 @@ func start_dialogue(lines: Array[String]):
 	is_dialogue_active = true
 
 # Create a new dialogue start function that takes a specific set of dialogue lines
-func dialogue_player(lines : Array[String]):
+func dialogue_player(line_key):
 	if is_dialogue_active:
 		return
-		
-		dialogue_lines = lines
-		
-		
-	pass 
+	
+	dialogue_lines = finish[line_key]
+	
+	_show_text_box()
+	
+	is_dialogue_active = true
 
 func _show_text_box():
 	text_box = text_box_scene.instantiate()
