@@ -1,9 +1,6 @@
 extends Node
 
-# JSON Variables
-#var json = JSON.new()
-#var dialogue_string = FileAccess.get_file_as_string("res://Dialogue/.ITID_dialogue.json")
-#var dialogue_dict = JSON.parse_string(dialogue_string)
+# for the JSON file
 var finish 
 
 func readJSON(json_file_path):
@@ -29,18 +26,6 @@ var can_advance_line = false
 signal buttons_enabled 
 signal dialogue_started
 
-
-# maybe I replace the position parameter with which dialogue text box I want to call
-func start_dialogue(lines: Array[String]):
-	if is_dialogue_active:
-		return
-	
-	dialogue_lines = lines
-	
-	
-	_show_text_box()
-	
-	is_dialogue_active = true
 
 # Create a new dialogue start function that takes a specific set of dialogue lines
 func dialogue_player(line_key):

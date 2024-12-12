@@ -1,9 +1,8 @@
-[gd_scene load_steps=78 format=3 uid="uid://jiuvw2j680ro"]
+[gd_scene load_steps=77 format=3 uid="uid://jiuvw2j680ro"]
 
 [ext_resource type="Texture2D" uid="uid://brcggvuowbaew" path="res://Art/Test/bg.png" id="1_5kc13"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_jl562"]
 [ext_resource type="Texture2D" uid="uid://csb0xc12iv2u3" path="res://Art/Test/bg_clock.png" id="1_xrvjf"]
-[ext_resource type="Script" path="res://test_dialogue.gd" id="2_cf36g"]
 [ext_resource type="Texture2D" uid="uid://cf24nsci6uu86" path="res://Art/Test/namedaybackground.png" id="3_ojgk0"]
 [ext_resource type="Texture2D" uid="uid://b1vescykb3jot" path="res://Art/Test/datepanel.png" id="4_1n8ah"]
 [ext_resource type="Texture2D" uid="uid://bdfub8lxkthg5" path="res://Art/Test/character_test/Character_A.png" id="4_beoo0"]
@@ -279,7 +278,6 @@ rightbutton = NodePath("Clock/RightButton2")
 length_s = 1.0
 
 [node name="ScriptManager" type="Node" parent="."]
-script = ExtResource("2_cf36g")
 
 [node name="Background" type="Sprite2D" parent="."]
 texture = ExtResource("1_5kc13")
