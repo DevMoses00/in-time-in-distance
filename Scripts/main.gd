@@ -218,4 +218,4 @@ func _on_timer_timeout() -> void:
 
 func dialogue_go():
 	#DialogueManager.start_dialogue(lines)
-	DialogueManager.dialogue_player("T25B25")
+	DialogueManager.dialogue_player("Teaser")
