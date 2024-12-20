@@ -213,9 +213,9 @@ func character_movement():
 
 func _on_timer_timeout() -> void:
 	pass
-	#character_movement()
+	character_movement()
 
 
 func dialogue_go():
 	#DialogueManager.start_dialogue(lines)
-	DialogueManager.dialogue_player("Teaser")
+	DialogueManager.dialogue_player("A25B25")
