@@ -13,6 +13,7 @@ func readJSON(json_file_path):
 @onready var text_box_scene = preload("res://Scenes/text_box.tscn")
 
 
+
 var dialogue_lines
 var current_line_index = 0
 
@@ -26,6 +27,10 @@ var can_advance_line = false
 signal buttons_enabled 
 signal dialogue_started
 
+# for the mouth movements
+signal wes_talking
+signal asri_talking
+signal stop_talking
 
 # Create a new dialogue start function that takes a specific set of dialogue lines
 func dialogue_player(line_key):
@@ -43,11 +48,13 @@ func _show_text_box():
 	text_box.finished_displaying.connect(_on_text_box_finished_displaying)
 	get_tree().root.add_child(text_box)
 	
-	if dialogue_lines[current_line_index].begins_with("CATHY:"):
+	if dialogue_lines[current_line_index].begins_with("A:"):
 		text_box.global_position = Vector2(670, -10)
+		asri_talking.emit()
 	
-	elif dialogue_lines[current_line_index].begins_with("MAC:"):
+	elif dialogue_lines[current_line_index].begins_with("W:"):
 		text_box.global_position = Vector2(-280, -10)
+		wes_talking.emit()
 	
 	text_box_tween = get_tree().create_tween().set_loops()
 	# tween animation
@@ -70,6 +77,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	):
 		text_box_tween.kill() # kill the tween loop
 		text_box.queue_free()
+		# have their mouths stop moving
+		stop_talking.emit()
 		
 		current_line_index += 1
 		if current_line_index >= dialogue_lines.size():

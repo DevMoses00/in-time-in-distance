@@ -10,8 +10,8 @@ extends Node2D
 @export var namePanel : Sprite2D
 @export var days : AnimatedSprite2D
 @export var dates : AnimatedSprite2D
-@export var chaA : Sprite2D
-@export var chaB : Sprite2D
+@export var chaA : AnimatedSprite2D
+@export var chaB : AnimatedSprite2D
 
 @export_group("Buttons")
 @export var leftbutton : Button
@@ -32,12 +32,25 @@ var fadetween : Tween
 @onready var chaApos = chaA.position
 @onready var chaBpos = chaB.position
 
+# character mouths
+@onready var Asrimouth: AnimatedSprite2D = $Clock/NamePanel/CharacterB/Mouth
+@onready var Wesmouth: AnimatedSprite2D = $Clock/DatePanel/CharacterA/Mouth
+
+# character eyes
+@onready var Asrieyes: AnimatedSprite2D = $Clock/NamePanel/CharacterB/Eyes
+@onready var Weseyes: AnimatedSprite2D = $Clock/DatePanel/CharacterA/Eyes
+
+var WesNum : int = 25
+var AsriNum : int = 25
+var dialogueNum 
 #@onready var textA = $Clock/DatePanel/CharacterA.position - Vector2(310,40)
 #@onready var textB = $Clock/NamePanel/CharacterB.position - Vector2(-280, 30)
 
 # boolean for opening of the game, will result in false after pressed for the first time
 var opening : bool = true
 var normal_idle : bool = true
+
+var character_fades
 
 # SIGNALS
 
@@ -65,6 +78,7 @@ func _ready() -> void:
 	
 	
 	# starting the dialogue
+	character_talking()
 	DialogueManager.dialogue_started.connect(dialogue_go)
 	
 	# enabling the buttons to be pressed after the dialogue
@@ -77,11 +91,13 @@ func _process(delta: float) -> void:
 
 
 func title_tween():
+	# For the opening of the game
 	var tween = get_tree().create_tween().set_parallel()
 	tween.tween_property($Clock,"position",Vector2(0,0),3)
 	tween.tween_property($Clock,"scale",Vector2(1,1),3)
 
 func clock():
+	# sets the clock animation
 	tween_sec = get_tree().create_tween().set_parallel().set_loops()
 	tween_sec.tween_property(second,"rotation",TAU,length_s).from(0)
 	tween_min = get_tree().create_tween().set_parallel().set_loops()
@@ -122,7 +138,10 @@ func ramp_up_time():
 		opening = false
 		DialogueManager.dialogue_started.emit()
 	else:
-		await get_tree().create_timer(11).timeout
+		fade_tween_back()
+		await get_tree().create_timer(10).timeout
+		fade_tween()
+		await get_tree().create_timer(9).timeout
 		tween_kill()
 		length_s = 1.0
 		clock()
@@ -156,13 +175,25 @@ func fade_tween():
 	fadetween.tween_property(chaA,"modulate:a",1,4)
 	fadetween.tween_property(chaB,"modulate:a",1,4)
 
+func fade_tween_back():
+	await get_tree().create_timer(4.0).timeout
+	fadetween = get_tree().create_tween().set_parallel()
+	fadetween.tween_property(days,"modulate:a",1,4)
+	fadetween.tween_property(dates,"modulate:a",1,4)
+	fadetween.tween_property(chaA,"modulate:a",0,4)
+	fadetween.tween_property(chaB,"modulate:a",0,4)
 
 # BUTTON CODE
 
 func buttons_enable():
-	leftbutton.disabled = false
-	midbutton.disabled = false
-	rightbutton.disabled = false
+	if WesNum >= 50:
+		end_sequence()
+	if AsriNum >= 50: 
+		end_sequence()
+	else:
+		leftbutton.disabled = false
+		midbutton.disabled = false
+		rightbutton.disabled = false
 
 func left_pressed():
 	# animation for when the left button gets pressed 
@@ -174,6 +205,15 @@ func left_pressed():
 	if opening == false: 
 		await get_tree().create_timer(1.1).timeout
 		panel_moves()
+		await get_tree().create_timer(9.0).timeout
+		WesNum += 5
+		chaA.play(str(WesNum))
+		Weseyes.play(str(WesNum))
+		Wesmouth.animation = str(WesNum)
+		AsriNum += 5
+		chaB.play(str(AsriNum))
+		Asrieyes.play(str(AsriNum))
+		Asrimouth.animation = str(AsriNum)
 	# add the necessary variables for when I want to fade in the new character animation and call the new dialogue array
 
 func middle_pressed():
@@ -185,7 +225,14 @@ func middle_pressed():
 	
 	if opening == false: 
 		await get_tree().create_timer(1.1).timeout
-		date_tween()
+		panel_moves()
+		#date_tween()
+		await get_tree().create_timer(9.0).timeout
+		WesNum += 5
+		chaA.play(str(WesNum))
+		Weseyes.play(str(WesNum))
+		Wesmouth.animation = str(WesNum)
+		
 	# add the necessary variables for when I want to fade in the new character animation and call the new dialogue array
 
 func right_pressed():
@@ -196,8 +243,28 @@ func right_pressed():
 	
 	if opening == false: 
 		await get_tree().create_timer(1.1).timeout
-		name_tween()
+		panel_moves()
+		#name_tween()
+		await get_tree().create_timer(9.0).timeout
+		AsriNum += 5
+		chaB.play(str(AsriNum))
+		Asrieyes.play(str(AsriNum))
+		Asrimouth.animation = str(AsriNum)
 		# add the necessary variables for when I want to fade in the new character animation and call the new dialogue array
+
+
+func character_talking():
+	DialogueManager.wes_talking.connect(Wes_mouth_moving)
+	DialogueManager.asri_talking.connect(Asri_mouth_moving)
+	DialogueManager.stop_talking.connect(stop_mouth_moving)
+func Wes_mouth_moving():
+	Wesmouth.play(str(WesNum))
+func Asri_mouth_moving():
+	Asrimouth.play(str(AsriNum))
+func stop_mouth_moving():
+	Wesmouth.stop()
+	Asrimouth.stop()
+
 
 func character_movement():
 	$Timer.wait_time = length_s
@@ -210,12 +277,16 @@ func character_movement():
 	for i in posBrray:
 		chaB.position = i
 		await get_tree().create_timer(length_s/5).timeout
-
 func _on_timer_timeout() -> void:
 	pass
 	character_movement()
 
 
 func dialogue_go():
+	dialogueNum = "A" + str(AsriNum) + "W" + str(WesNum)
 	#DialogueManager.start_dialogue(lines)
-	DialogueManager.dialogue_player("A25B25")
+	DialogueManager.dialogue_player(dialogueNum)
+
+func end_sequence():
+	# this will be used the next time the buttons are suppose to be available, but a character has reached 50
+	pass

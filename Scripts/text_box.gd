@@ -16,10 +16,10 @@ var punctuation_time = 0.01
 signal finished_displaying()
 
 func display_text(text_to_display: String):
-	if text_to_display.begins_with("CATHY: "):
-		text_to_display = text_to_display.trim_prefix("CATHY: ")
-	elif text_to_display.begins_with("MAC: "):
-		text_to_display = text_to_display.trim_prefix("MAC: ")
+	if text_to_display.begins_with("A: "):
+		text_to_display = text_to_display.trim_prefix("A: ")
+	elif text_to_display.begins_with("W: "):
+		text_to_display = text_to_display.trim_prefix("W: ")
 	text = text_to_display
 	label.text = text_to_display # label expands to the full width of the text
 	
