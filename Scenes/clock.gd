@@ -15,6 +15,6 @@ func _process(delta: float) -> void:
 func clock_tween():
 	# A tween animation that constantly moves the clock for dynamic effect
 	var clockTween = get_tree().create_tween().set_loops()
-	clockTween.tween_property(self, "position:x", -5, 0.5)
-	clockTween.tween_property(self, "position:x", 5, 0.5)
+	clockTween.tween_property(self, "position:x", -2, 0.5)
+	clockTween.tween_property(self, "position:x", 2, 0.5)
 	pass

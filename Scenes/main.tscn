@@ -1,11 +1,14 @@
-[gd_scene load_steps=144 format=3 uid="uid://jiuvw2j680ro"]
+[gd_scene load_steps=148 format=3 uid="uid://jiuvw2j680ro"]
 
-[ext_resource type="Texture2D" uid="uid://brcggvuowbaew" path="res://Art/Test/bg.png" id="1_5kc13"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_jl562"]
+[ext_resource type="Texture2D" uid="uid://b25iomnuufbr1" path="res://Art/Updated/background_animated/Untitled_Artwork-1.png" id="2_ho6qf"]
 [ext_resource type="Texture2D" uid="uid://cc8d3ndpsb7n2" path="res://Art/Updated/updated_bg_clock.png" id="3_7w2e8"]
+[ext_resource type="Texture2D" uid="uid://c3jchtua3qgcj" path="res://Art/Updated/background_animated/Untitled_Artwork-2.png" id="3_g2htu"]
 [ext_resource type="Texture2D" uid="uid://cf24nsci6uu86" path="res://Art/Test/namedaybackground.png" id="3_ojgk0"]
 [ext_resource type="Texture2D" uid="uid://b1vescykb3jot" path="res://Art/Test/datepanel.png" id="4_1n8ah"]
+[ext_resource type="Texture2D" uid="uid://bjixrfn7nd6qy" path="res://Art/Updated/background_animated/Untitled_Artwork-3.png" id="4_kpqmr"]
 [ext_resource type="Script" path="res://Scenes/clock.gd" id="4_usftm"]
+[ext_resource type="Texture2D" uid="uid://biy74sxo2lbes" path="res://Art/Updated/background_animated/Untitled_Artwork-4.png" id="5_26snd"]
 [ext_resource type="Texture2D" uid="uid://dg6oepelbahth" path="res://Art/Updated/Asriyah/A_25/25.png" id="5_d0ru6"]
 [ext_resource type="Texture2D" uid="uid://b8q1ceubp25tm" path="res://Art/Test/rightbutton.png" id="5_ej1k6"]
 [ext_resource type="Texture2D" uid="uid://6y2pdescnva8" path="res://Art/Test/right_button_down.png" id="6_5qlof"]
@@ -121,6 +124,26 @@
 [ext_resource type="Texture2D" uid="uid://dssaacn1j4auo" path="res://Art/Updated/Wesley/W_45/45_mouth_open.png" id="71_re7vt"]
 [ext_resource type="Texture2D" uid="uid://da5fuq5ewt4vc" path="res://Art/Updated/Wesley/W_50/50_mouth_close.png" id="72_bjuk0"]
 [ext_resource type="Texture2D" uid="uid://cooqfbnfuf4ry" path="res://Art/Updated/Wesley/W_50/50_mouth_open.png" id="73_b74j3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aqloh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ho6qf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g2htu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kpqmr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_26snd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_onpqm"]
 animations = [{
@@ -718,8 +741,10 @@ length_s = 1.0
 
 [node name="ScriptManager" type="Node" parent="."]
 
-[node name="Background" type="Sprite2D" parent="."]
-texture = ExtResource("1_5kc13")
+[node name="Background" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_aqloh")
+autoplay = "default"
+frame_progress = 0.0486825
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
