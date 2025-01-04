@@ -1,15 +1,389 @@
 {
 
     "A25W25": [
-        "A: Hi this is the beginning of the game, we're both 25.",
-        "W: Throughout this story, we'll grow in age dependng on your choices.",
+        "A: Hey, sorry I'm late.",
+
+        "W: No no I just got here too, you're right on time.",
+        
+        "A: Good! Great.",
+        
+        "A: So, have you been to one of these before?",
+        
+        "W: Can't say that I have. Not really one to make time for things like this.",
+        
+        "A: Things like... dating?",
+        
+        "W: No! Well, yes dating.",
+        
+        "W: But speed dating, at that.",
+
+        "A: I see, yeah me neither.", 
+        
+        "W: Speed dating?",
+        
+        "A: Dating, by and large.",
+        
+        "W: Ah, gotcha.",
+        
+        "W: Hm.",
+        
+        "W: My sister put me up to this, actually.",
+        
+        "W: Being not really one to make time for things like this.",
+        
+        "W: She signed me up for this without telling me.",
+        
+        "A: She sounds like a caring sister.",
+        
+        "W: Headstrong, persistent, bossy.",
+        
+        "A: So, caring.",
+        
+        "W: Right, and she's been pushing me to get back out there.",
+        
+        "W: Signing me up for dating apps and forcing me to take 'better pictures' of myself.",
+        
+        "W: She even designed a powerpoint presentation of me that she could show to her friends.",
+        
+        "A: In case any of them were interested?",
+        
+        "W: In case anyone wanted to see how disastrous the state of her brother's romantic life is.",
+        
+        "W: And how she's the only person equipped to save him from a deteriorating self-esteem and life of resentment.",
+        
+        "A: And well?", 
+        
+        "W: Well what?",
+        
+        "A: Is she saving you? Are you a resentful man with an inferiority complex?",
+        
+        "W: Hm, last time I checked...",
+        
+        "W: I'm neither of those things, yet.",
+        
+        "W: Only annoyed at my sister's unsolicited attempts to make me fall in love again.",
+        
+        "W: And sign me up for speed dating, of all things.",
+        
+        "A: Hm. It can't be all bad.",
+        
+        "A: Considering you showed up.",
+        
+        "A: You're willing to try.",
+         
+        "W: Yeah. I'm willing to try.",
+        
+        "W: Shit. I took over the conversation just to say I didn't choose to be here.",
+
+        "W: Classic good first impression.",
+        
+        "A: You're okay, it's refreshing to listen to someone open up.",
+        
+        "A: And again, you showed up. You're willing to try. You did choose.",
+        
+        "W: I'm going to go out on a limb and say your sibling didn't sign you up for this.",
+        
+        "W: And create a powerpoint presentation of you.",
+        
+        "A: Hate to say it, but this is all my own doing.", 
+        
+        "A: I woke up this morning with the full intention to go out and speed date. For the first time ever.",
+        
+        "W: ring ring. ",
+        
+        "A: And just like that, the first time ever is up.",
+        
+        "W: No way, is this really all it's suppose to be?",
+        
+        "W: This is kinda nuts.",
+        
+        "W: I didn't get a chance to ask you about all your life-defining decisions that led you to this very mundane moment with me.",
+        
+        "A: Maybe another time. We'll just have to start making time for things like this.",
+        
+        "W: Things like dating.",
+        
+        "A: Things like speed dating.",
+        
+        "W: Sounds like a plan...",
+        
+        "W: Shit. I didn't even ask your name.",
+
+        "A: I was wondering if either of us would point that out.",
+        
+        "A: It's Asriyah. My friends, and my speed dates call me Asri.",
+        
+        "W: It's nice to meet you, Asri.",
+        
+        "W: I'm Wes.",
+        
+        "A: Wes. Short for Weston?",
+        
+        "W: Short for Wesley.",
+        
+        "A: RING ",
+        
+        "W: And we're short for time.",
+        
+        "A: A short but pleasant time.",
+        
+        "A: Maybe I'll see you around, Wes.",
+        
+        "W: Yeah. Best of luck on the next date, Asri."
     ],
 
     "A25W30": [
-        "W: I'm now 30.",
-        "A: I'm 25."
+        "W: Hi, I'm Wes.",
+
+        "A: Nice to meet you, I'm Asri.",
+
+        "W: Asri's a lovely name. A unique name.",
+
+        "A: It was my great grandmother's name, Asriyah.",
+        
+        "A: It means noble or prosperous.",
+
+        "W: You're telling me you're royalty?",
+
+        "W: For me to be so lucky...",
+
+        "A: If I'm royalty, my family forgot to mention it.",
+
+        "A: I'm not cut out for the royal life, anyhow.",
+
+        "A: I quite like being the Asri I've grown into.",
+
+        "W: Who would that Asri be?",
+
+        "A: An Asri that spends a lot of time figuring out what she wants for her future.",
+
+        "A: A fulfilling career with a quiet home surrounded by plants that grow long vines.",
+
+        "A: Maybe one or two ragdoll cats that sleep most of the day but keep me pleasant company.",
+
+        "A: And an open floor plan to accomodate my large ego, given how much I'm speaking right now.",
+
+        "A: Sorry about that.",
+
+        "W: No, no worries at all. You sound like you got a good sense of your life.",
+
+        "A: No, I only spent most of the week spiraling and contemplating every decision I've ever made.",
+
+        "A: What do they call it. When you start questioning everything at 25...",
+
+        "A: A quarter-life crisis.",
+
+        "A: Having one of those. You should try it some time.",
+
+        "W: Been there, done that. Believe me.",
+
+        "W: Actually been there a couple times in the past year alone.",
+
+        "W: Look forward to the days right before your 30th birthday.",
+
+        "W: Where you're drunk most of the time trying to slow everything down.",
+
+        "A: Are you telling me you arrived to your speed date drunk?",
+
+        "W: No of course not, I'd never do that to someone else.",
+
+        "W: I arrived to my speed date very hungover.",
+
+        "W: A very big difference.",
+
+        "A: You're that confident you'll just charm whoever's in front of you?",
+
+        "W: Oh no, my ego fits a cozy, modest apartment actually.",
+
+        "W: I just don't have much to lose. The person I marry should see me for who I am.",
+
+        "W: The real me, reckless abandon and all.",
+
+        "A: Can't imagine being that carefree when I get to your age.",
+
+        "W: Just make it through your next 17 crises.",
+
+        "W: You'll understand soon.",
+
+        "W: Ring ring.",
+
+        "W: Well, so this game goes.",
+
+        "A: And I was just starting to enjoy myself.",
+
+        "W: I hope I'm a memorable enough speed date for you.",
+
+        "A: Let's put it this way.",
+         
+        "A: If I somehow find out that I'm descendant to a rich aristocrat family.",
+
+        "A: And find myself with an abundance of money.",
+
+        "A: I'll pay for one of your drinking benders.",
+
+        "A: Until then, stay safe out there, reckless abadonment.",
+
+        "W: Stay organized and starry-eyed, egomaniac."
+
     ],
 
+    "A30W25": [
+        "A: Hi, my name's Asri.",
+
+        "W: It's a pleasure. I'm Wes.",
+
+        "W: I like your choice in outfit. I gotta say, you're honestly stunning.",
+
+        "A: That's sweet of you to say.",
+
+        "A: Thank you.",
+
+        "W: Yeah of course.",
+
+        "W: So, what brings you here?",
+
+        "W: To speed dating?",
+
+        "A: Just looking to meet new people I guess.",
+
+        "W: Yeah, same for me too.",
+
+        "W: Well, my sister thinks I should be meeting new people.",
+
+        "A: Is that so?",
+
+        "W: Very so. Wish it wasn't so.",
+
+        "W: Signed me up for this thing. Made a presentation about me. Gave me advice.",
+
+        "W: Told me to compliment my date, but not based off her looks.",
+
+        "W: But rather something she can control, like her clothes.",
+
+        "W: And you picked a great outfit, so you made it easy.", 
+
+        "W: Shit. And I probably should've stopped oversharing a few sentences ago.",
+
+        "W: So I'll stop talking now.",
+
+        "A: You're funny. I don't mind your overshare.",
+
+        "A: Something tells me you haven't been dating recently.",
+
+        "W: Oh god...",
+
+        "W: Is it really that obvious?",
+
+        "W: It's the blabbering that gives it away.",
+
+        "W: I don't mean to take over conversations.",
+
+        "W: If someone's talking, then we don't have to sit in awkward silence.",
+
+        "W: It's a defense mechanism, I guess.",
+
+        "A: I'm all for awkward silences.",
+
+        "A: My ex-boyfriend was really good at it.",
+
+        "A: The detrimental-at-parties kind of good.",
+
+        "A: So I haven't been used to a string of sentences from another man in a while.",
+
+        "W: Well I'm happy to offer something different at least.",
+
+        "W: My ex-girlfriend always said I talked like I was preparing for a new olympic sport.",
+
+        "W: Which is an funny to think about.",
+
+        "W: Because she was the one in the friend group that talked the most of all of us.",
+
+        "A: A college sweetheart?",
+
+        "W: Mhm, the kind that won custody over the friend group when we broke up.",
+
+        "A: The college sweetheart you were meant to be in love with forever.",
+
+        "W: So you know the type?",
+
+        "A: Yes, I believed it and lived it.",
+
+        "A: We graduated and he couldn't handle the long-distance.",
+
+        "A: And I couldn't sacrifice my livelihood for him.",
+
+        "W: Shit. The awkward ex?",
+
+        "A: No he came later. At a hotel we were both staying at for a tech conference.",
+
+        "W: You're a tech whiz?",
+
+        "A: A tech journalist for now.",
+
+        "A: ring ring.",
+
+        "A: Wishing that time didn't fly by so quickly.",
+
+        "A: By the end, I think I was the one taking over the conversation.",
+
+        "W: Not at all. It was nice to relate with you.",
+
+        "W: Through our exes, I guess.",
+
+        "A: I think we did speed dating right.",
+
+        "A: By the way.",
+        
+        "A: I could tell you haven't been recently dating because of how quickly you brought up your sister.",
+
+        "A: Guys around here have learned it's risky to bring up any other women.",
+
+        "A: Even family, for some reason.",
+
+        "A: It's a shame. I appreciate when people open up. Always have.",
+
+        "W: Oh, I see. Well that's what being raised by women will do for you.",
+
+        "W: Vulnerably overshare and bring them up every chance you get.",
+
+        "W: Consider yourself lucky I didn't talk about my mother's opinionated lectures on childhood education.",
+
+        "W: And how I'm destined to be a teacher now because of her.",
+
+        "A: Darn, I'm sure if we had more time. I'd be glued to my seat.",
+
+        "A: Take care, Wes.",
+
+        "W: You too, Asri."
+
+    ],
+
+    "A30W30": [
+        "A: Hi, I'm Asri.",
+
+        "W: Hi there, Asri. I'm Wes.",
+
+        "W: Don't mean to be abrupt, but let's cut to the chase a bit here.",
+
+        "W: Considering we don't have a lot of time.",
+
+        "A: The floor is yours, Wes.",
+
+        "W: Are you looking to marry?",
+
+        "A: Not anytime soon, no.",
+
+        "W: What's soon for you?",
+
+        "W: Are we talking months? Years?",
+
+        "A: Are you in some kind of legal trouble?",
+
+        "W: No, what do you mean by that?",
+
+        ""
+    ],
+    
     "A25W35": [
         "W: I'm now 35.",
         "A: I'm 25."
@@ -28,16 +402,6 @@
     "A25W50": [
         "W: I'm now 50.",
         "A: I'm 25."
-    ],
-
-    "A30W25": [
-        "A: I'm now 30.",
-        "W: I'm 25."
-    ],
-
-    "A30W30": [
-        "A: I'm now 30.",
-        "W: I'm now 30."
     ],
 
     "A30W35": [

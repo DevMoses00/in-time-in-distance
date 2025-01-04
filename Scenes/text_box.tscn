@@ -1,9 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://dqwway263ic5e"]
+[gd_scene load_steps=5 format=3 uid="uid://dqwway263ic5e"]
 
-[ext_resource type="Texture2D" uid="uid://1gjx5r7gkuac" path="res://Art/Test/test_textbox.png" id="1_8bvwm"]
 [ext_resource type="Script" path="res://Scripts/text_box.gd" id="1_blxos"]
+[ext_resource type="Texture2D" uid="uid://bqx1j7gu66b0q" path="res://Art/Updated/updated_textbox.png" id="2_q5ska"]
+[ext_resource type="FontFile" uid="uid://b7vjw82jo2a1b" path="res://Fonts/helvetica-rounded-bold-5871d05ead8de.otf" id="3_4s0rd"]
 
 [sub_resource type="FontVariation" id="FontVariation_uc35b"]
+base_font = ExtResource("3_4s0rd")
 
 [node name="TextBox" type="MarginContainer"]
 offset_right = 192.0
@@ -12,7 +14,7 @@ script = ExtResource("1_blxos")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 2
-texture = ExtResource("1_8bvwm")
+texture = ExtResource("2_q5ska")
 region_rect = Rect2(27, 27, 450, 450)
 patch_margin_left = 54
 patch_margin_top = 72
@@ -27,6 +29,7 @@ theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
 [node name="Label" type="Label" parent="MarginContainer"]
+texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontVariation_uc35b")
