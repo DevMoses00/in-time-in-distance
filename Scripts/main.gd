@@ -40,8 +40,8 @@ var fadetween : Tween
 @onready var Asrieyes: AnimatedSprite2D = $Clock/NamePanel/CharacterB/Eyes
 @onready var Weseyes: AnimatedSprite2D = $Clock/DatePanel/CharacterA/Eyes
 
+var AsriNum : int = 30
 var WesNum : int = 25
-var AsriNum : int = 25
 var dialogueNum 
 #@onready var textA = $Clock/DatePanel/CharacterA.position - Vector2(310,40)
 #@onready var textB = $Clock/NamePanel/CharacterB.position - Vector2(-280, 30)
@@ -129,6 +129,12 @@ func ramp_up_time():
 	if opening == true:
 		fade_tween()
 		panel_moves()
+		chaA.play(str(WesNum))
+		Weseyes.play(str(WesNum))
+		Wesmouth.animation = str(WesNum)
+		chaB.play(str(AsriNum))
+		Asrieyes.play(str(AsriNum))
+		Asrimouth.animation = str(AsriNum)
 		await get_tree().create_timer(11).timeout
 		tween_kill()
 		length_s = 1.0
@@ -197,10 +203,11 @@ func buttons_enable():
 
 func left_pressed():
 	# animation for when the left button gets pressed 
+	$HandTestLeft.play()
 	var handtween = get_tree().create_tween()
-	handtween.tween_property($HandTestLeft,"position",Vector2(0,0),1)
+	handtween.tween_property($HandTestLeft,"position",Vector2(0,-60),2.5).set_trans(Tween.TRANS_CUBIC)
 	handtween.tween_callback(ramp_up_time)
-	handtween.tween_property($HandTestLeft,"position",Vector2(-639,-211),1)
+	handtween.tween_property($HandTestLeft,"position",Vector2(-639,-211),2.0).set_trans(Tween.TRANS_CUBIC)
 	
 	if opening == false: 
 		await get_tree().create_timer(1.1).timeout
@@ -219,9 +226,9 @@ func left_pressed():
 func middle_pressed():
 	# animation for when the middle button gets pressed 
 	var handtween = get_tree().create_tween()
-	handtween.tween_property($HandTestMid,"position",Vector2(0,0),1)
+	handtween.tween_property($HandTestMid,"position",Vector2(0,0),2.5).set_trans(Tween.TRANS_CUBIC)
 	handtween.tween_callback(ramp_up_time)
-	handtween.tween_property($HandTestMid,"position",Vector2(-613,-384),1)
+	handtween.tween_property($HandTestMid,"position",Vector2(-613,-384),2.0).set_trans(Tween.TRANS_CUBIC)
 	
 	if opening == false: 
 		await get_tree().create_timer(1.1).timeout
@@ -236,10 +243,11 @@ func middle_pressed():
 	# add the necessary variables for when I want to fade in the new character animation and call the new dialogue array
 
 func right_pressed():
+	$HandTestRight.play()
 	var handtween = get_tree().create_tween()
-	handtween.tween_property($HandTestRight,"position",Vector2(0,0),1)
+	handtween.tween_property($HandTestRight,"position",Vector2(0,-40),2.5).set_trans(Tween.TRANS_CUBIC)
 	handtween.tween_callback(ramp_up_time)
-	handtween.tween_property($HandTestRight,"position",Vector2(630,-268),1)
+	handtween.tween_property($HandTestRight,"position",Vector2(630,-268),2.0).set_trans(Tween.TRANS_CUBIC)
 	
 	if opening == false: 
 		await get_tree().create_timer(1.1).timeout
