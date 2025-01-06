@@ -31,6 +31,7 @@ signal dialogue_started
 signal wes_talking
 signal asri_talking
 signal stop_talking
+signal move_clock
 
 # Create a new dialogue start function that takes a specific set of dialogue lines
 func dialogue_player(line_key):
@@ -47,6 +48,12 @@ func _show_text_box():
 	text_box = text_box_scene.instantiate()
 	text_box.finished_displaying.connect(_on_text_box_finished_displaying)
 	get_tree().root.add_child(text_box)
+	
+	if dialogue_lines[current_line_index].begins_with("R:"):
+		print("ring")
+		# play a ring sound
+		move_clock.emit()
+		text_box.global_position = Vector2(200,-50)
 	
 	if dialogue_lines[current_line_index].begins_with("A:"):
 		text_box.global_position = Vector2(670, -10)

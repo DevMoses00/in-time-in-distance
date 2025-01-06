@@ -21,7 +21,7 @@
         
         "W: Speed dating?",
         
-        "A: Dating, by and large.",
+        "A: Dating, in general.",
         
         "W: Ah, gotcha.",
         
@@ -89,7 +89,7 @@
         
         "A: I woke up this morning with the full intention to go out and speed date. For the first time ever.",
         
-        "W: ring ring. ",
+        "R: RING RING",
         
         "A: And just like that, the first time ever is up.",
         
@@ -121,7 +121,7 @@
         
         "W: Short for Wesley.",
         
-        "A: RING. RING. ",
+        "R: RING RING",
         
         "W: And we're short for time.",
         
@@ -205,7 +205,7 @@
 
         "W: You'll understand soon.",
 
-        "W: Ring ring.",
+        "R: RING RING",
 
         "W: Well, so this game goes.",
 
@@ -320,7 +320,7 @@
 
         "A: A tech journalist for now.",
 
-        "A: ring ring.",
+        "R: RING RING",
 
         "A: Wishing that time didn't fly by so quickly.",
 
@@ -409,9 +409,11 @@
 
         "A: You're not some kind of oracle, are you?",
 
-        "W: If you give me enough to drink, I could recite your entire future with enough time.",
+        "W: If you give me enough to drink, I could recite your entire future.",
 
-        "W: And with enough money, foresight doesn't come free.",
+        "W: Just need the time.",
+
+        "W: And the money, foresight doesn't come free.",
 
         "A: I thought money wasn't an issue for you.",
 
@@ -467,9 +469,11 @@
 
         "A: My father is actually the lawyer in the family.", 
 
-        "A: Ring ring.",
+        "R: RING RING",
 
-        "W: Ha! The daughter of a lawyer, how about that. I knew it I can see it all over you.",
+        "W: Ha! The daughter of a lawyer, how about that. I knew it.",
+        
+        "W: I can see it all over you.",
 
         "A: Anything you say further can and will be used against you in the court of law.",
 
@@ -487,11 +491,9 @@
     ],
     
     "A25W35": [
-        "W: Hi.",
+        "W: Uh, Hello.",
 
-        "A: Hello.",
-
-        "A: I'm Asri.",
+        "A: Hello. I'm Asri.",
 
         "W: Wesley.",
 
@@ -509,7 +511,7 @@
 
         "A: When someone tells me their day is not the worst.",
 
-        "A: It makes me think it might be really close to one of the worst days.",
+        "A: It makes me think it might be really close to one of the worst.",
 
         "W: Ah well, sorry.",
 
@@ -517,7 +519,301 @@
 
         "W: Cold and busy, but fine.",
 
-        "W: I'm always preferred the warmer weather."
+        "W: I've always preferred the warmer weather.",
+
+        "A: Is that so?",
+
+        "W: I'm sorry?",
+
+        "A: You've always preferred warmer weather?",
+
+        "A: How come?",
+
+        "W: Ah, right. It's nothing really.",
+
+        "W: We don't have to start with that.",
+
+        "A: We have to start somewhere, Wesley.",
+
+        "A: Tell me about a warm weather experience.",
+
+        "A: I'll listen.",
+
+        "W: Uh... well.",
+
+        "W: Let's see...",
+
+        "W: In all honesty.",
+
+        "W: Can't really think of a good one, sorry.",
+
+        "W: Don't know why I even said I preferred warmer weather.",
+
+        "W: I just thought I should say something.",
+
+        "W: I'm sorry.",
+
+        "W: Yeah, sorry I'm a little all over the place.",
+
+        "A: Hey, it's alright. Look I prefer warmer weather.",
+
+        "A: Summer time is hard to beat in my opinion.",
+
+        "W: Oh yeah?",
+
+        "A: Yeah, I have a lot of memories traveling with my family every summer between school years.",
+
+        "A: It was usually road tripping to national parks.",
+
+        "W: Oh, like Yosemite?",
+
+        "A: Yeah, Yosemite is gorgeous. I was in love with the sequoias when I went a couple of years ago.",
+        
+        "A: But one time while my mom and dad were together, we planned a drive from Sequoia National Park to Joshua Tree.",
+
+        "A: I had never been to either, so I was excited for it.",
+
+        "A: But on our way down we decided to stop in LA because our car was overheating.", 
+
+        "W: Really? Something was up with the A/C?",
+
+        "A: Yeah it conked out that morning as we were leaving Sequoia.",
+
+        "A: So we're cruising down 58. Mom and Dad are arguing about the heat.",
+
+        "A: Deciding between finding a mechanic in LA then going to Joshua tree.",
+        
+        "A: Or giving up and going to Long Beach instead.",
+
+        "A: And I just remember leaning my head against the open window.",
+
+        "A: Curls flying everywhere while they argued in the background.",
+
+        "A: And the three things I cared about in that moment were how nice the wind felt on my scalp.",
+
+        "W: Important with no A/C.",
+
+        "A: How massive those sequoia trees were.",
+
+        "A: And immediately wondering why we don't grow up to be that big.",
+
+        "A: Which is silly obviously.",
+
+        "W: But sounds like a pleasant way to pass the time with the heat.",
+
+        "W: How old were you?",
+
+        "A: Like 19, so an even sillier thought back then.",
+
+        "W: No not at all. I can't imagine I was thinking much of anything at 19.",
+
+        "W: And for you to have such good memories of what you were thinking.",
+
+        "R: RING RING",
+
+        "W: Ah, there that goes. Sorry for being off. Wasted a bit of time.",
+
+        "W: But thank you for this. I actually do prefer warmer weather. I remember why.",
+
+        "A: Pretty trees and summer in LA?", 
+
+        "W: Those are up there, but no.",
+
+        "W: Summer break meant my mom was off from teaching and my sister was home from college.",
+
+        "W: And I would spend all day with them.",
+
+        "W: Another story for another time, sorry.",
+
+        "A: That sounds really sweet. Save it for next time.",
+
+        "A: Thanks, Wesley. For listening.",
+
+        "W: Yeah. Yeah no problem.",
+
+        "W: Wait before we go, would you recommend Joshua Tree?",
+
+        "A: We ended up never going, ha.",
+
+        "A: To this day, I can say that my family chose Long Beach over Joshua Tree.",
+
+        "A: And let the awkward silence fill the room.",
+
+        "A: A fun party trick to try out.",
+
+        "A: Take care, Wesley.",
+
+        "W: Hah yeah. You too, Asri."
+    ],
+
+    "A30W35": [
+        "A: Hi, I'm Asri.",
+
+        "W: Wesley. Hi.",
+
+        "A: What's your story, Wesley?",
+
+        "W: My story?",
+
+        "A: You look like you have an interesting story.",
+
+        "A: It's the little frown you're making right now.",
+
+        "A: Gives your complex backstory away.",
+
+        "W: Ah, no. Nothing really complex about it.",
+
+        "W: Just staying busy. Keeping my mind off things.",
+
+        "A: Are you gonna reveal anything during this speed date?",
+
+        "A: Sorry, I don't mean to be pushy or anything.",
+
+        "W: No I'm sorry, I'm trying to find what's good to say.",
+
+        "W: To be honest. Having a rough week.",
+
+        "W: I know you don't want to hear this coming from your speed date.",
+
+        "W: But I just got let go. So busy looking for some new work.",
+
+        "A: Oh, I'm sorry to hear. What field do you work in?",
+
+        "W: Well this was a contracted thing. For a research study.",
+
+        "W: Ironically, on the psychological effects of repeated layoffs.",
+
+        "A: Oh, that sounds cruel.",
+
+        "A: Could you be like a blind participant in one of their studies.",
+
+        "A: That might also be a cruel thing of me to say.",
+
+        "W: Well they hired me, I told them I was let go from my teaching position.",
+
+        "W: They probably thought they had a good opportunity on their hands.",
+
+        "A: You were a teacher? What did you teach?",
+
+        "W: I was a sociology professor primarily, but often ran studies with the psych department because of funding.",
+
+        "W: But that uninteresting part of me is in the past now.",
+
+        "W: Now I'm looking for work and trying to put myself out there.",
+
+        "A: So here you are. Doing just that.",
+
+        "A: If my company is hiring, I'll loop you in.",
+
+        "A: I'm a journalist, so if you write research papers you'd do just fine.",
+
+        "A: It's the tech industry, though. Might not be your cup of tea.",
+
+        "W: I appreciate the pseudo job offer. But might need time to figure things out.",
+
+        "W: Tired of the work cycle. Tired of a lot of things.",
+
+        "W: Sorry, how do you like journalism?",
+
+        "A: We don't have to talk about our work anymore, Wesley.",
+
+        "A: It's okay.",
+
+        "A: I'm tired too.",
+        
+        "A: Do you like weddings?",
+
+        "W: Uh, weddings?",
+
+        "W: I guess so. They're alright.",
+
+        "A: I ask because I'm suppose to be going to one in a couple weeks.",
+
+        "A: A friend from college, Sydney.",
+
+        "A: And I'm not really looking forward to it.",
+
+        "W: Bad experience at weddings?",
+
+        "A: Not the weddings themselves. Just the idea of marriage.",
+
+        "A: My parents divorced when I went to college.",
+
+        "A: A decade of complicated Christmases.",
+
+        "W: Sorry to hear that. Uh, have your parents move on?",
+
+        "W: Sorry if that is insensitive, sorry. I mean just have they found new partners?",
+        
+        "A: No you're alright. My dad has, new wife and her pair of kids from her first marriage.",
+
+        "A: My mom never did. She was quite happy to leave my Dad.",
+
+        "A: Even if it meant she'd never love someone else again.",
+
+        "A: Which is pretty badass to me.",
+
+        "A: But terrifying, all the same.",
+
+        "A: So I'm dreading this wedding, for all of that baggage I just threw at you.",
+
+        "W: Hard to top that, for most speed dates.",
+
+        "W: But try actually being divorced, like this guy over here.",
+
+        "A: You're kidding me...",
+
+        "W: Next week will mark 4 years since we married. 2 years since we weren't.",
+
+        "W: Like a fire. Bright and quick.",
+
+        "A: I'm so sorry. Look at me complaining about friends weddings.",
+
+        "A: Now I feel insensitive all over.",
+
+        "W: You're fine. Weddings, and the idea of marriage is all whack.",
+
+        "W: Not what they're cracked up to be.",
+
+        "W: That's why I asked if your parents found any luck starting over.",
+
+        "W: So still feeling a little mixed with what I heard.",
+
+        "A: I mean, you're still so young.",
+
+        "W: A good cliche, but I woke up today with a sore collarbone for no reason. So...",
+
+        "R: RING RING",
+
+        "A: Stupid alarm.",
+
+        "A: Look I'll say this.",
+
+        "A: Even though my mom never found someone else.",
+
+        "A: She found happiness in so many other ways.",
+
+        "A: Like gardening with her daughter and her neices, for example.",
+
+        "A: I can tell it means a lot to her. To spend time with people close to her.",
+
+        "A: So, keep your head up? Our real idea of love might not be found yet.",
+
+        "W: You have a kind look about the world, Asri.",
+
+        "W: Thank you for that. Thanks for stopping the work talk too.",
+
+        "A: Tech writing could be in your future, if you wanted it Wesley.",
+
+        "W: I'm gonna wait and see how this social experiment plays out.",
+
+        "W: But until then, thanks Asri.",
+
+        "W: And have fun at the wedding. Your friend will be happy.",
+
+        "W: And much happier to see you happy with her on her special day.",
+
+        "A: Well said, wise one."
     ],
 
     "A35W35": [
@@ -542,15 +838,7 @@
         "A: I'm 25."
     ],
 
-    "A30W35": [
-        "A: I'm now 30.",
-        "W: I'm now 35.",
 
-        "A: A little bit of shit show.",
-        "W: You think we'll ever lift back up again?",
-        "A: I really hope so. We have to, Wesley. We're meant to lift and fall and lift again.",
-        "A: I'm tired too."
-    ],
 
     "A30W40": [
         "A: I'm now 30.",

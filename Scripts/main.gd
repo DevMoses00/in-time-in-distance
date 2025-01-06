@@ -43,8 +43,8 @@ var clockTween : Tween
 @onready var Asrieyes: AnimatedSprite2D = $Clock/NamePanel/CharacterB/Eyes
 @onready var Weseyes: AnimatedSprite2D = $Clock/DatePanel/CharacterA/Eyes
 
-var AsriNum : int = 25
-var WesNum : int = 25
+var AsriNum : int = 30
+var WesNum : int = 35
 var dialogueNum 
 #@onready var textA = $Clock/DatePanel/CharacterA.position - Vector2(310,40)
 #@onready var textB = $Clock/NamePanel/CharacterB.position - Vector2(-280, 30)

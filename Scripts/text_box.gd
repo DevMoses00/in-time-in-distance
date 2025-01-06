@@ -20,6 +20,8 @@ func display_text(text_to_display: String):
 		text_to_display = text_to_display.trim_prefix("A: ")
 	elif text_to_display.begins_with("W: "):
 		text_to_display = text_to_display.trim_prefix("W: ")
+	elif text_to_display.begins_with("R: "):
+		text_to_display = text_to_display.trim_prefix("R: ")
 	text = text_to_display
 	label.text = text_to_display # label expands to the full width of the text
 	

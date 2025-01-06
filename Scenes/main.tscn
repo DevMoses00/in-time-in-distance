@@ -1,4 +1,4 @@
-[gd_scene load_steps=380 format=3 uid="uid://jiuvw2j680ro"]
+[gd_scene load_steps=381 format=3 uid="uid://jiuvw2j680ro"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_jl562"]
 [ext_resource type="Texture2D" uid="uid://b25iomnuufbr1" path="res://Art/Updated/background_animated/Untitled_Artwork-1.png" id="2_ho6qf"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b8q1ceubp25tm" path="res://Art/Test/rightbutton.png" id="5_ej1k6"]
 [ext_resource type="Texture2D" uid="uid://6y2pdescnva8" path="res://Art/Test/right_button_down.png" id="6_5qlof"]
 [ext_resource type="Texture2D" uid="uid://brn6tektpajdh" path="res://Art/Updated/Asriyah/A_30/30.png" id="6_jhyyd"]
+[ext_resource type="Script" path="res://Scripts/clock.gd" id="7_roedw"]
 [ext_resource type="Texture2D" uid="uid://bmybrfis11mj8" path="res://Art/Test/middlebutton.png" id="7_u63cj"]
 [ext_resource type="Texture2D" uid="uid://blt87r57j45t5" path="res://Art/Updated/Asriyah/A_35/35.png" id="7_x7sud"]
 [ext_resource type="Texture2D" uid="uid://cxa5sxl673vrl" path="res://Art/Updated/Asriyah/A_40/40.png" id="8_i5udc"]
@@ -1782,6 +1783,7 @@ frame_progress = 0.0486825
 position = Vector2(-15, 292)
 scale = Vector2(0.55, 0.55)
 texture = ExtResource("3_7w2e8")
+script = ExtResource("7_roedw")
 
 [node name="NamePanel" type="Sprite2D" parent="Clock"]
 texture = ExtResource("3_ojgk0")
