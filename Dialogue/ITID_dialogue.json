@@ -111,7 +111,7 @@
 
         "A: I was wondering if either of us would point that out.",
         
-        "A: It's Asriyah. My friends, and my speed dates call me Asri.",
+        "A: It's Asriyah. My friends, and my speed dates, call me Asri.",
         
         "W: It's nice to meet you, Asri.",
         
@@ -121,7 +121,7 @@
         
         "W: Short for Wesley.",
         
-        "A: RING ",
+        "A: RING. RING. ",
         
         "W: And we're short for time.",
         
@@ -294,9 +294,9 @@
 
         "W: My ex-girlfriend always said I talked like I was preparing for a new olympic sport.",
 
-        "W: Which is an funny to think about.",
+        "W: Which is funny to think about.",
 
-        "W: Because she was the one in the friend group that talked the most of all of us.",
+        "W: Because she was the one in the friend group that talked the most out of all of us.",
 
         "A: A college sweetheart?",
 
@@ -379,14 +379,152 @@
 
         "A: Are you in some kind of legal trouble?",
 
-        "W: No, what do you mean by that?",
+        "W: No, why do you ask?",
 
-        ""
+        "A: I'm curious if you're looking for a wife to share a joint bank account with.",
+
+        "W: Oh please, money isn't an issue for me.",
+
+        "W: If I was in any trouble, I would've asked if you were a lawyer.",
+
+        "W: Now that I think of it, are you a lawyer?",
+
+        "W: You seem the type.",
+
+        "A: The type? Explain that one.",
+
+        "W: I don't know. You seem serious.",
+
+        "W: Like when you'd play dress-up as a kid, I'd guess you opted for a suit and tie.",
+
+        "A: You're hilarious. Yeah obviously.",
+
+        "W: Asked for a briefcase for your sixth birthday?",
+
+        "A: Lucky guess perhaps.",
+
+        "W: Your first word was cross-examination?",
+
+        "A: Woah, I didn't expect to meet someone who knew my entire life story.",
+
+        "A: You're not some kind of oracle, are you?",
+
+        "W: If you give me enough to drink, I could recite your entire future with enough time.",
+
+        "W: And with enough money, foresight doesn't come free.",
+
+        "A: I thought money wasn't an issue for you.",
+
+        "W: I'm looking out for future Wes. In case he's all out of charm when he's older.",
+
+        "W: Who knows what he'll be up to.",
+
+        "A: Hopefully not asking women if they're looking to marry on the first date.",
+
+        "W: A man can dream.",
+
+        "W: But really it's my mom. She's finally hit the 'where's my grandchildren' part of her life.",
+
+        "A: I'm sorry to hear that.",
+
+        "A: How long have you been suffering?",
+
+        "W: Ever since she retired from teaching, six months about.",
+        
+        "W: She's had a lot of empty time on her hands.",
+
+        "W: Resorted to sewing baby clothes and dropping them off at my apartment.",
+
+        "A: It's worse than I thought.",
+
+        "W: So now I'm here, asking the important questions.",
+
+        "W: Before she dies without grandkids and leaves her life with disappointment in her heart.",
+
+        "W: Her words, would never be mine.",
+
+        "A: It must be a universal parent trait.",
+
+        "A: To guilt you into starting a family, regardless of what you want out of your own life.",
+
+        "W: Shared experience then?",
+
+        "A: From my father, shockingly. Loves the idea of being a grandpa.",
+
+        "A: He thinks my window is closing, with it, all his real dreams.",
+
+        "W: He's not sewing baby clothes too, is he?",
+
+        "A: Not in the slightest.",
+
+        "A: His way of expressing his disappointment is through logic debates.",
+
+        "A: By challenging my economic reasoning and concept of personal freedom. ",
+
+        "A: As if they're up for interpretation.",
+
+        "W: Asri, you're not telling me he's actually...",
+
+        "A: My father is actually the lawyer in the family.", 
+
+        "A: Ring ring.",
+
+        "W: Ha! The daughter of a lawyer, how about that. I knew it I can see it all over you.",
+
+        "A: Anything you say further can and will be used against you in the court of law.",
+
+        "A: So watch yourself out there.",
+
+        "A: And take care of future Wes for me, would you?",
+
+        "W: It's the least I could do.",
+        
+        "W: When you're ready to marry, lawyer daughter, let future Wes know.",
+
+        "W: His mother would be over the moon.",
+
+        "A: So would the lawyer daughter's father."
     ],
     
     "A25W35": [
-        "W: I'm now 35.",
-        "A: I'm 25."
+        "W: Hi.",
+
+        "A: Hello.",
+
+        "A: I'm Asri.",
+
+        "W: Wesley.",
+
+        "A: Nice to meet you, Wesley.",
+
+        "W: Yeah, you too.",
+
+        "W: So uh, having a good day?",
+
+        "A: Yes, thank you for asking.",
+
+        "A: How about you?",
+
+        "W: Not the worst today.",
+
+        "A: When someone tells me their day is not the worst.",
+
+        "A: It makes me think it might be really close to one of the worst days.",
+
+        "W: Ah well, sorry.",
+
+        "W: I'm having a fine day.",
+
+        "W: Cold and busy, but fine.",
+
+        "W: I'm always preferred the warmer weather."
+    ],
+
+    "A35W35": [
+
+
+
+        
     ],
 
     "A25W40": [
@@ -406,7 +544,12 @@
 
     "A30W35": [
         "A: I'm now 30.",
-        "W: I'm now 35."
+        "W: I'm now 35.",
+
+        "A: A little bit of shit show.",
+        "W: You think we'll ever lift back up again?",
+        "A: I really hope so. We have to, Wesley. We're meant to lift and fall and lift again.",
+        "A: I'm tired too."
     ],
 
     "A30W40": [
@@ -431,11 +574,6 @@
 
     "A35W30": [
         "W: I'm now 30.",
-        "A: I'm now 35."
-    ],
-
-    "A35W35": [
-        "W: I'm now 35.",
         "A: I'm now 35."
     ],
 

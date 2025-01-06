@@ -12,6 +12,8 @@ extends Node2D
 @export var dates : AnimatedSprite2D
 @export var chaA : AnimatedSprite2D
 @export var chaB : AnimatedSprite2D
+@export var chaAage : AnimatedSprite2D
+@export var chaBage : AnimatedSprite2D
 
 @export_group("Buttons")
 @export var leftbutton : Button
@@ -28,6 +30,7 @@ var tween_hour : Tween
 var PanelLtween : Tween
 var PanelRtween : Tween
 var fadetween : Tween
+var clockTween : Tween
 
 @onready var chaApos = chaA.position
 @onready var chaBpos = chaB.position
@@ -40,7 +43,7 @@ var fadetween : Tween
 @onready var Asrieyes: AnimatedSprite2D = $Clock/NamePanel/CharacterB/Eyes
 @onready var Weseyes: AnimatedSprite2D = $Clock/DatePanel/CharacterA/Eyes
 
-var AsriNum : int = 30
+var AsriNum : int = 25
 var WesNum : int = 25
 var dialogueNum 
 #@onready var textA = $Clock/DatePanel/CharacterA.position - Vector2(310,40)
@@ -61,6 +64,7 @@ func _ready() -> void:
 	
 	# bring the clock into focus
 	title_tween()
+	clock_tween()
 	
 	# standard clock rotation
 	length_s = 1.0
@@ -115,6 +119,7 @@ func tween_kill():
 	tween_hour.kill()
 	PanelLtween.kill()
 	PanelRtween.kill()
+	clockTween.kill()
 
 
 func ramp_up_time():
@@ -126,17 +131,22 @@ func ramp_up_time():
 	# start the animation
 	length_s = 0.1
 	clock()
+	clock_tween()
+	$Background.play()
 	if opening == true:
 		fade_tween()
 		panel_moves()
+		chaAage.play(str(WesNum))
 		chaA.play(str(WesNum))
 		Weseyes.play(str(WesNum))
 		Wesmouth.animation = str(WesNum)
+		chaBage.play(str(AsriNum))
 		chaB.play(str(AsriNum))
 		Asrieyes.play(str(AsriNum))
 		Asrimouth.animation = str(AsriNum)
 		await get_tree().create_timer(11).timeout
 		tween_kill()
+		$Background.stop()
 		length_s = 1.0
 		clock()
 		panel_moves()
@@ -149,6 +159,7 @@ func ramp_up_time():
 		fade_tween()
 		await get_tree().create_timer(9).timeout
 		tween_kill()
+		$Background.stop()
 		length_s = 1.0
 		clock()
 		panel_moves()
@@ -175,13 +186,19 @@ func fade_tween():
 	# the speedy clock's day and date fades away and is replaced by the two characters
 	# a fade tween between that blurs removes the date and time and replaces it with the character
 	await get_tree().create_timer(4.0).timeout
-	fadetween = get_tree().create_tween().set_parallel()
-	fadetween.tween_property(days,"modulate:a",0,4)
-	fadetween.tween_property(dates,"modulate:a",0,4)
-	fadetween.tween_property(chaA,"modulate:a",1,4)
-	fadetween.tween_property(chaB,"modulate:a",1,4)
+	fadetween = get_tree().create_tween()
+	fadetween.parallel().tween_property(days,"modulate:a",0,3)
+	fadetween.parallel().tween_property(dates,"modulate:a",0,3)
+	fadetween.parallel().tween_property(chaAage,"modulate:a",1,3)
+	fadetween.parallel().tween_property(chaBage,"modulate:a",1,3)
+	fadetween.tween_interval(1)
+	fadetween.parallel().tween_property(chaAage,"modulate:a",0,2)
+	fadetween.parallel().tween_property(chaBage,"modulate:a",0,2)
+	fadetween.parallel().tween_property(chaA,"modulate:a",1,2)
+	fadetween.parallel().tween_property(chaB,"modulate:a",1,2)
 
 func fade_tween_back():
+	# a fade tween fades the character away 
 	await get_tree().create_timer(4.0).timeout
 	fadetween = get_tree().create_tween().set_parallel()
 	fadetween.tween_property(days,"modulate:a",1,4)
@@ -189,6 +206,12 @@ func fade_tween_back():
 	fadetween.tween_property(chaA,"modulate:a",0,4)
 	fadetween.tween_property(chaB,"modulate:a",0,4)
 
+func clock_tween():
+	# A tween animation that constantly moves the clock for dynamic effect
+	clockTween = get_tree().create_tween().set_loops()
+	clockTween.tween_property($Clock, "position:x", -2, 0.5)
+	clockTween.tween_property($Clock, "position:x", 2, 0.5)
+	pass
 # BUTTON CODE
 
 func buttons_enable():
@@ -204,7 +227,7 @@ func buttons_enable():
 func left_pressed():
 	# animation for when the left button gets pressed 
 	$HandTestLeft.play()
-	var handtween = get_tree().create_tween()
+	var handtween = get_tree().create_tween() 
 	handtween.tween_property($HandTestLeft,"position",Vector2(0,-60),2.5).set_trans(Tween.TRANS_CUBIC)
 	handtween.tween_callback(ramp_up_time)
 	handtween.tween_property($HandTestLeft,"position",Vector2(-639,-211),2.0).set_trans(Tween.TRANS_CUBIC)
@@ -214,10 +237,12 @@ func left_pressed():
 		panel_moves()
 		await get_tree().create_timer(9.0).timeout
 		WesNum += 5
+		chaAage.play(str(WesNum))
 		chaA.play(str(WesNum))
 		Weseyes.play(str(WesNum))
 		Wesmouth.animation = str(WesNum)
 		AsriNum += 5
+		chaBage.play(str(AsriNum))
 		chaB.play(str(AsriNum))
 		Asrieyes.play(str(AsriNum))
 		Asrimouth.animation = str(AsriNum)
@@ -236,6 +261,7 @@ func middle_pressed():
 		#date_tween()
 		await get_tree().create_timer(9.0).timeout
 		WesNum += 5
+		chaAage.play(str(WesNum))
 		chaA.play(str(WesNum))
 		Weseyes.play(str(WesNum))
 		Wesmouth.animation = str(WesNum)
@@ -256,6 +282,7 @@ func right_pressed():
 		await get_tree().create_timer(9.0).timeout
 		AsriNum += 5
 		chaB.play(str(AsriNum))
+		chaBage.play(str(AsriNum))
 		Asrieyes.play(str(AsriNum))
 		Asrimouth.animation = str(AsriNum)
 		# add the necessary variables for when I want to fade in the new character animation and call the new dialogue array
