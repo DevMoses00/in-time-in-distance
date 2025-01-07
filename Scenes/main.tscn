@@ -370,7 +370,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 2.0
+"speed": 3.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_onpqm"]
@@ -1780,8 +1780,8 @@ frame_progress = 0.0486825
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Clock" type="Sprite2D" parent="."]
-position = Vector2(-15, 292)
-scale = Vector2(0.55, 0.55)
+modulate = Color(1, 1, 1, 0)
+scale = Vector2(0.13, 0.13)
 texture = ExtResource("3_7w2e8")
 script = ExtResource("7_roedw")
 

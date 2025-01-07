@@ -61,16 +61,17 @@ var character_fades
 func _ready() -> void:
 	DialogueManager.readJSON("res://Dialogue/ITID_dialogue.json")
 	# THE OVERALL DIRECTOR SCRIPT IS PLAYED HERE 
-	
+	await get_tree().create_timer(1).timeout
 	# bring the clock into focus
 	title_tween()
-	clock_tween()
+	
 	
 	# standard clock rotation
 	length_s = 1.0
 	clock()
 	panel_moves()
 	await get_tree().create_timer(5).timeout
+	clock_tween()
 	
 	# activate buttons
 	buttons_enable()
@@ -96,10 +97,16 @@ func _process(delta: float) -> void:
 
 func title_tween():
 	# For the opening of the game
+	fade_tween_in($Clock)
+	SoundManager.fade_in_bgs("Ticking", 2, -50)
+	await get_tree().create_timer(2).timeout
 	var tween = get_tree().create_tween().set_parallel()
-	tween.tween_property($Clock,"position",Vector2(0,0),3)
-	tween.tween_property($Clock,"scale",Vector2(1,1),3)
+	#tween.tween_property($Clock,"position",Vector2(0,0),3)
+	tween.tween_property($Clock,"scale",Vector2(1,1),7).set_ease(Tween.EASE_IN_OUT).set_trans(Tween.TRANS_CUBIC)
 
+func fade_tween_in(image) -> void:
+	var fadeTween = get_tree().create_tween()
+	fadeTween.tween_property(image,"modulate",Color(1.0, 1.0, 1.0, 1.0), 2)
 func clock():
 	# sets the clock animation
 	tween_sec = get_tree().create_tween().set_parallel().set_loops()
