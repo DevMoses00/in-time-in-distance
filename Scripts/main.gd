@@ -146,6 +146,9 @@ func ramp_up_time():
 		SoundManager.fade_out("Ticking",3.0)
 		SoundManager.fade_in_sfx("Chain1",1.0)
 		SoundManager.fade_in_sfx("Chain2",1.0)
+		await get_tree().create_timer(.9).timeout
+		SoundManager.fade_out("Chain1",3.0)
+		SoundManager.fade_out("Chain2",3.0)
 		fade_tween()
 		panel_moves()
 		chaAage.play(str(WesNum))
@@ -156,20 +159,24 @@ func ramp_up_time():
 		chaB.play(str(AsriNum))
 		Asrieyes.play(str(AsriNum))
 		Asrimouth.animation = str(AsriNum)
-		await get_tree().create_timer(2.5).timeout
+		await get_tree().create_timer(2.0).timeout
 		SoundManager.fade_in_mfx("SynthA",1.0)
 		await get_tree().create_timer(2.0).timeout
 		SoundManager.fade_in_mfx("SynthC",1.0)
 		await get_tree().create_timer(2.0).timeout
 		SoundManager.fade_in_mfx("SynthB",1.0)
-		await get_tree().create_timer(4).timeout
+		await get_tree().create_timer(4.5).timeout
 		tween_kill()
+		SoundManager.stop_all()
+		SoundManager.play_sfx("Tic",0,10)
 		$Background.stop()
 		length_s = 1.0
 		clock()
 		panel_moves()
 		await get_tree().create_timer(3).timeout
 		opening = false
+		SoundManager.fade_in_bgm("BGAura",5.0)
+		SoundManager.fade_in_bgs("Ticking",5.0,0,-50)
 		DialogueManager.dialogue_started.emit()
 	else:
 		fade_tween_back()
@@ -181,7 +188,7 @@ func ramp_up_time():
 		length_s = 1.0
 		clock()
 		panel_moves()
-		await get_tree().create_timer(3).timeout
+		await get_tree().create_timer(5).timeout
 		DialogueManager.dialogue_started.emit()
 
 

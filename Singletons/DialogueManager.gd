@@ -66,10 +66,10 @@ func _show_text_box():
 	text_box_tween = get_tree().create_tween().set_loops()
 	# tween animation
 	text_box_tween.tween_property(text_box, "scale",Vector2(1.01,1.01),.1)
-	text_box_tween.tween_callback(tic_sound)
+	#text_box_tween.tween_callback(tic_sound)
 	text_box_tween.tween_interval(1)
 	text_box_tween.tween_property(text_box, "scale",Vector2(.98,.98),.1)
-	text_box_tween.tween_callback(toc_sound)
+	#text_box_tween.tween_callback(toc_sound)
 	text_box_tween.tween_interval(1)
 	
 	text_box.display_text(dialogue_lines[current_line_index])
