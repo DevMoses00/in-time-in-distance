@@ -136,11 +136,16 @@ func ramp_up_time():
 	rightbutton.disabled = true
 	tween_kill()
 	# start the animation
+	SoundManager.play_sfx("LeftButton")
 	length_s = 0.1
 	clock()
 	clock_tween()
 	$Background.play()
 	if opening == true:
+		await get_tree().create_timer(.5).timeout
+		SoundManager.fade_out("Ticking",3.0)
+		SoundManager.fade_in_sfx("Chain1",1.0)
+		SoundManager.fade_in_sfx("Chain2",1.0)
 		fade_tween()
 		panel_moves()
 		chaAage.play(str(WesNum))
@@ -151,7 +156,13 @@ func ramp_up_time():
 		chaB.play(str(AsriNum))
 		Asrieyes.play(str(AsriNum))
 		Asrimouth.animation = str(AsriNum)
-		await get_tree().create_timer(11).timeout
+		await get_tree().create_timer(2.5).timeout
+		SoundManager.fade_in_mfx("SynthA",1.0)
+		await get_tree().create_timer(2.0).timeout
+		SoundManager.fade_in_mfx("SynthC",1.0)
+		await get_tree().create_timer(2.0).timeout
+		SoundManager.fade_in_mfx("SynthB",1.0)
+		await get_tree().create_timer(4).timeout
 		tween_kill()
 		$Background.stop()
 		length_s = 1.0
