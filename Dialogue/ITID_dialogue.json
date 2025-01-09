@@ -400,7 +400,9 @@
 
         "A: The type? Explain that one.",
 
-        "W: I don't know. You seem serious.",
+        "W: Well, you seem like a serious soul.",
+
+        "A: A serious soul?",
 
         "W: Like when you'd play dress-up as a kid, I'd guess you opted for a suit and tie.",
 
@@ -696,7 +698,7 @@
 
         "A: That might also be a cruel thing of me to say.",
 
-        "W: Well they hired me, I told them I was let go from my teaching position.",
+        "W: Well when they hired me, I told them I was let go from my teaching position.",
 
         "W: They probably thought they had a good opportunity on their hands.",
 
@@ -823,12 +825,327 @@
         "A: Well said, wise one."
     ],
 
-    "A35W35": [
 
+    "A35W25": [
+        "A: Hello. I'm Asri.",
+
+        "W: Nice to meet you Asri, I'm Wes.",
+
+        "A: Wes, good.",
+        
+        "A: So Wes, I have a couple of questions prepared.",
+
+        "A: To make the best use of our time, if you don't mind?",
+
+        "W: Oh, not at all. Please ask away.",
+
+        "W: But also before we start, your hair looks really nice.",
+
+        "A: My hair?",
+
+        "W: Yeah it's a nice hairstyle. It suits you I mean.",
+        
+        "W: Just wanted to let you know.",
+
+        "A: Thank you. That's oddly sweet.",
+
+        "A: Okay, now to the questions.",
+
+        "A: So what does a fulfilling life look like to you?",
+
+        "W: Woah, a fulfilling life?",
+
+        "A: Yes. What does it look like to you?",
+
+        "W: Okay, well. I think I'm still trying to figure that one out.",
+
+        "A: Okay, like how?",
+
+        "W: I'm in school to become a teacher. So I hope that works out?",
+
+        "W: Also making sure my family is taken care of, that's super important to me.",
+
+        "W: And I guess I think of a fulfilling life that includes someone else in it.",
+
+        "W: And so I'm trying to meet people again too.",
+
+        "W: So yeah, that. Final answer.",
+
+        "W: I'll stop talking.",
+
+        "A: So you're in the process of figuring some things out.",
+
+        "A: That's what we're here for. That's why I brought these questions.",
+
+        "A: Okay next one...",
+
+        "W: Uh, wait Asri?",
+
+        "W: Can I ask you a question now?",
+
+        "A: Oh, that would be fair. What do you want to know?",
+
+        "W: Well, what brings you here?",
+
+        "W: I mean, I can figure that you're looking to find someone.",
+
+        "W: And someone right for you and everything.",
+
+        "W: But why do it in this way? Speed dating?",
+
+        "A: Alright, I'm here because I'm done with dating any other way.",
+
+        "A: It's an exhausting wheel that I'm done running on.",
+
+        "W: That makes sense. I'm sure you have other things to worry about too.",
+
+        "A: Exactly, I'm over trying to shift my schedule and spend time with people that aren't serious.",
+
+        "W: So, speed dating is efficient from your view?",
+
+        "A: It is. We meet. We ask our questions.",
+
+        "A: We see if there's enough mutual interest.",
+
+        "A: And then we can decide if we want to see each other again and have a real discussion.",
+
+        "A: So there it is, now let me look at my questions...",
+
+        "W: Wait sorry, I see what you're saying.",
+
+        "W: But doesn't that way feel bland?",
+
+        "A: No, what do you mean?",
+
+        "W: Optimizing your dating life this way.",
+
+        "W: By spending the least amount of time possible.",
+
+        "A: But still asking critical questions, so what's the problem?",
+
+        "W: Well I think that's the problem. To me it's sapping out the surprise.",
+
+        "W: The spontaneity? The spark that makes meeting people feel good.",
+
+        "A: Wes, I see your point. Trust me, I really do.",
+
+        "A: But I've come to this process after years of dating going horribly.",
+
+        "A: I've met guys at bars and at concerts.",
+
+        "A: At book clubs and at work events.",
+
+        "A: I've done it all, and there's always something disappointing.",
+
+        "A: I went on a Rome-Venice-Florence package deal to Italy with a guy I thought I was going to marry.",
+
+        "A: After knowing him for seven months.",
+
+        "A: Only to find out he took me there so he could post about it.",
+
+        "A: So that his ex would see and get jealous.",
+
+        "W: Oh no....",
+
+        "A: I was literally a seven-month plot device for this jackass.",
+
+        "A: And I cried in boat on the Grand Canal.",
+
+        "A: Which is the most romantic place for the most embarassing thing.",
+
+        "A: He thought that I wouldn't find out? That I would obviously not appreciate being used?",
+
+        "A: Like he had no idea who I was after seven months?",
+
+        "W: You seem to be a thorough person.",
+
+        "A: Right, thank you! I investigated things way more secretive and meaningful than that dude's pathetic excuse to show off.",
+
+        "R: RING RING",
+
+        "A: Damn, and so the questions are meant to weed out everyone I've ever dated before.",
+
+        "W: I get it a lot more now, you've gone through some brutal relationships.",
+
+        "W: Sorry I didn't get to answer more of your questions.",
+
+        "A: I had a lot more. Like a ton more.",
+
+        "A: But you asked a good one.",
+
+        "A: That was cathartic. To let that out.",
+
+        "A: So thank you. We'll try this again another time, how's that sound Wes?",
+
+        "W: Yeah, sounds like a plan to me.",
+
+        "W: Looking forward to more questions soon, Asri."
+
+    ],
+
+    "A35W30": [
+        "W: Woah, hey there.",
+
+        "A: Hello. I'm Asri.",
+
+        "A: And you are?",
+
+        "W: My my, Asri. I'm Wes.",
+
+        "W: I can already tell it's a pleasure to meet you?",
+
+        "A: Oh really? That quick to judge? Get your assumptions out the way now.",
+
+        "A: We have a lot else I'd like to get to.",
+
+        "W: Oh don't worry about me or whatever I'm saying.",
+
+        "W: I want to get to whatever you had in mind.",
+
+        "W: Lead the way, M'am.",
+
+        "A: I prefer just Asri, please.",
+
+        "A: So we don't have a lot of time, and I need to ask some critical questions.",
+
+        "W: Questions?",
+
+        "W: Like you wrote down questions to ask me?",
+
+        "A: Yes I did. This is a speed date. What's the confused look?",
+
+        "W: Uh, no confused look. I was thinking we could just talk.",
+
+        "W: Be a little more natural, you know?",
+
+        "W: Don't get me wrong I'm happy to answer what you have.",
+
+        "W: But my word of advice, those questions are gonna make this conversation awkward.",
+
+        "A: You think trying to get to know someone by asking prepared questions is...",
+
+        "A: Awkward? Really?",
+
+        "W: Yeah it's very awkward.",
+
+        "A: Really.",
+
+        "W: I mean, this isn't really an interview kind of thing.",
+
+        "A: Funny you mention that, my first question is about your career.",
+
+        "W: Oh please, you're going to ask what I do?",
+
+        "W: Because you want to know how much I make?",
+
+        "A: Slow it down hot head, it's a simple question.",
+
+        "A: Are you doing something you enjoy?",
+
+        "W: Something I enjoy? I mean.",
+
+        "W: Yeah I do enjoy what I do. A lot.",
+
+        "A: Lovely. Not so hard, was it? What do you do then?",
+
+        "W: Well, I teach. So I'm gonna have to disappoint you when it comes to the money.",
+
+        "W: But whatever joy I don't get in cash, I find it through my students.",
+
+        "W: Is that a good answer? Did I get the job?",
+
+        "A: It was good, really good until I felt inclined to roll my eyes.",
+
+        "A: A teacher is respectable. I'm sure the kids you teach like your energy.",
+
+        "A: Based off what I can tell from you.",
+
+        "W: Most of those 'kids' actually just turned 20, so they see me as the cool upper classman.",
+
+        "A: Oh okay, a professor?",
+
+        "W: Barely, just a talkative slightly-wrinkled student.",
+
+        "W: That never left campus.",
+
+        "W: Wait, did you say I have good energy?",
+
+        "A: Oh quit it.",
+
+        "W: Don't let me miss that, hold on Asri.",
+
+        "W: What do you like about my energy, mattafact?",
+
+        "A: What subject do you teach?",
+
+        "W: What subject do you want me to teach?",
+
+        "A: ALRIGHT ENOUGH OF THAT.",
+
+        "A: Subject, please?",
+
+        "W: Sociology.",
+
+        "W: Basically, I like people and putting them into context with the world we've establish throughout history.",
+
+        "W: And how are lives are inherently dependent on the theories and constructs.",
+        
+        "W: That've been passed down by our immediate parental guidance and intersecting communities.",
+
+        "W: And in order for us to understand the problems we have in the world.",
+
+        "W: Of which there are a countless number.",
+
+        "W: We must consider all points of evidence supplied with or in absence of...",
+
+        "R: RING RING.",
+
+        "W: Historical. Context.",
+
+        "W: You got me talking about my lecture content. On a speed date.",
+
+        "W: Unreal behavior,",
+
+        "A: Still think these questions are a bad idea?",
+
+        "W: For most people, absolutely.",
+
+        "W: For Wes? I could answer your questions all day.",
+
+        "W: You saw how fast my mouth was moving.",
+
+        "A: If only we had all day.",
+
+        "A: I'm happy to say, you've got the job.",
+
+        "W: The news I was waiting to hear. Toast a drink with me after this?",
+
+        "A: No time this time. Get going Wes",
+
+        "A: But you were right. I could also tell this was going to be a pleasure.",
+
+        "W: The pleasure was all mine, Asri."
+    ],
+
+
+    "A35W35": [
+        "A: Hello. I'm Asri.",
+
+        "A: And you are?",
+
+        "W: I'm Wesley.",
+
+        "A: Great, nice to meet you Wesley.",
+
+        "A: Time is of the essence when it comes to these things.",
+
+        "A: So I prepared a few questions, if you don't mind."
 
 
         
     ],
+
+
 
     "A25W40": [
         "W: I'm now 40.",
@@ -862,15 +1179,6 @@
         "W: I'm now 50."
     ],
 
-    "A35W25": [
-        "W: I'm 25.",
-        "A: I'm now 35."
-    ],
-
-    "A35W30": [
-        "W: I'm now 30.",
-        "A: I'm now 35."
-    ],
 
     "A35W40": [
         "W: I'm now 40.",

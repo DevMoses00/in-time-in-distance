@@ -173,10 +173,10 @@ func ramp_up_time():
 		length_s = 1.0
 		clock()
 		panel_moves()
+		SoundManager.fade_in_bgs("Ticking",6.0,0,-50)
 		await get_tree().create_timer(3).timeout
 		opening = false
 		SoundManager.fade_in_bgm("BGAura",5.0)
-		SoundManager.fade_in_bgs("Ticking",5.0,0,-50)
 		DialogueManager.dialogue_started.emit()
 	else:
 		fade_tween_back()
@@ -194,7 +194,7 @@ func ramp_up_time():
 		SoundManager.fade_out("Chain1",3.0)
 		SoundManager.fade_out("Chain2",3.0)
 		fade_tween()
-		await get_tree().create_timer(1.8).timeout
+		await get_tree().create_timer(2.3).timeout
 		SoundManager.fade_in_mfx("SynthC",1.0)
 		await get_tree().create_timer(3.0).timeout
 		SoundManager.fade_in_mfx("SynthB",1.0)
@@ -203,6 +203,7 @@ func ramp_up_time():
 		SoundManager.stop_all()
 		SoundManager.play_sfx("Tic",0,10)
 		$Background.stop()
+		SoundManager.fade_in_bgs("Ticking",6.0,0,-50)
 		length_s = 1.0
 		clock()
 		panel_moves()
@@ -280,7 +281,7 @@ func left_pressed():
 	if opening == false: 
 		await get_tree().create_timer(1.1).timeout
 		panel_moves()
-		await get_tree().create_timer(9.0).timeout
+		await get_tree().create_timer(9.5).timeout
 		WesNum += 5
 		chaAage.play(str(WesNum))
 		chaA.play(str(WesNum))
@@ -304,7 +305,7 @@ func middle_pressed():
 		await get_tree().create_timer(1.1).timeout
 		panel_moves()
 		#date_tween()
-		await get_tree().create_timer(9.0).timeout
+		await get_tree().create_timer(9.5).timeout
 		WesNum += 5
 		chaAage.play(str(WesNum))
 		chaA.play(str(WesNum))
@@ -324,7 +325,7 @@ func right_pressed():
 		await get_tree().create_timer(1.1).timeout
 		panel_moves()
 		#name_tween()
-		await get_tree().create_timer(9.0).timeout
+		await get_tree().create_timer(9.5).timeout
 		AsriNum += 5
 		chaB.play(str(AsriNum))
 		chaBage.play(str(AsriNum))
