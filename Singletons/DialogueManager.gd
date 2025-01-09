@@ -52,14 +52,22 @@ func _show_text_box():
 	if dialogue_lines[current_line_index].begins_with("R:"):
 		print("ring")
 		# play a ring sound
+		SoundManager.stop_all()
+		SoundManager.play_sfx("Ring")
+		#await get_tree().create_timer(.01).timeout
+		#SoundManager.fade_out("Ring",4.3)
 		move_clock.emit()
 		text_box.global_position = Vector2(200,-50)
 	
 	if dialogue_lines[current_line_index].begins_with("A:"):
+		# Play an Asri sound
+		tic_sound()
 		text_box.global_position = Vector2(670, -10)
 		asri_talking.emit()
 	
 	elif dialogue_lines[current_line_index].begins_with("W:"):
+		# Play a Wes sound
+		toc_sound()
 		text_box.global_position = Vector2(-280, -10)
 		wes_talking.emit()
 	
@@ -73,6 +81,7 @@ func _show_text_box():
 	text_box_tween.tween_interval(1)
 	
 	text_box.display_text(dialogue_lines[current_line_index])
+	
 	can_advance_line = false
 
 func _on_text_box_finished_displaying():

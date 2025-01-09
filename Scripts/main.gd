@@ -43,8 +43,8 @@ var clockTween : Tween
 @onready var Asrieyes: AnimatedSprite2D = $Clock/NamePanel/CharacterB/Eyes
 @onready var Weseyes: AnimatedSprite2D = $Clock/DatePanel/CharacterA/Eyes
 
-var AsriNum : int = 30
-var WesNum : int = 35
+var AsriNum : int = 25
+var WesNum : int = 25
 var dialogueNum 
 #@onready var textA = $Clock/DatePanel/CharacterA.position - Vector2(310,40)
 #@onready var textB = $Clock/NamePanel/CharacterB.position - Vector2(-280, 30)
@@ -159,7 +159,7 @@ func ramp_up_time():
 		chaB.play(str(AsriNum))
 		Asrieyes.play(str(AsriNum))
 		Asrimouth.animation = str(AsriNum)
-		await get_tree().create_timer(2.0).timeout
+		await get_tree().create_timer(1.8).timeout
 		SoundManager.fade_in_mfx("SynthA",1.0)
 		await get_tree().create_timer(2.0).timeout
 		SoundManager.fade_in_mfx("SynthC",1.0)
@@ -180,15 +180,35 @@ func ramp_up_time():
 		DialogueManager.dialogue_started.emit()
 	else:
 		fade_tween_back()
-		await get_tree().create_timer(10).timeout
+		SoundManager.fade_in_sfx("Chain1",1.0)
+		SoundManager.fade_in_sfx("Chain2",1.0)
+		await get_tree().create_timer(.9).timeout
+		SoundManager.fade_out("Chain1",3.0)
+		SoundManager.fade_out("Chain2",3.0)
+		await get_tree().create_timer(1.8).timeout
+		SoundManager.fade_in_mfx("SynthA",1.0)
+		await get_tree().create_timer(3.0).timeout
+		SoundManager.fade_in_sfx("Chain1",1.0)
+		SoundManager.fade_in_sfx("Chain2",1.0)
+		await get_tree().create_timer(.9).timeout
+		SoundManager.fade_out("Chain1",3.0)
+		SoundManager.fade_out("Chain2",3.0)
 		fade_tween()
-		await get_tree().create_timer(9).timeout
+		await get_tree().create_timer(1.8).timeout
+		SoundManager.fade_in_mfx("SynthC",1.0)
+		await get_tree().create_timer(3.0).timeout
+		SoundManager.fade_in_mfx("SynthB",1.0)
+		await get_tree().create_timer(4.5).timeout
 		tween_kill()
+		SoundManager.stop_all()
+		SoundManager.play_sfx("Tic",0,10)
 		$Background.stop()
 		length_s = 1.0
 		clock()
 		panel_moves()
 		await get_tree().create_timer(5).timeout
+		SoundManager.fade_in_bgm("BGAura",5.0)
+		SoundManager.fade_in_bgs("Ticking",5.0,0,-50)
 		DialogueManager.dialogue_started.emit()
 
 
