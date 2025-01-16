@@ -1,4 +1,4 @@
-[gd_scene load_steps=381 format=3 uid="uid://jiuvw2j680ro"]
+[gd_scene load_steps=396 format=3 uid="uid://jiuvw2j680ro"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_jl562"]
 [ext_resource type="Texture2D" uid="uid://b25iomnuufbr1" path="res://Art/Updated/background_animated/Untitled_Artwork-1.png" id="2_ho6qf"]
@@ -352,6 +352,7 @@
 [ext_resource type="Texture2D" uid="uid://7uggx0gqsox7" path="res://Art/Updated/middle_hand_animation/frame_73.png" id="269_id1xx"]
 [ext_resource type="Texture2D" uid="uid://srakj58ob7we" path="res://Art/Updated/middle_hand_animation/frame_74.png" id="270_bqvit"]
 [ext_resource type="Texture2D" uid="uid://de71jq5k35xvb" path="res://Art/Updated/middle_hand_animation/frame_75.png" id="271_remk2"]
+[ext_resource type="FontFile" uid="uid://b7vjw82jo2a1b" path="res://Fonts/helvetica-rounded-bold-5871d05ead8de.otf" id="353_v0wf1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_aqloh"]
 animations = [{
@@ -1752,6 +1753,43 @@ animations = [{
 "speed": 20.0
 }]
 
+[sub_resource type="FontVariation" id="FontVariation_kge5v"]
+base_font = ExtResource("353_v0wf1")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hff6u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t2g5t"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hkxne"]
+texture = ExtResource("55_fh2ty")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ckb3t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4vhhb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_npqfr"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jb23s"]
+texture = ExtResource("55_fh2ty")
+modulate_color = Color(0.909804, 0.258824, 0.498039, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7euvh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_110op"]
+texture = ExtResource("56_trpwe")
+modulate_color = Color(0.909804, 0.258824, 0.498039, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kejhn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yna4a"]
+texture = ExtResource("55_fh2ty")
+
+[sub_resource type="FontVariation" id="FontVariation_1cqwc"]
+base_font = ExtResource("353_v0wf1")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_keiv8"]
+specular_color = Color(0, 0, 0, 1)
+
 [node name="Main" type="Node2D" node_paths=PackedStringArray("second", "minute", "hour", "datePanel", "namePanel", "days", "dates", "chaA", "chaB", "chaAage", "chaBage", "leftbutton", "midbutton", "rightbutton")]
 script = ExtResource("1_jl562")
 second = NodePath("Clock/SecHand")
@@ -1965,4 +2003,66 @@ sprite_frames = SubResource("SpriteFrames_cj0o1")
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
+[node name="SkipButton" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 768.0
+offset_top = 464.0
+offset_right = 925.0
+offset_bottom = 578.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_kge5v")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hff6u")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_t2g5t")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_hkxne")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ckb3t")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_4vhhb")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_npqfr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jb23s")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_7euvh")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_110op")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_kejhn")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yna4a")
+disabled = true
+
+[node name="Label" type="Label" parent="SkipButton"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -110.5
+offset_top = -32.0
+offset_right = 103.5
+offset_bottom = 8.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_1cqwc")
+theme_override_font_sizes/font_size = 24
+text = "skip dialogue"
+horizontal_alignment = 1
+
+[node name="BlackScreen" type="TextureRect" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+offset_left = -1184.0
+offset_top = -672.0
+offset_right = -1156.39
+offset_bottom = -654.52
+scale = Vector2(86.36, 86.36)
+texture = SubResource("CanvasTexture_keiv8")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="SkipButton" to="." method="_on_skip_button_pressed"]

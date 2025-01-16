@@ -43,16 +43,18 @@ var clockTween : Tween
 @onready var Asrieyes: AnimatedSprite2D = $Clock/NamePanel/CharacterB/Eyes
 @onready var Weseyes: AnimatedSprite2D = $Clock/DatePanel/CharacterA/Eyes
 
-var AsriNum : int = 40
-var WesNum : int = 35
+var AsriNum : int = 45
+var WesNum : int = 45
 var dialogueNum 
-#@onready var textA = $Clock/DatePanel/CharacterA.position - Vector2(310,40)
+var EndNum : int = 0
+#@onready var textA = $Clock/DatesPanel/CharacterA.position - Vector2(310,40)
 #@onready var textB = $Clock/NamePanel/CharacterB.position - Vector2(-280, 30)
 
 # boolean for opening of the game, will result in false after pressed for the first time
 var opening : bool = true
 var normal_idle : bool = true
-
+var endgame : bool = false
+var epilogue : bool = false
 var character_fades
 
 # SIGNALS
@@ -70,7 +72,7 @@ func _ready() -> void:
 	length_s = 1.0
 	clock()
 	panel_moves()
-	await get_tree().create_timer(5).timeout
+	await get_tree().create_timer(9).timeout
 	clock_tween()
 	
 	# activate buttons
@@ -88,6 +90,8 @@ func _ready() -> void:
 	
 	# enabling the buttons to be pressed after the dialogue
 	DialogueManager.buttons_enabled.connect(buttons_enable)
+	
+	
 
 
 func _process(delta: float) -> void:
@@ -117,8 +121,9 @@ func clock():
 	tween_hour.tween_property(hour,"rotation",TAU,length_s * 3600).from(0)
 
 func panel_moves():
-	name_tween()
-	date_tween()
+	if endgame == false:
+		name_tween()
+		date_tween()
 
 func tween_kill():
 	tween_sec.kill()
@@ -137,6 +142,17 @@ func ramp_up_time():
 	tween_kill()
 	# start the animation
 	SoundManager.play_sfx("LeftButton")
+	if epilogue == true:
+		$BlackScreen.show()
+		SoundManager.stop_all()
+		SoundManager.fade_in_bgs("Ticking",6.0,0,-50)
+		SoundManager.fade_out("Ticking", 10.0)
+		await get_tree().create_timer(5).timeout
+		get_tree().change_scene_to_file("res://Scenes/title.tscn")
+		return
+	if endgame == true: 
+		end_sequence()
+		return
 	length_s = 0.1
 	clock()
 	clock_tween()
@@ -199,17 +215,49 @@ func ramp_up_time():
 		await get_tree().create_timer(3.0).timeout
 		SoundManager.fade_in_mfx("SynthB",1.0)
 		await get_tree().create_timer(4.5).timeout
+		if WesNum >= 50 || AsriNum >= 50:
+			endgame = true
+			await get_tree().create_timer(3).timeout
+			SoundManager.play_sfx("Glitch")
+			$Clock.position = Vector2(600,-600)
+			await get_tree().create_timer(.3).timeout
+			$Clock.position = Vector2(-600,-600)
+			await get_tree().create_timer(.3).timeout
+			$Clock.position = Vector2(800,100)
+			await get_tree().create_timer(.3).timeout
+			$Clock.position = Vector2(600,-600)
+			await get_tree().create_timer(.3).timeout
+			$Clock.position = Vector2(-600,-600)
+			await get_tree().create_timer(.3).timeout
+			$Clock.position = Vector2(800,100)
+			await get_tree().create_timer(.3).timeout
+			$Clock.position = Vector2(600,-600)
+			await get_tree().create_timer(.3).timeout
+			$Clock.position = Vector2(-600,-600)
+			await get_tree().create_timer(.3).timeout
+			$Clock.position = Vector2(800,100)
+			await get_tree().create_timer(.3).timeout
+			$Clock.position = Vector2(0,0)
+			length_s = 1.0
+			panel_moves()
+			tween_kill()
+			SoundManager.stop_all()
+			SoundManager.play_sfx("Tic",0,10)
+			$Background.stop()
+			await get_tree().create_timer(4).timeout
+			DialogueManager.dialogue_started.emit()
+			return
 		tween_kill()
 		SoundManager.stop_all()
 		SoundManager.play_sfx("Tic",0,10)
 		$Background.stop()
 		SoundManager.fade_in_bgs("Ticking",6.0,0,-50)
-		length_s = 1.0
+		length_s = 100.0
 		clock()
 		panel_moves()
 		await get_tree().create_timer(5).timeout
 		SoundManager.fade_in_bgm("BGAura",5.0)
-		SoundManager.fade_in_bgs("Ticking",5.0,0,-50)
+		#SoundManager.fade_in_bgs("Ticking",5.0,0,-50)
 		DialogueManager.dialogue_started.emit()
 
 
@@ -261,14 +309,16 @@ func clock_tween():
 # BUTTON CODE
 
 func buttons_enable():
-	if WesNum >= 50:
-		end_sequence()
-	if AsriNum >= 50: 
-		end_sequence()
-	else:
-		leftbutton.disabled = false
-		midbutton.disabled = false
-		rightbutton.disabled = false
+	if not opening:
+		SoundManager.play_bgs("Button")
+	if endgame == true:
+		if SoundManager.is_playing("Ending") == true: 
+			pass
+		else:
+			SoundManager.fade_in_bgm("Ending", 5.0)
+	leftbutton.disabled = false
+	midbutton.disabled = false
+	rightbutton.disabled = false
 
 func left_pressed():
 	# animation for when the left button gets pressed 
@@ -277,7 +327,8 @@ func left_pressed():
 	handtween.tween_property($HandTestLeft,"position",Vector2(0,-60),2.5).set_trans(Tween.TRANS_CUBIC)
 	handtween.tween_callback(ramp_up_time)
 	handtween.tween_property($HandTestLeft,"position",Vector2(-639,-211),2.0).set_trans(Tween.TRANS_CUBIC)
-	
+	if endgame == true:
+		return
 	if opening == false: 
 		await get_tree().create_timer(1.1).timeout
 		panel_moves()
@@ -300,7 +351,8 @@ func middle_pressed():
 	handtween.tween_property($HandTestMid,"position",Vector2(0,0),2.5).set_trans(Tween.TRANS_CUBIC)
 	handtween.tween_callback(ramp_up_time)
 	handtween.tween_property($HandTestMid,"position",Vector2(-613,-384),2.0).set_trans(Tween.TRANS_CUBIC)
-	
+	if endgame == true:
+		return
 	if opening == false: 
 		await get_tree().create_timer(1.1).timeout
 		panel_moves()
@@ -320,7 +372,8 @@ func right_pressed():
 	handtween.tween_property($HandTestRight,"position",Vector2(0,-40),2.5).set_trans(Tween.TRANS_CUBIC)
 	handtween.tween_callback(ramp_up_time)
 	handtween.tween_property($HandTestRight,"position",Vector2(630,-268),2.0).set_trans(Tween.TRANS_CUBIC)
-	
+	if endgame == true:
+		return
 	if opening == false: 
 		await get_tree().create_timer(1.1).timeout
 		panel_moves()
@@ -348,6 +401,8 @@ func stop_mouth_moving():
 
 
 func character_movement():
+	if endgame == true:
+		return
 	$Timer.wait_time = length_s
 	var posArray = [chaApos - Vector2 (-3,0), chaApos + Vector2(-1,0), chaApos, chaApos + Vector2 (3,0)]
 	for i in posArray:
@@ -364,10 +419,48 @@ func _on_timer_timeout() -> void:
 
 
 func dialogue_go():
+	if epilogue == true:
+		DialogueManager.dialogue_player("End25")
 	dialogueNum = "A" + str(AsriNum) + "W" + str(WesNum)
 	#DialogueManager.start_dialogue(lines)
 	DialogueManager.dialogue_player(dialogueNum)
+	if not endgame:
+		$SkipButton.disabled = false
+		var tween = get_tree().create_tween()
+		tween.tween_property($SkipButton,"modulate:a",1,3)
 
 func end_sequence():
 	# this will be used the next time the buttons are suppose to be available, but a character has reached 50
-	pass
+	EndNum += 1
+	if EndNum == 6:
+		AsriNum = 25
+		WesNum = 25
+		endgame = false
+		ramp_up_time()
+		epilogue = true
+		return
+	if WesNum != 25:
+		WesNum -= 5
+		chaAage.play(str(WesNum))
+		chaA.play(str(WesNum))
+		Weseyes.play(str(WesNum))
+		Wesmouth.animation = str(WesNum)
+	if AsriNum != 25:
+		AsriNum -= 5
+		chaB.play(str(AsriNum))
+		chaBage.play(str(AsriNum))
+		Asrieyes.play(str(AsriNum))
+		Asrimouth.animation = str(AsriNum)
+	SoundManager.play_sfx("Tic",0,10)
+	await get_tree().create_timer(2).timeout
+	dialogueNum = "E" + str(EndNum)
+	DialogueManager.dialogue_player(dialogueNum)
+
+func _on_skip_button_pressed() -> void:
+	SoundManager.play_sfx("LeftButton")
+	$SkipButton.disabled = true
+	DialogueManager.skip_signaled.emit()
+	await get_tree().create_timer(2).timeout
+	SoundManager.stop_all()
+	var tween = get_tree().create_tween()
+	tween.tween_property($SkipButton,"modulate:a",0,3)

@@ -33,6 +33,12 @@ signal asri_talking
 signal stop_talking
 signal move_clock
 
+# to skip a section of dialogue
+signal skip_signaled
+
+func _ready() -> void:
+	skip_signaled.connect(skip_dialogue)
+
 # Create a new dialogue start function that takes a specific set of dialogue lines
 func dialogue_player(line_key):
 	if is_dialogue_active:
@@ -53,11 +59,14 @@ func _show_text_box():
 		print("ring")
 		# play a ring sound
 		SoundManager.stop_all()
-		SoundManager.play_sfx("Ring")
-		#await get_tree().create_timer(.01).timeout
-		#SoundManager.fade_out("Ring",4.3)
+		SoundManager.play_bgm("Alarm")
+		await get_tree().create_timer(.01).timeout
+		SoundManager.fade_out("Alarm",4.3)
 		move_clock.emit()
 		text_box.global_position = Vector2(200,-50)
+	
+	if dialogue_lines[current_line_index].begins_with("E:"):
+		text_box.global_position = Vector2(200, 500)
 	
 	if dialogue_lines[current_line_index].begins_with("A:"):
 		# Play an Asri sound
@@ -70,6 +79,11 @@ func _show_text_box():
 		toc_sound()
 		text_box.global_position = Vector2(-280, -10)
 		wes_talking.emit()
+	
+	if dialogue_lines[current_line_index].begins_with("E:"):
+		text_box.display_text(dialogue_lines[current_line_index])
+		can_advance_line = false
+		return
 	
 	text_box_tween = get_tree().create_tween().set_loops()
 	# tween animation
@@ -112,3 +126,14 @@ func tic_sound():
 	SoundManager.play_sfx("Tic")
 func toc_sound():
 	SoundManager.play_sfx("Toc")
+
+func skip_dialogue():
+	current_line_index = int(dialogue_lines.size())
+	text_box.queue_free()
+	# have their mouths stop moving
+	stop_talking.emit()
+	is_dialogue_active = false
+	current_line_index = 0
+	# send a signal saying that this line is over and a new action must occur?
+	buttons_enabled.emit()
+	return

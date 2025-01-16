@@ -32,7 +32,7 @@
         
         "W: Ah, gotcha.",
         
-        "W: Hm.",
+        "W: Hm. Well...",
         
         "W: My sister put me up to this, actually.",
         
@@ -496,7 +496,9 @@
 
         "W: His mother would be over the moon.",
 
-        "A: So would the lawyer daughter's father."
+        "A: So would the lawyer daughter's father.",
+
+        "A: Maybe."
     ],
     
     "A25W35": [
@@ -616,7 +618,7 @@
 
         "W: No not at all. I can't imagine I was thinking much of anything at 19.",
 
-        "W: And for you to have such good memories of what you were thinking.",
+        "W: And for you to have such good memories of what you were thinking in that moment.",
 
         "R: RING RING",
 
@@ -746,7 +748,7 @@
 
         "A: Not the weddings themselves. Just the idea of marriage.",
 
-        "A: My parents divorced when I went to college.",
+        "A: My parents divorced after I came back from college.",
 
         "A: A decade of complicated Christmases.",
 
@@ -1169,11 +1171,11 @@
 
         "A: Complicated?",
 
-        "W: Well I moved out my old place a couple of months ago.",
+        "W: Well I moved out my old place in Oakland a couple of months ago.",
 
         "A: Oh interesting. How come?",
 
-        "W: Well, honestly... I couldn't really afford it anymore.", 
+        "W: Well... I couldn't really afford it anymore.", 
 
         "W: And I realized I didn't need that big of a space.",
 
@@ -1191,7 +1193,7 @@
 
         "A: Oh, you have roommates temporarily?",
 
-        "W: Yes, but uh not just roommates.",
+        "W: Yes, but not just roommates.",
 
         "W: Ah, I didn't expect this to come up during a speed date of all things.",
 
@@ -1271,7 +1273,7 @@
 
         "A: Things are always complicated. I'm happy to not be alone in that right now.",
 
-        "A; Sheesh.",
+        "A: Sheesh.",
 
         "A: So much for these questions.",
 
@@ -1652,7 +1654,7 @@
 
         "W: Hi there. I'm Wesley.",
 
-        "A: How do you do, Wesley?",
+        "A: How are you, Wesley?",
 
         "W: Can't complain. A little pain here and there.",
 
@@ -1686,9 +1688,9 @@
 
         "W: I took some time for myself these past couple years.",
 
-        "A: Oh I see, were you in a relationship back then?",
+        "A: Oh I see. Were you in a relationship back then?",
 
-        "A: I don't mean to pry. I have a habit of asking what by coworkers call 'invasive questions.'",
+        "A: I don't mean to pry. I have a habit of asking what by co-workers call 'invasive questions.'",
 
         "W: No no it's not invasive. I was in one back then yeah.",
 
@@ -1724,7 +1726,7 @@
 
         "W: I'm a handful and a half myself, who am I kidding.",
 
-        "A: Ha! You're speaking my language Wesley darling.", 
+        "A: Ha! You're speaking my language, Wesley darling.", 
 
         "A: I never understood what all the craze was with having kids.",
 
@@ -1762,7 +1764,7 @@
 
         "W: I know I sound a little twisted. But that was my thinking.",
 
-        "A: Oh Wesley darling, its rather a sweet sentiment.",
+        "A: Oh Wesley darling, it's rather a sweet sentiment.",
 
         "A: Not twisted at all.",
 
@@ -1786,7 +1788,7 @@
 
         "A: With gusto.",
 
-        "A: Well this was a nice way to get back into dating, don't you think?",
+        "A: Well, this was a nice way to get back into dating, don't you think?",
 
         "W: Can't complain one bit.",
 
@@ -2022,8 +2024,6 @@
 
         "A: I was a stubborn brat growing up. They were just happy I was eating.",
 
-        "A: I wasn't very easy to handle as a kid. I've mellowed out once I became an adult.",
-
         "W: Goodness gracious. Granola, for an entire year?",
 
         "W: I can't imagine. Just granola...",
@@ -2036,7 +2036,7 @@
 
         "W: Asri, alright now.",
 
-        "A: Dating I kid in middle school because his name was granola.",
+        "A: Dated a kid in middle school because his name was Granola.",
 
         "A: Purchased granola stocks...",
 
@@ -2081,110 +2081,1539 @@
     ],
 
     "A25W40": [
-        "W: I'm now 40.",
-        "A: I'm 25."
-    ],
+        "W: Hi there, I'm Wesley.",
 
-    "A25W45": [
-        "W: I'm now 45.",
-        "A: I'm 25."
-    ],
+        "A: Hello. I'm Asri.",
 
-    "A25W50": [
-        "W: I'm now 50.",
-        "A: I'm 25."
-    ],
+        "W: Asri, alright now. What's got you here speed dating?",
 
-    "A30W45": [
-        "A: I'm now 30.",
-        "W: I'm now 45."
-    ],
+        "W: I'd figure a woman like you wouldn't have trouble dating.",
 
-    "A30W50": [
-        "A: I'm now 30.",
-        "W: I'm now 50."
-    ],
+        "A: Oh I guess same as anyone, just trying to meet people.",
 
+        "A: It's hard to meet anyone normally anymore.",
 
-    "A35W45": [
-        "W: I'm now 45.",
-        "A: I'm now 35."
-    ],
+        "W: Times have changed. That's for sure.",
 
-    "A35W50": [
-        "W: I'm now 50.",
-        "A: I'm now 35."
-    ],
+        "A: But we're here trying.",
 
+        "A: 'And if at first you don't succeed...'",
 
-    "A40W45": [
-        "A: I'm now 40.",
-        "W: I'm now 45."
-    ],
+        "A: 'Then dust yourself off and try again, try again...'",
 
-    "A40W50": [
-        "A: I'm now 40.",
-        "W: I'm now 50."
+        "A: 'You can dust it off and try again, try again...'",
+
+        "W: Asri! Showing up with a classic now.",
+
+        "A: I think that's how it goes.",
+
+        "W: How'd you know Aaliyah? That song came out way before your time.",
+
+        "A: It's not that old, Wesley. I listened to it growing up constantly.", 
+
+        "A: My parents introduced me to old school hip hop and R&B.",
+
+        "A: Like 90s stuff. My mom loved LL Cool J and Mary J. Blige.",
+
+        "A: So I have a catalogue of good songs stored up here.",
+
+        "A: Besides like you said, Try Again is a classic that withstands time.",
+
+        "W: How about that. So you know good R&B?",
+
+        "A: I have good taste, I promise you.",
+
+        "A: Are you saying there's only bad R&B now?",
+
+        "W: I'm not an unreasonable guy, but there's a lot on the radio that's not for me.",
+
+        "W: When I'm driving, I like to lean back and play something I know will be good.",
+        
+        "W: Like any Stevie Wonder song.",
+
+        "W: 'You are the sunshine of my life...'",
+
+        "A: 'That's why I'll always be around...'",
+
+        "W: 'You are the apple of my eye...'",
+
+        "A: 'Forever you'll stay in my heart...'",
+
+        "W: That's what I'm talking about now.",
+
+        "W: You're full of surprises, Asri.",
+
+        "A: I'll tell my parents you said thank you.",
+
+        "A: So, are you someone that enjoys concerts?",
+
+        "W: I went to them all the time when I was younger.",
+
+        "W: Not so much now.",
+
+        "A: How come?",
+
+        "W: Ah I don't know. The magic of it all is gone.",
+
+        "W: Artists don't sound as good.",
+
+        "W: It's always uncomfortable when you're packed between people like sardines.",
+
+        "A: So you like to keep it comfortable?",
+
+        "W: Sit in the backyard with a drink and the radio. That kind of comfortable.",
+
+        "A: Good to know, but not so surprising.",
+
+        "W: I never said I was full of surprises.",
+
+        "W: You're still young enough to stand through a concert and enjoy it, huh?",
+
+        "A: I'm not really one for concerts either, to be honest.",
+
+        "A: Your idea of a solo backyard kickback just might be my speed too.",
+
+        "W: Asri, you just might be the oldest soul I've ever met.",
+
+        "R: RING RING.",
+
+        "A: If only I could keep better track of the time.",
+
+        "A: Good taste and good sense.",
+
+        "A: Enough for another date?",
+
+        "W: You are the apple of my eye, Asri.",
+
+        "A: Forever you'll stay in my heart, Wesley.",
+
+        "W: A classic?",
+
+        "A: A classic."
     ],
 
     "A45W25": [
-        "W: I'm 25.",
-        "A: I'm now 45."
+        "W: Hi, I'm Wes.",
+
+        "A: Nice to meet you Wes. My name is Asriyah.",
+
+        "W: I really like you scarf, by the way.",
+
+        "W: You look like you have good taste in fashion.",
+
+        "A: Oh how sweet of you. This is one of my favorite scarves.",
+
+        "W: Oh nice! So I guess you have a bunch of scarves!",
+
+        "A: I have quite a few. I couldn't tell you how many really.",
+
+        "A: But I have a scarf for nearly any occasion.",
+
+        "A: Work scarves, party scarves, dinner scarves, and date scarves.",
+
+        "W: Woah really? I didn't even know there were scarves for different activities.",
+
+        "A: Yes yes, Wes! I even have a couple of bikeride scarves and some gardening scarves.",
+
+        "A: I truly mean a scarf for nearly any occasion.",
+
+        "W: Oh do you garden?",
+
+        "A: Oh I try to here and there.",
+
+        "A: I've always loved plants. Right now I'm keeping Roses and Lavender.",
+
+        "A: Something I can take care of easily.",
+
+        "W: That sounds so nice!",
+
+        "A: It keeps me happy, truly.",
+
+        "W: Are you looking to pick up gardening, Wes?",
+
+        "W: Oh no not me.",
+
+        "W: My mom gardens. Tomatoes and basil.",
+
+        "W: It's been one of her hobbies ever since I was born.",
+
+        "W: I wish I could pick it up, but I'm not a fan of soil.",
+
+        "W: It just gets under the fingernails.",
+
+        "W: And gloves are never comfortable.",
+
+        "W: Though I help her out when I can, helping her pick out seeds before the season.",
+
+        "W: And then helping her pick everything that's ripe.",
+
+        "W: She does all the hard work in between!",
+
+        "W: So all credit to her, gardening is awesome.",
+
+        "W: I'll stop blabbering on now.",
+
+        "A: Ha Wes. No please, gardening is awesome.",
+
+        "A: I like to call it a peaceful sport.",
+
+        "W: Interesting. A sport in what way?",
+
+        "A: Well, there's plenty of practice and training involved when you think about it.",
+
+        "A: Having to learn what goes where and what pairs well together.",
+
+        "A: What plants keeps certain bugs away from another plant.",
+
+        "A: Plenty of trial and error too.",
+
+        "A: I started with a whole gardenia bush that was trimmed and beautifully sprouted.",
+
+        "A: But little did I know that the soil I had at home was not proper gardenia soil?",
+
+        "A: A misbalanced pH is what I learned after they had all withered in days.",
+
+        "W: Oh that sounds awful.",
+
+        "A: Awfully expensive, mind you.",
+
+        "A: But aside from that, you prepare for every season, in better shape than the season before.",
+
+        "A: When it's time to play though.",
+
+        "A: Every morning when you step outside.",
+
+        "A: You hear the birds everywhere, and hear the wet due grass smoosh under your sandals.",
+
+        "A: Your heart rate is low, and you feel calmer than at any point in the day.",
+
+        "A: All your training paid off, and the flowers you tend to are very thankful.",
+        
+        "A: But anyhow.",
+
+        "A: It's a delight to garden, your mother understands.",
+
+        "R: RING RING",
+
+        "A: Ah shoot. My gardening talk got in the way of our date.",
+
+        "W: No this was so great. The way you described everything.",
+
+        "W: Beautiful. Really beautiful.",
+
+        "W: I have a better appreciation for it now. I think my mother does understand.",
+
+        "A: That's delightful to hear.",
+
+        "A: You've been delightful, Wes.",
+
+        "A: You know who to talk to for advice on Roses and Lavender.",
+
+        "W: And scarves, Asriyah. That's how we got here in the first place.",
+
+        "A: Ah you're so right. To scarves and gardening.",
+
+        "A: Farewell, Wes. Have a lovely time on the rest of your dates.",
+
+        "W: I hope you enjoy the rest of your dates too, Asriyah."
+
     ],
 
     "A45W30": [
-        "W: I'm now 30.",
-        "A: I'm now 45."
+        "A: Hello, I'm Asriyah.",
+
+        "W: Asriyah, a pleasure to meet you. I'm Wes.",
+
+        "W: Am I at the right place?",
+
+        "A: What do you mean, you're here for speed dating, yes?",
+
+        "W: I am, but I wasn't told I'd be meeting women completely out of my league here.",
+
+        "W: Fashion icons and models? Who am I to be so lucky.",
+
+        "A: I'd recommend you get your eyes checked, Wes.",
+
+        "A: You're not looking at any model or icon or anything of the sort.",
+
+        "W: Then who am I looking at right now.",
+
+        "A: Just Asriyah. Plain and simple.",
+
+        "A: Plain, old, and simple.",
+
+        "A: All your courting shenanigans won't work on me.",
+
+        "W: Courting shenanigans? You mean I can't try and flirt with a woman as beautiful as you?",
+
+        "A: I'm not someone who falls for all that nonsense.",
+        
+        "A: I'm not a flirting person. Who are you trying to fool?",
+
+        "W: Asriyah who are you trying to fool? Everyone is a flirting person!",
+
+        "A: Certainly not me.",
+
+        "A: I haven't gone on a date in years.",
+
+        "A: And I know now, for good reason.",
+
+        "A: If all the men now try their tricks like this.",
+
+        "W: There's no tricks here. It's called having some fun.",
+
+        "W: Trust me. You've been out the dating sphere and things have changed.",
+
+        "A: So everyone plays games and gets nowhere?",
+
+        "W: Geez, who broke your heart?",
+
+        "A: No one in a long time now.",
+
+        "W: Then what's wrong with a little flirting, c'mon it's no harm.",
+
+        "A: Wes, I'm a little past all the flirting.",
+
+        "A: I'm only here because I want to find good company.",
+
+        "A: Someone that's kind and nice to talk to.",
+
+        "A: Not someone that tries to flatter me for flattering sake.",
+
+        "A: Does that make sense?",
+
+        "W: Crystal clear, Asriyah.",
+
+        "W: I can promise you, I'm good company.",
+
+        "W: And nice to talk to, I'm a good bogo deal.",
+
+        "W: A bogo steal.",
+
+        "A: You're ridiculous. Has anyone told you that before?",
+
+        "W: Only the women that spend enough time with me to come to that conclusion.",
+
+        "W: You might be the fastest to get there.",
+
+        "W: A world record.",
+        
+        "A: Really.",
+        
+        "W: Congratulations! Where should I send the medal?",
+
+        "A: Hmph. I'll email you.",
+
+        "W: Already exchanging emails? Asriyah please you're going too fast for me.",
+
+        "W: I'm not ready for your courting shenanigans.",
+
+        "A: Oh brother.",
+
+        "R: RING RING",
+
+        "A: Thank goodness that's over.",
+
+        "W: Would like to leave a review of your dating experience?",
+
+        "W: The Wes bogo deal steal?",
+
+        "A: Instant return.",
+
+        "A: Good thing it was under warranty.",
+
+        "W: Ah! Was that flirting I just heard?",
+    
+        "A: Get your ears checked, too Wes.",
+
+        "A: Ridiculous, so ridiculous.",
+
+        "A: I'll keep a look out for an email from you, Wes.",
+
+        "W: Anything for the world record holder, Asriyah.",
+
+        "W: A pleasure.",
+
+        "A: Oh quit it, fool." 
     ],
 
     "A45W35": [
-        "W: I'm now 35.",
-        "A: I'm now 45."
+        "A: Hello, how are you? I'm Asriyah.",
+
+        "W: Wesley. Hi.",
+
+        "W: I'm okay, thanks.",
+
+        "A: Just okay, dear?",
+
+        "W: I'm fine really. I guess a little tired.",
+
+        "A: Have you been getting your sleep?",
+
+        "W: Ah it's a little complicated. Things are busy right now.",
+
+        "A: You're never too busy to get eight hours, Wesley.",
+
+        "A: No matter what, you need to get your sleep.",
+
+        "W: Right, sorry. I'm just having some trouble sleeping these days.",
+
+        "A: Oh that sounds awful. I hate when I can't get my sleep.",
+
+        "A: I turn into the biggest grump alive.",
+
+        "A: Do you do anything to help you sleep?",
+
+        "W: I wouldn't say so, not really.",
+
+        "W: I usually just wait until my brain stops thinking.",
+
+        "A: Until it stops thinking?",
+
+        "W: It's just that. For some reason.",
+
+        "W: My mind reserves the night to review everything that happened during the day.",
+
+        "W: Did the barista think I was weird for ordering a black coffee.",
+
+        "W: Did I call my mother at the right time, or was she annoyed to pick up my call.",
+
+        "W: Does my sister and her husband resent me for taking up space in their house.",
+
+        "A: Oh dear, Wesley.",
+
+        "W: Sorry, I don't mean to spill out my problems to you right now.",
+
+        "W: I just have an bad case of an active brain when I'd rather sleep.",
+
+        "W: Sorry for all that.",
+
+        "A: There's nothing to apologize for. Nothing at all.",
+
+        "A: I've had trouble sleeping in the past. It's an awful feeling.",
+
+        "A: And the next day after a poor night's sleep?",
+
+        "A: It's hard to get anything done, I feel like a slug walking and talking around.",
+
+        "A: But right when I get ready for bed, the thing I've waited all day for.",
+
+        "A: My eyes shoot wide open and I'm not even tired anymore!",
+
+        "A: My body would act like I had two doubleshots of coffee for dinner!",
+
+        "A: So I know what you're going through is no small matter.",
+
+        "W: Right. An unforgiving cycle sometimes.",
+
+        "A: Whenever I can't sleep like that.",
+
+        "A: And I know when it's planning to be one of those active nights.",
+
+        "A: I head downstairs and boil some hot water to sip on.",
+
+        "A: And play some music on my phone. Something jazzy and sweet-sounding.",
+
+        "A: I plop down on my sofa chair, and I sing with my cup of hot water.",
+
+        "A: I turn the thoughts I'm having to song.",
+
+        "W: Oh really?",
+
+        "A: Oh yes really. You sing whatever's on your mind over the song playing.",
+
+        "A: Create your glides and use your vibrato.",
+
+        "A: I'm sure you're a baritone, a nice singing range for things like this.",
+
+        "W: I don't know, maybe.",
+
+        "A: But after singing for half an hour so, putting worries and all to song lyrics.",
+
+        "A: I usually doze off on the sofa!",
+
+        "A: I sleep in one stretch and wake up so refreshed.",
+
+        "A: And relieved that whatever was on my mind.",
+
+        "A: I sang it away.",
+
+        "R: RING RING",
+
+        "A: Oh blasted alarm.",
+
+        "A: And then you're up and ready to tackle the day, better than on yesterday's sleep.",
+
+        "W: Huh. I like that idea.",
+
+        "W: Something I should try.",
+
+        "A: Yes yes you should. Don't forget to drink hot water.",
+
+        "A: Soothes the singing voice.",
+
+        "W: Heh, yeah I'm sure it does.",
+
+        "W: Thank you, Asriyah.",
+
+        "A: Do sleep better now, Wesley.",
+
+        "A: Take care."
+
     ],
 
     "A45W40": [
-        "W: I'm now 40.",
-        "A: I'm now 45."
+        "W: Hey there. I'm Wesley.",
+
+        "A: Hello Wesley. Nice to meet you. I'm Asriyah.",
+
+        "W: Nice to meet you too.",
+
+        "W: So! Asriyah how should we start?",
+
+        "A: Oh don't ask me. I've never been really good at dating questions.",
+
+        "W: I'll one you up better. I've never been good at dates, flat out.",
+
+        "A: Cut from the same cloth then! You pick the topic Wesley.",
+
+        "W: Okay, let's think...",
+
+        "W: Oh, I got a good one.",
+
+        "A: Please share!",
+
+        "W: Okay. If you weren't here on this speed date right now. What would you be doing instead?",
+
+        "A: Oh hmm. I could've been doing a number of things actually.",
+
+        "A: If I wanted to stay in, I'd have cooked something for myself.",
+
+        "A: And I would watch a show or maybe start and stop a book or two.",
+
+        "W: Well, I'd call those plans no doubt.",
+
+        "A: That doesn't sound grand I know, but on my nights in I like to unwind like that.",
+
+        "A: If I had already dressed to go out, and say this whole thing was canceled.",
+
+        "A: I'd walk to the movie theater near my mom.",
+
+        "A: Getting a few extra steps never hurt.",
+
+        "A: The movie theater is a small little place, very old-school.",
+        
+        "A: It has letterings they stick on the front signs you know?",
+
+        "W: Yeah I know the kind, can't remember the last time I went to a theater built like that.", 
+
+        "A: Oh Wesley, those theaters are the best. Nothing like the new ones with the electronic seats.",
+
+        "A: That make so much blasted noise! You couldn't pay me to sit in one of those contraptions.",
+
+        "A: But anyway, I love watching movies there because they always run an old movie program.",
+
+        "A: On Saturday and Sunday mornings.",
+
+        "A: Last Sunday I went and saw The Spy in Black.",
+
+        "A: Came out in 1939! Would you believe it?",
+
+        "W: No kidding. A movie like that still holds up?",
+
+        "A: If you like mystery thrillers, absolutely.",
+
+        "A: Valerie Hobson was in it, and I remember loving her in the old Great Expectations movie.",
+
+        "A: She was so lovely as Estella.",
+
+        "A: But anywho. All that to say I would've watched a movie instead of being here.",
+
+        "A: If for some reason I couldn't be here to sit in front of a kind man who'd let me go on and on like that.",
+
+        "W: You sounded so happy and passionate. I wouldn't dare interrupt.",
+
+        "A: Tell me what you'd be doing, Wesley. Quick before time runs out!",
+
+        "W: Well you bringing up old movies reminded me of the drive-in movie theater I used to go to when I was a kid.",
+
+        "A: Oh drive-in theaters are such a blast from the past!",
+
+        "W: Exactly, exactly. I'd go all the time with my mom and sister.",
+
+        "W: We had to turn the radio on to get the movie audio and everything.",
+
+        "W: Those were something else. Nothing beats sitting in your own car.",
+
+        "W: You're all wrapped in blankets and there's a bunch of opened chip bags in the back seat.",
+
+        "W: I was the youngest, so I'd sit in the back during those nights just eating away.",
+
+        "W: Probably couldn't even tell you what any of those movies were.",
+
+        "W: I just loved the chips!",
+
+        "A: And the time spent with family. I can tell that much.",
+
+        "W: Oh no doubt, movies get you closer to people.",
+        
+        "W: It's hard to describe what I mean by that.",
+
+        "A: I agree. I usually go on my own, but sitting in a room full of strangers.",
+
+        "A: By the end of the movie, whether it was good or bad or thrilling.",
+
+        "A: Everyone comes out of that theater a little closer than when they entered it.",
+
+        "R: RING RING",
+
+        "W: Ah dang.",
+
+        "W: So it was movies, was it?",
+
+        "A: Yeah. Movies for you too, right?",
+
+        "W: You got it.",
+        
+        "W: You know, when all this is said and done.",
+
+        "W: Might go and watch one myself.",
+        
+        "W: You're welcome to come along.",
+
+        "A: As long as it's an old movie classic...",
+
+        "W: I'll do some searching, Asriyah.",
+
+        "A: Then I'll grab the bags of chips.",
+
+        "W: Perfect."
+
+    ],
+
+    "A25W45": [
+        "W: Hello, nice to meet you!",
+
+        "A: Hey, you too. I'm Asri.",
+
+        "W: Asri, great. I'm Wesley.",
+
+        "W: So speed dating, Asri?",
+
+        "A: It's the way of the world now.",
+
+        "W: That's true, I guess it's all about adapting.",
+
+        "W: So, are you a student?",
+
+        "A: No, haven't been for a couple years now.",
+
+        "A: I'm an editor for an online magazine right now.",
+
+        "W: Oh really? How is that?",
+
+        "A: Not the best, not the worst.",
+
+        "A: I'm planning to work as a journalist in the next couple years.",
+
+        "A: I wish this paid a little more, but the work isn't too demanding.",
+
+        "W: That's always the thing to balance. Money is actually the way of the world.",
+
+        "A: Tell me about it. I can't really afford all too much on an editor salary.",
+
+        "A: What's your line of work?",
+
+        "A: And more importantly, does it pay well?",
+
+        "W: You're implying you'd walk away if it didn't?",
+
+        "A: I'd hate for us both to be struggling.",
+
+        "A: So you're in the hot seat, Wesley.",
+
+        "W: Ha, well I'm a professor at Penn State.",
+
+        "W: In sociology, so I can assure you.",
+
+        "W: The pay is ample.",
+
+        "W: Maybe not so ample for your rich tastes?",
+
+        "A: My tastes aren't rich, I'm just calculative.",
+
+        "W: You importantly crunch the numbers, it's part of life.",
+
+        "W: Just wait until you're paying a mortgage.", 
+
+        "A: You can't talk to an entry-level editor about owning a home.",
+
+        "A: It's insensitive, to say the least.",
+
+        "W: Right, right. My mistake.",
+
+        "W: What do you spend your money on now then?", 
+
+        "A: Food to fill my pantry and gas money to get to speed dates.",
+
+        "W: Amen to that. So you live on your own, then?",
+
+        "A: I'm renting close by to my mom and dad right now.",
+
+        "A: And the only reason I can do that is because.",
+
+        "A: Not to sound like a spoiled brat.",
+
+        "A: My parents help me cover the rent each month.",
+
+        "W: Tsk tsk. So does that mean I can walk away now?",
+
+        "A: Yeah yeah. I whine about my editor salary.",
+
+        "A: Stomp my feet in the apartment my dad funds.",
+
+        "A: Go and cry on the bed my mom bought me.",
+
+        "W: Full-sized bed?",
+
+        "A: Try a California Queen.", 
+
+        "A: Great, now I'm starting to actually believe I'm a spoiled brat.",
+
+        "W: No no don't think that.",
+
+        "W: You might be, I don't know you well enough yet.",
+
+        "W: But it sounds to me like you have caring parents.",
+
+        "W: That are in the financial position to support you.",
+
+        "W: While you work towards the goals you've set out for yourself.",
+
+        "W: There's nothing wrong with getting help from your family, especially when they can provide.",
+
+        "A: Yeah, I'm lucky to have them. They're separated now, but they still do their best to priortize me.",
+
+        "A: And I value their support, but I know their money comes with fine print.",
+
+        "W: Fine print? In what way?",
+
+        "A: 'Yes, of course I'll help pay for your apartment. Just as long as it's no more than a five minute drive from your dear father!'",
+
+        "A: 'Of course I'll get you furniture. Just come over to your lovely mother's house every night or you're the most ungrateful daughter to have ever existed!'",
+
+        "A: To give a small sample.",
+
+        "W: Those are parents for you.",
+
+        "W: The fine print never goes away. My mom is in her 70s and still reminds me how much money I owe her.",
+
+        "W: For having raised me.",
+
+        "R: RING RING",
+
+        "A: Damn. So this really will go on forever?",
+
+        "W: Afraid so, but to tell you the truth.",
+
+        "W: I'd rather have my mom remind me every day.",
+
+        "W: Than for her not to be here to remind me.",
+
+        "W: It's something I'm cherishing more and more each day.",
+
+        "A: Yeah, that's a really good point.",
+
+        "A: Maybe this spoiled brat learned a thing or two just now.",
+
+        "W: Learn and adapt. It's the way of the world.",
+
+        "W: Good luck on the journalist career, california queen.",
+
+        "A: Thank you for the lessons learned, professor."
+
+    ],
+
+    "A30W45": [
+        "A: Hello, I'm Asri.",
+
+        "W: Hi Asri, it's good to meet you.",
+
+        "W: I'm Wesley.",
+
+        "A: Wesley, lovely.",
+
+        "A: So what've you been up to?",
+
+        "W: Not too much. Work, family, sometimes I catch a show if there's time left in the day.",
+
+        "W: How about you?",
+
+        "A: Work, family, sometimes I catch a show if there's time left in the day.",
+
+        "W: Ha, adulting at its finest, isn't that so?",
+
+        "A: I can't imagine anything better.",
+
+        "A: But it sounds like you could be a tv guy then?",
+
+        "W: I enjoy a good old sitcom as much as the next guy.",
+
+        "A: A 'good' sitcom? Those exist?",
+
+        "W: Oh come on, Living Single? Martin?",
+
+        "A: Just shoot me.",
+
+        "W: Oh that's a good one! David Spade was so good in that.",
+
+        "A: I was testing your sit-com knowledge there.",
+
+        "A: You're mentioning 90s shows as if there hasn't been good TV since.",
+
+        "W: Well, if I'm being honest here.",
+
+        "A: Don't say it...",
+
+        "W: I don't think there's been good TV since the 90s.",
+
+        "A: Well, this has been an experience.",
+
+        "A: Good luck on the next date!",
+
+        "W: Hey hey I'm joking. Kind of.",
+
+        "W: I've watched some recent stuff.",
+
+        "W: Always Sunny? I like that one.",
+
+        "A: You mean the show that came out in 2005?",
+
+        "W: And it's only gotten funnier with every new season.",
+
+        "W: Look TV sitcoms are perfect because I can drop in and out like it's nothing.",
+
+        "W: I can binge watch an entire season or watch a random episode.",
+
+        "W: I'll let out a few laughs here and there, and then I'll quickly forget what I was laughing about.",
+
+        "W: What could be better than that?",
+
+        "A: We don't have enough time for me to tell you all the things that could be better than that.",
+
+        "A: Do us both a favor, sit down tonight, and watch a good show.",
+
+        "A: A drama limited series like I May Destroy You.",
+
+        "A: Would actually change your life.", 
+
+        "W: Change my life?",
+
+        "A: It can at times be deeply discomforting but delicate in the right ways.",
+
+        "A: Michaela Coel is perfectly funny and authentic in it.",
+
+        "A: It's award-winning stuff quite literally.",
+
+        "W: I get the appeal of shows like that.",
+
+        "W: That kind of TV just isn't for me.",
+
+        "A: How could you possibly say that.",
+
+        "A: Good TV is made for everyone.",
+
+        "A: It's TV that forces you to discover parts of humanity we've overlooked in society.",
+
+        "A: People's lives hidden in plain sight, but told through tense, captivating style.",
+
+        "A: If you're interested in people, like we should all be. You need to watch better TV.",
+
+        "W: Your points are as clear as water, Asri.",
+
+        "W: I'm very interested in people. So much so that I studied people teach people about the idea of people.",
+
+        "W: I'm biased, but one sociology course can teach you a great deal about what makes people so interesting.",
+
+        "A: Oh god, I've been talking to a sociology teacher?",
+
+        "A: A sociology teacher that watches bad TV?",
+
+        "R: RING RING",
+
+        "W: A shocking reveal, I know.",
+
+        "W: So. What do you think?",
+
+        "A: Well, first off.",
+
+        "A: I think I should've run right out the door when you mentioned David Spade being good in a TV sitcom.",
+
+        "W: Ah, you're a lost cause.",
+
+        "A: Secondly.",
+
+        "A: I haven't been that thrilled to talk about TV in ages.",
+
+        "W: So I was doing something right.",
+
+        "A: Let's not jump to conclusions. You might've been doing something right.",
+
+        "A: Or I'm due for a series binge this weekend.",
+
+        "W: Can I recommend you watch The King of Queens?",
+
+        "A: No you cannot.",
+
+        "A: But an episode or two of The King of Queens could be on my list.",
+        
+        "A: If I'm desperate.",
+
+        "W: Oh, Desperate Housewives is good too!",
+
+        "A: Oh quit it. Bye, Wesley.",
+
+        "W: Ha, happy dating, Asri."
+
+    ],
+
+    "A35W45": [
+        "A: Hello, my name is Asriyah.",
+
+        "A: And you are?",
+
+        "W: Hi there! My name is Wesley.",
+
+        "A: Great, Wesley.",
+
+        "A: So if you don't mind, I got a couple of questions for you, Wesley.",
+
+        "W: Oh? What kind of questions?",
+
+        "A: Questions to better help me understand you, and your intentions.",
+
+        "W: My intentions? That's kinda odd.",
+
+        "A: What do you mean? Odd in what way?",
+
+        "W: We're both here to speed date, right?",
+
+        "W: The only reason I'm here is to meet someone, romantically speaking.",
+
+        "W: So what else could my intentions be?",
+
+        "A: You'd be surprised at how many men I've met that don't really know why they're dating.",
+
+        "A: They show up and waste my time and theirs.",
+
+        "A: Because they don't take stuff like this seriously.",
+
+        "A: Which is why, as I was saying, I'd like to ask you a couple questions.",
+
+        "W: I guess you can go for it. I got nothing to hide.",
+
+        "W: I'm taking this very seriously, so you don't need to worry about that from me.",
+
+        "A: Good, that's what I want to hear.",
+
+        "A: Alright, first question.",
+
+        "A: Would you consider your current job to be stable?",
+
+        "W: Oh yes, stable for sure.",
+
+        "W: I'm a sociology professor at Penn State, on a tenure track.",
+
+        "W: Three years into this gig, so in another three I should be secure.",
+
+        "A: Oh how about that, why another three years?",
+
+        "W: That's how getting tenure works. Takes about six or seven years and people tend to vie for one or two spots.",
+
+        "W: The nature of the beast kind of thing.",
+
+        "A: That sounds quite the opposite of secure, Wesley.",
+
+        "W: Well true I can see that when I say it out loud.",
+
+        "W: But the department has given me the thumbs up for the last couple of years, so I'm not too worried.",
+
+        "W: Believe it or not, I was way more confident in my 30s about getting tenure.", 
+
+        "W: I spent my 20s adjuncting and picking up research projects.",
+
+        "W: Until I moved out to San Francisco with my wife at the time.",
+
+        "A: Oh congratulations on the marriage.",
+
+        "A: And sorry things didn't work out.",
+
+        "W: It's how things go. Got a divorce not too long after move there also.",
+
+        "W: Clean break, and moved on over to Oakland for a teaching gig.",
+
+        "W: A full time professor at Lincoln University and on a tenure track for about two years.",
+
+        "A: Teaching sociology like you are now?",
+
+        "W: Yep, just about the same course load too.",
+
+        "W: I thought everything was going according to plan...",
+
+        "A: Oh, until one day it wasn't, huh?",
+
+        "W: They said they were restructuring the entire department.",
+
+        "W: And I wasn't part of that restructuring, to my big dismay.",
+
+        "W: So I was still freshly divorced, lost my professor dream job, and was scrambling to find something else.",
+
+        "W: And that was around 10 years ago...",
+
+        "A: And look at you now, alive and looking well.",
+
+        "W: I'll take alive, I think I could lose a couple pounds.",
+
+        "A: Hm. I can't imagine what it must've felt like to lose that job.",
+
+        "A: Since you've found your way back to it. I'm guessing you've always wanted to be a professor?",
+
+        "W: Oh yeah, it's all I ever thought for myself.",
+
+        "W: I wanted to follow in my moms footsteps and teach like her for a living.",
+
+        "W: It's a good thing I liked to talk and learn.",
+
+        "W: But it was lucky to have a teacher mom to help me develop into the man I am today.",
+
+        "W: A long-winded explanation just to say, yeah my professor job is pretty stable this time around.",
+
+        "W: You got any more questions for me?",
+
+        "R: RING RING",
+
+        "A: Oh what the hell? Great.",
+
+        "A: Am I ever going to get through this list?",
+
+        "W: I feel like I'm to blame on that one. I shouldn't give such extensive backstory.",
+
+        "A: No don't worry about it, Wesley.",
+
+        "A: I think you've inspired me.",
+
+        "W: Me? Inspire you on what?",
+
+        "A: To have a plan that I'm okay with falling to pieces.",
+
+        "A: No one I know would really describe me as having a 'flexible' mindset.",
+
+        "A: So there's work that needs to be done there.",
+
+        "W: Ah, all in due time, Asriyah.",
+
+        "W: As long as you're not too hard on yourself. You can make any decision you want.",
+
+        "W: All roads will lead back to what you're meant to be doing at some point.",
+
+        "W: What are you doing, might I quickly ask?",
+
+        "A: Journalism, but I think I'm ready to quit that soon.",
+
+        "A: Spend some time really figuring out what's next for me.",
+
+        "A: Thanks for your wisdom, Wesley.",
+
+        "W: Any time you need to hear it, attend one of my lectures, ha!",
+
+        "A: Yeah yeah, professor."
+        
+    ],
+
+    "A40W45": [
+        "W: Hi! Nice to meet you. I'm Wesley.",
+
+        "A: Hi there darling, I'm Asriyah.",
+
+        "A: So shall we begin? Time's ticking!",
+
+        "W: Sure sure, anything you have in mind to ask?",
+
+        "A: Let's see...",
+
+        "A: Nothing too complicated. How has your week gone?",
+
+        "W: Good! A bit busy with work throughout the week, you know how it is.",
+
+        "W: Went with my sister and niece to the park yesterday and walked the trail.",
+
+        "A: Oh, I love the sound of that. Family time is delightful.",
+
+        "A: Forgive me, but I'm assuming you don't have any children of your own?",
+
+        "W: Oh no, never did. That ship sailed a long time ago. You?",
+
+        "A: Never planned on it darling, so it never came to be.",
+
+        "A: I'm rather happy with all the free time I have for myself.",
+
+        "A: One or two healthy conversations with the big man upstairs helped me realize that.",
+
+        "W: I see! So you're religious?",
+
+        "A: Religious is a strong word for me.",
+
+        "A: It's a bit tricky. I believe in God and go to church weekly.",
+
+        "A: So certainly religious in that sense.",
+
+        "W: Yeah, sounds like you're religious to me.",
+
+        "A: But I'm not really well-versed in all the other parts.", 
+
+        "A: The community, the daily and nightly prayer, the bible study.",
+
+        "W: Well I'm no priest, but wouldn't God forgive you for not praying every day?",
+
+        "A: I'm certain He would, or I believe He would rather.",
+
+        "A: But for me to do those activities... there's just very little desire, you understand.",
+
+        "A: When I go to church, I enjoy my time.",
+
+        "A: The music is lovely, the sermon is often interesting.",
+
+        "A: I talk to a few folks here and there and catch up.",
+
+        "A: But once I'm out the church door, all of that excitement I got caught in fades away.",
+
+        "A: All the supposed connection toward God and church.",
+
+        "A: None of what I'm suppose to feel ever really shows up.",
+
+        "A: Oh God - Oh Goodness!",
+
+        "A: I'm taking up so much time, I'm sorry darling.",
+
+        "W: No Asriyah it's okay. I forgive! With grace.",
+
+        "A: With grace! A gift I receive most sincerely.",
+
+        "A: What are your thoughts on religion?",
+
+        "W: Well, if it wasn't obvious, I'm not really familiar with faith in a traditional way.",
+
+        "W: My mother never raised me to really believe in a God entity.",
+
+        "W: But she always told me that there was something.",
+        
+        "W: Looking out for each and every one of us.",
+
+        "A: What was this 'something' to her? Or to you?",
+
+        "W: Something that flowed. Something invisible.",
+
+        "W: That tethered people together like strings.",
+
+        "W: And formed knots in our minds and hearts.",
+
+        "W: She'd tell me that this kind of spiritualness helped us focus on the people we're tethered to in our lives.",
+
+        "W: Instead of a God we couldn't see.",
+
+        "W: The knots within all of us made sure that no matter how far the people we loved went.",
+
+        "W: We'd always be tied together.",
+
+        "W: And no matter what, we wouldn't unravel.",
+
+        "R: RING RING",
+
+        "W: Ah, that's time then.",
+
+        "A: Wesley. What can I say that's better than that?",
+
+        "W: Ha, it's my family's weird take on religion. Raised with it, lived through it.",
+
+        "A: And most definitely grown considerably with it.",
+
+        "A: Grown into a kind man, with plenty of beauty and faith in his heart.",
+
+        "W: Whom shares a tether with you now. In case you ever need someone to talk faith with.",
+
+        "A: Tethered together, and no unraveling for either of us.",
+
+        "W: Sure can do. It was nice getting to connect.",
+
+        "A: It was nice for me too. A complete delight.",
+
+        "A: I hope to see you soon, but until then.",
+
+        "A: With grace, Wesley.",
+
+        "W: With grace, Asriyah."
     ],
 
     "A45W45": [
-        "W: I'm now 45.",
-        "A: I'm now 45."
+        "A: Hello, how are you? I'm Asriyah.",
+
+        "W: Hi Asriyah. Nice to meet you! I'm Wesley.",
+
+        "A: Having a good time so far?",
+
+        "W: Yeah I'd say so. What a strange thing, this speed dating is.",
+
+        "A: I certainly know what you mean.",
+
+        "A: I don't understand why it's a thing, you never really learn about someone this quickly.",
+
+        "W: Right? It's so confusing.",
+
+        "W: Hm. Confusion is a quality afforded to the young, they say.",
+
+        "A: But we're not so young anymore. Isn't that right?",
+
+        "W: Speak for yourself. I still feel as young as ever.",
+
+        "W: My hip pain flare-up lasted only two days this week.",
+
+        "A: Lucky you. Some of us feel the oldest they've ever been.",
+
+        "A: I can't recall the last time I woke up without some sort of ache or pain.",
+
+        "W: I've had my fair share of pain this week, don't get me wrong.",
+
+        "W: Kind of why I'm out here speed dating, if you know what I mean.",
+
+        "A: Are you saying you recently ended a relationship?",
+
+        "A: Are you trying to jump into a new relationship?",
+
+        "A: I'm not one to judge, but love hopping is not my kind of party.",
+
+        "A: I'd make sure to take the proper time needed after relationships end.",
+
+        "A: I think that's just the decent thing to do.",
+
+        "W: Woah woah alright now. I don't think you know what I mean.",
+
+        "A: Oh? Then what?",
+
+        "W: You know... why else would we be out here trying to talk to people?",
+
+        "W: Certainly at our age?",
+
+        "A: It's fun to get to meet new people, at any age really.",
+
+        "A: There's always something new to learn and a new perspective to gain, don't you think?",
+
+        "W: I certainly agree with you, but also the promise of speed dating, it's so alluring.",
+
+        "W: Getting to meet someone you like really quickly, and be in a relationship again.",
+        
+        "W: Which it's been quite a few years for me without one, by the way.",
+
+        "W: Don't you feel lonely at times?",
+
+        "A: Hm. Do I feel lonely?",
+
+        "A: I must sometimes.",
+
+        "A: Love rarely ever goes out of style. I'm always craving it.",
+
+        "A: I'd say that I'm not all that lonely.",
+
+        "A: I have family to be excited about and to keep me company.",
+
+        "W: You have children?",
+
+        "A: Oh no, that wasn't for me. Possibly in another life I would've loved it.",
+
+        "A: I still visit my parents and take care of my mom.",
+
+        "A: She and my aunt moved in together a couple years ago - easier to save money and whatnot.",
+
+        "A: And they like spending time together now that they're older I suppose.",
+
+        "A: So it's lovely to spend time with them.",
+
+        "A: My father has his own family, so his children and I have gotten closer over the years.",
+
+        "A: Truly, I have good people in my corner. It makes not having someone a lot easier.",
+
+        "W: I understand that, family ends up being good company for me too.",
+
+        "W: It had always been my mom and my sister.",
+
+        "W: A couple cousins here and there.",
+
+        "W: But I have an eight-year-old niece that I love to bits.",
+
+        "A: How cute! What's her name?",
+
+        "W: Bella. She's the closest thing I'll ever have to a daughter.",
+
+        "W: My sister and her husband work nine-to-fives, so some days I can swoop in and hang with the princess.",
+        
+        "A: Kids at that age are so magical. So full of wonder, isn't that so?",
+
+        "A: Whenever there are families with kids that come to my work.",
+
+        "A: It's always a delight to see their faces light up while I give a tour.",
+
+        "A: I'm a museum docent at the Phoenix Museum, which is such a lovely place to be everyday.",
+
+        "W: That sounds spectacular. You must see a lot of people with that kind of job.",
+
+        "A: Oh, hundreds a day I'm sure.",
+
+        "A: That's another reason why I don't feel lonely all that much.",
+
+        "A: I'm surrounded by interesting people all the time.",
+
+        "R: RING RING",
+
+        "A: Ah, never enough time I swear.",
+
+        "W: You're an interesting person you know.",
+
+        "W: I can tell you're good at what you do. A nice spirit about you.",
+
+        "A: Thank you, Wesley. You're an interesting person too.",
+
+        "A: I think I'd also say the same thing if I had met you earlier, for what it's worth.", 
+
+        "W: Earlier? Like earlier in life?",
+
+        "A: Yes of course. You have a good energy about you.",
+
+        "W: That's kind of you to say, but I've had my fair share of rock bottoms.",
+
+        "W: I've been unpleasant a lot of times in my life.",
+
+        "A: Who hasn't when it all comes down to it?",
+
+        "A: You care about your people, and you want to feel loved.",
+
+        "A: And that's something I've been looking for at every age.",
+
+        "W: Hm. Yeah. I never thought of it in that way.",
+
+        "W: You're good in my book.",
+        
+        "W: You care about people - your family and friends.",
+
+        "W: Strangers at work every day.",
+
+        "A: Like I care about you now, stranger.",
+
+        "A: You're good company.",
+
+        "W: Ha, you're good company too, Asriyah.",
+
+        "W: Take care.",
+
+        "A: You do the same, Wesley."
+
+    ],
+
+
+    "A25W50": [
+        "W: Hi, Asri.",
+
+        "A: Hello, Wesley.",
+
+        "W: Wow, look at you.",
+
+        "W: Exactly like I remember.",
+
+        "A: Still as headstrong and ambitious.",
+
+        "W: And kind and patient, I hope.",
+
+        "W: Are you ready?",
+
+        "A: Of course, one last time.",
+
+        "E: Where are you in this world?"
+    ],
+
+    "A30W50": [
+        "A: Hello, Wesley.",
+
+        "W: Hi, Asri.",
+
+        "W: Look at you, just magnificent.",
+
+        "A: Thank you. You don't look to bad yourself",
+
+        "W: 50 doesn't look so bad on me, right?",
+
+        "W: Ready for the last round?",
+
+        "A: Let's do this.",
+
+        "E: Where are you in this world?"
+    ],
+
+    "A35W50": [
+        "W: Hi, Asriyah.",
+
+        "A: Hello, Wesley.",
+
+        "A: No questions from me this time.",
+
+        "W: What a shame, I would've happily answered.",
+
+        "A: I know you would have.",
+
+        "A: Are you ready?",
+
+        "A: As ready as I'll ever be.",
+
+        "E: Where are you in this world?"
+    ],
+
+    "A40W50": [
+        "A: Hello, Wesley.",
+
+        "W: Hi, Asriyah.",
+
+        "A: Always good to see you, darling.",
+
+        "W: Same here, still a fashion icon by the looks of it.",
+
+        "A: Ha, good clothes never escape me.",
+
+        "A: Ready darling?",
+
+        "W: Absolutely, for old time's sake.",
+
+        "E: Where are you in this world?"
     ],
 
     "A45W50": [
-        "W: I'm now 50.",
-        "A: I'm now 45."
+        "W: Hi, Asriyah.",
+
+        "A: Hello, Wesley.",
+
+        "A: Such a pleasure to see you.",
+
+        "W: Same here. You're looking well.",
+
+        "A: Oh, I try what I can.",
+
+        "W: So, are you ready?",
+
+        "A: I'm ready, absolutely.",
+
+        "E: Where are you in this world?"
     ],
 
     "A50W25": [
-        "A: I'm now 50.",
-        "W: I'm 25."
+        "A: Hello, Wes.",
+
+        "W: Hey, Asriyah.",
+
+        "A: Just like I remember you, so handsome.",
+
+        "W: Ah thank you. I really like your sweater!",
+
+        "A: Thank you for being so sweet.",
+
+        "A: Are you ready?",
+
+        "W: Yeah, let's do this.",
+
+        "E: Where are you in this world?"
     ],
 
     "A50W30": [
-        "A: I'm now 50.",
-        "W: I'm now 30."
+        "W: Hey there, Asriyah.",
+
+        "A: Hello, Wes.",
+
+        "W: Looking as beautiful as ever.",
+
+        "A: You're young and as charming as ever.",
+
+        "W: Ready for the last round?",
+
+        "A: Happily ready.",
+
+        "E: Where are you in this world?"
     ],
 
     "A50W35": [
-        "A: I'm now 50.",
-        "W: I'm now 35."
+        "A: Hello, Wesley.",
+
+        "W: Asriyah, hi.",
+
+        "A: How are you feeling?",
+
+        "W: There's been worse days, but it's good seeing you.",
+
+        "A: I know it'll pass, you're too strong for it not too.",
+
+        "A: Are you ready?",
+
+        "W: No, but let's do this. One last time",
+
+        "E: Where are you in this world?"
     ],
 
     "A50W40": [
-        "A: I'm now 50.",
-        "W: I'm now 40."
+        "W: Hey, Asriyah.",
+
+        "A: Hello, Wesley.",
+
+        "A: Look at you, as handsome as ever.",
+
+        "W: You've always been too kind.",
+
+        "A: I'm kind and truthful.",
+
+        "A: Are you ready?",
+
+        "W: I'm ready, one last time.",
+
+        "E: Where are you in this world?"
     ],
 
     "A50W45": [
-        "A: I'm now 50.",
-        "W: I'm now 45."
+        "A: Hello, Wesley.",
+
+        "W: Hi, Asriyah.",
+
+        "A: You're looking well.",
+
+        "W: Same to you, how are you feeling?",
+
+        "A: Tired, but happy for it all.",
+
+        "W: Me too. Are you ready?",
+
+        "A: As ready as I'll ever be.",
+
+        "E: Where are you in this world?"
     ],
 
     "A50W50": [
-        "A: I'm now 50.",
-        "W: I'm now 50."
+        "A: Wesley.",
+
+        "W: Asriyah.",
+
+        "A: Always good to see you.",
+
+        "W: Same here. Time has treated you well.",
+
+        "A: Hm. As charming as ever.",
+
+        "W: Ready for the last round?",
+
+        "A: As ready as I'll ever be.",
+
+        "E: Where are you in this world?"
     ],
 
     "T25B25": [
@@ -2203,6 +3632,110 @@
         "MAC: Get ready for...",
         "CATHY: In Time, On Distance",
         "MAC: The first VM Game of 2025!"
+    ],
+
+    "E1": [
+        "A: I'm here, but nowhere near.",
+
+        "W: In sight, but ages away.",
+
+        "W: We'll never have enough time.",
+
+        "A: We'll never be close enough."
+    ],
+
+    "E2": [
+        "W: You have you words.",
+
+        "A: The same as yours.",
+
+        "W: Conversations don't fade as time ticks.",
+
+        "A: The texture, the taste may change.",
+
+        "W: Will change.",
+
+        "A: Should change."
+    ],
+    
+    "E3": [
+        "W: As we speak on distance.",
+
+        "W: I wish we were closer.",
+
+        "A: In time, we all change.",
+
+        "A: But for a moment, I wish we stayed the same."
+    ],
+
+    "E4": [
+        "W: I wish we could start over.",
+
+        "A: I wish we could begin again.",
+
+        "W: In another lifetime, lovers.",
+
+        "A: In all lifetimes, at least friends."
+    ],
+
+    "E5": [
+        "W: We'll never have enough time.",
+
+        "A: We'll never be close enough.",
+
+        "A: But your time is yours.",
+        
+        "W: My time is mine.",
+
+        "A: To meet you once.",
+
+        "W: Is love enough."
+    ],
+
+    "End25": [
+        "A: Hey, sorry I'm late.",
+
+        "W: No no I just got here too, you're right on time.",
+        
+        "A: Good! Great.",
+        
+        "A: So, have you been to one of these before?",
+
+        "W: Dating?",
+
+        "A: Speed dating.",
+
+        "W: Well it's something I'm trying to make time for.",
+
+        "A: Yeah, me too.",
+
+        "A: It's hard though, isn't it?",
+
+        "W: What do you mean?",
+
+        "A: There isn't really a lot of time to get to know someone through this.",
+
+        "A: Like we could have a bunch of speed dates, and I don't think I'd still really know you, right?",
+
+        "W: Yeah that's true. I mean we're here though.",
+
+        "W: We showed up and we're trying.",
+
+        "W: And we all have to start somewhere.",
+
+        "A: Right, why not start here? And see where it goes.",
+
+        "W: Exactly. Okay, you wanna start this over?",
+
+        "A: Sure thing, yeah.",
+
+        "A: Hi, I'm Asriyah, you can call me Asri.",
+
+        "W: I'm Wes, short for Wesley.",
+
+        "A: Nice to meet you, Wes.",
+
+        "W: Nice to meet you too, Asri."
     ]
 
 }
