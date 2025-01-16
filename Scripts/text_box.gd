@@ -18,8 +18,6 @@ signal finished_displaying()
 func display_text(text_to_display: String):
 	if text_to_display.begins_with("A: "):
 		text_to_display = text_to_display.trim_prefix("A: ")
-	elif text_to_display.begins_with("E: "):
-		text_to_display = text_to_display.trim_prefix("E: ")
 	elif text_to_display.begins_with("W: "):
 		text_to_display = text_to_display.trim_prefix("W: ")
 	elif text_to_display.begins_with("R: "):

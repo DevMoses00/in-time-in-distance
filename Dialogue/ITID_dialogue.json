@@ -994,7 +994,7 @@
 
         "W: My my, Asri. I'm Wes.",
 
-        "W: I can already tell it's a pleasure to meet you?",
+        "W: I can already tell it's a pleasure to meet you. ",
 
         "A: Oh really? That quick to judge? Get your assumptions out the way now.",
 
@@ -1002,7 +1002,7 @@
 
         "W: Oh don't worry about me or whatever I'm saying.",
 
-        "W: I want to get to whatever you had in mind.",
+        "W: I want to get to what you had in mind.",
 
         "W: Lead the way, M'am.",
 
@@ -3645,9 +3645,9 @@
     ],
 
     "E2": [
-        "W: You have you words.",
+        "W: You have your words.",
 
-        "A: The same as yours.",
+        "A: The same as you.",
 
         "W: Conversations don't fade as time ticks.",
 
@@ -3683,13 +3683,9 @@
 
         "A: We'll never be close enough.",
 
-        "A: But your time is yours.",
-        
-        "W: My time is mine.",
+        "A: But your time is yours. My time is mine.",
 
-        "A: To meet you once.",
-
-        "W: Is love enough."
+        "W: To meet you once, is love enough."
     ],
 
     "End25": [
@@ -3701,11 +3697,11 @@
         
         "A: So, have you been to one of these before?",
 
-        "W: Dating?",
+        "W: You mean dates?",
 
-        "A: Speed dating.",
+        "A: Speed dates.",
 
-        "W: Well it's something I'm trying to make time for.",
+        "W: Well, it's something I'm trying to make time for.",
 
         "A: Yeah, me too.",
 
@@ -3715,9 +3711,11 @@
 
         "A: There isn't really a lot of time to get to know someone through this.",
 
-        "A: Like we could have a bunch of speed dates, and I don't think I'd still really know you, right?",
+        "A: We could have a bunch of speed dates, and I don't think I'd still really know you, right?",
 
-        "W: Yeah that's true. I mean we're here though.",
+        "W: Yeah that's true.", 
+        
+        "W: I mean, we're here though.",
 
         "W: We showed up and we're trying.",
 
@@ -3725,9 +3723,11 @@
 
         "A: Right, why not start here? And see where it goes.",
 
-        "W: Exactly. Okay, you wanna start this over?",
+        "W: Exactly.",
+        
+        "W: So, should we start this over?",
 
-        "A: Sure thing, yeah.",
+        "A: From the top, yeah.",
 
         "A: Hi, I'm Asriyah, you can call me Asri.",
 

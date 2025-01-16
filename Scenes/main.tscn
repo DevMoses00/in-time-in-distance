@@ -1,4 +1,4 @@
-[gd_scene load_steps=396 format=3 uid="uid://jiuvw2j680ro"]
+[gd_scene load_steps=397 format=3 uid="uid://jiuvw2j680ro"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_jl562"]
 [ext_resource type="Texture2D" uid="uid://b25iomnuufbr1" path="res://Art/Updated/background_animated/Untitled_Artwork-1.png" id="2_ho6qf"]
@@ -1790,6 +1790,9 @@ base_font = ExtResource("353_v0wf1")
 [sub_resource type="CanvasTexture" id="CanvasTexture_keiv8"]
 specular_color = Color(0, 0, 0, 1)
 
+[sub_resource type="FontVariation" id="FontVariation_apu1x"]
+base_font = ExtResource("353_v0wf1")
+
 [node name="Main" type="Node2D" node_paths=PackedStringArray("second", "minute", "hour", "datePanel", "namePanel", "days", "dates", "chaA", "chaB", "chaAage", "chaBage", "leftbutton", "midbutton", "rightbutton")]
 script = ExtResource("1_jl562")
 second = NodePath("Clock/SecHand")
@@ -2063,6 +2066,24 @@ offset_right = -1156.39
 offset_bottom = -654.52
 scale = Vector2(86.36, 86.36)
 texture = SubResource("CanvasTexture_keiv8")
+
+[node name="Question" type="RichTextLabel" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -552.0
+offset_top = 376.0
+offset_right = 597.34
+offset_bottom = 1152.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = SubResource("FontVariation_apu1x")
+theme_override_font_sizes/normal_font_size = 82
+text = "Where are you in this world?"
+fit_content = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="SkipButton" to="." method="_on_skip_button_pressed"]

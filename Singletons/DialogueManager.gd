@@ -61,12 +61,9 @@ func _show_text_box():
 		SoundManager.stop_all()
 		SoundManager.play_bgm("Alarm")
 		await get_tree().create_timer(.01).timeout
-		SoundManager.fade_out("Alarm",4.3)
+		SoundManager.fade_out("Alarm",3.3)
 		move_clock.emit()
 		text_box.global_position = Vector2(200,-50)
-	
-	if dialogue_lines[current_line_index].begins_with("E:"):
-		text_box.global_position = Vector2(200, 500)
 	
 	if dialogue_lines[current_line_index].begins_with("A:"):
 		# Play an Asri sound
@@ -79,11 +76,6 @@ func _show_text_box():
 		toc_sound()
 		text_box.global_position = Vector2(-280, -10)
 		wes_talking.emit()
-	
-	if dialogue_lines[current_line_index].begins_with("E:"):
-		text_box.display_text(dialogue_lines[current_line_index])
-		can_advance_line = false
-		return
 	
 	text_box_tween = get_tree().create_tween().set_loops()
 	# tween animation
@@ -130,6 +122,7 @@ func toc_sound():
 func skip_dialogue():
 	current_line_index = int(dialogue_lines.size())
 	text_box.queue_free()
+	text_box_tween.kill()
 	# have their mouths stop moving
 	stop_talking.emit()
 	is_dialogue_active = false

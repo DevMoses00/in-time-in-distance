@@ -43,8 +43,8 @@ var clockTween : Tween
 @onready var Asrieyes: AnimatedSprite2D = $Clock/NamePanel/CharacterB/Eyes
 @onready var Weseyes: AnimatedSprite2D = $Clock/DatePanel/CharacterA/Eyes
 
-var AsriNum : int = 45
-var WesNum : int = 45
+var AsriNum : int = 25
+var WesNum : int = 25
 var dialogueNum 
 var EndNum : int = 0
 #@onready var textA = $Clock/DatesPanel/CharacterA.position - Vector2(310,40)
@@ -144,11 +144,12 @@ func ramp_up_time():
 	SoundManager.play_sfx("LeftButton")
 	if epilogue == true:
 		$BlackScreen.show()
+		tween_kill()
 		SoundManager.stop_all()
 		SoundManager.fade_in_bgs("Ticking",6.0,0,-50)
 		SoundManager.fade_out("Ticking", 10.0)
-		await get_tree().create_timer(5).timeout
-		get_tree().change_scene_to_file("res://Scenes/title.tscn")
+		await get_tree().create_timer(6).timeout
+		get_tree().change_scene_to_file("res://Scenes/end.tscn")
 		return
 	if endgame == true: 
 		end_sequence()
@@ -224,26 +225,32 @@ func ramp_up_time():
 			$Clock.position = Vector2(-600,-600)
 			await get_tree().create_timer(.3).timeout
 			$Clock.position = Vector2(800,100)
-			await get_tree().create_timer(.3).timeout
+			$BlackScreen.visible = true
+			await get_tree().create_timer(.2).timeout
+			$BlackScreen.visible = false
 			$Clock.position = Vector2(600,-600)
 			await get_tree().create_timer(.3).timeout
 			$Clock.position = Vector2(-600,-600)
 			await get_tree().create_timer(.3).timeout
 			$Clock.position = Vector2(800,100)
-			await get_tree().create_timer(.3).timeout
+			$BlackScreen.visible = true
+			await get_tree().create_timer(.2).timeout
+			$BlackScreen.visible = false
 			$Clock.position = Vector2(600,-600)
 			await get_tree().create_timer(.3).timeout
 			$Clock.position = Vector2(-600,-600)
 			await get_tree().create_timer(.3).timeout
 			$Clock.position = Vector2(800,100)
-			await get_tree().create_timer(.3).timeout
+			$BlackScreen.visible = true
+			await get_tree().create_timer(.2).timeout
+			$BlackScreen.visible = false
 			$Clock.position = Vector2(0,0)
-			length_s = 1.0
-			panel_moves()
 			tween_kill()
 			SoundManager.stop_all()
 			SoundManager.play_sfx("Tic",0,10)
 			$Background.stop()
+			length_s = 1000.0
+			#panel_moves()
 			await get_tree().create_timer(4).timeout
 			DialogueManager.dialogue_started.emit()
 			return
@@ -252,7 +259,7 @@ func ramp_up_time():
 		SoundManager.play_sfx("Tic",0,10)
 		$Background.stop()
 		SoundManager.fade_in_bgs("Ticking",6.0,0,-50)
-		length_s = 100.0
+		length_s = 1.0
 		clock()
 		panel_moves()
 		await get_tree().create_timer(5).timeout
@@ -312,10 +319,15 @@ func buttons_enable():
 	if not opening:
 		SoundManager.play_bgs("Button")
 	if endgame == true:
+		var tween = get_tree().create_tween()
+		tween.tween_property($Question, "modulate:a", 1, 2)
 		if SoundManager.is_playing("Ending") == true: 
 			pass
 		else:
 			SoundManager.fade_in_bgm("Ending", 5.0)
+	$SkipButton.disabled = true
+	var tween = get_tree().create_tween()
+	tween.tween_property($SkipButton,"modulate:a",0,1)
 	leftbutton.disabled = false
 	midbutton.disabled = false
 	rightbutton.disabled = false
@@ -438,6 +450,8 @@ func end_sequence():
 		endgame = false
 		ramp_up_time()
 		epilogue = true
+		var tween = get_tree().create_tween()
+		tween.tween_property($Question,"modulate:a",0,2)
 		return
 	if WesNum != 25:
 		WesNum -= 5
