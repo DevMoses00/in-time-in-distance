@@ -1,12 +1,4 @@
 {
-    "A20W20":[
-        "A: Help me",
-
-        "W: Help me",
-
-        "R: RING RING"
-    ],
-
     "A25W25": [
         "A: Hey, sorry I'm late.",
 
@@ -1322,7 +1314,7 @@
 
         "W: And, wait for it...",
 
-        "W: I'm talking to much.",
+        "W: I'm talking too much.",
 
         "W: So I'll stop that.",
 
@@ -3433,9 +3425,7 @@
 
         "W: Are you ready?",
 
-        "A: Of course, one last time.",
-
-        "E: Where are you in this world?"
+        "A: Of course, one last time."
     ],
 
     "A30W50": [
@@ -3451,9 +3441,7 @@
 
         "W: Ready for the last round?",
 
-        "A: Let's do this.",
-
-        "E: Where are you in this world?"
+        "A: Let's do this."
     ],
 
     "A35W50": [
@@ -3469,9 +3457,7 @@
 
         "A: Are you ready?",
 
-        "A: As ready as I'll ever be.",
-
-        "E: Where are you in this world?"
+        "A: As ready as I'll ever be."
     ],
 
     "A40W50": [
@@ -3487,9 +3473,7 @@
 
         "A: Ready darling?",
 
-        "W: Absolutely, for old time's sake.",
-
-        "E: Where are you in this world?"
+        "W: Absolutely, for old time's sake."
     ],
 
     "A45W50": [
@@ -3505,9 +3489,7 @@
 
         "W: So, are you ready?",
 
-        "A: I'm ready, absolutely.",
-
-        "E: Where are you in this world?"
+        "A: I'm ready, absolutely."
     ],
 
     "A50W25": [
@@ -3523,9 +3505,7 @@
 
         "A: Are you ready?",
 
-        "W: Yeah, let's do this.",
-
-        "E: Where are you in this world?"
+        "W: Yeah, let's do this."
     ],
 
     "A50W30": [
@@ -3539,9 +3519,7 @@
 
         "W: Ready for the last round?",
 
-        "A: Happily ready.",
-
-        "E: Where are you in this world?"
+        "A: Happily ready."
     ],
 
     "A50W35": [
@@ -3557,9 +3535,7 @@
 
         "A: Are you ready?",
 
-        "W: No, but let's do this. One last time",
-
-        "E: Where are you in this world?"
+        "W: No, but let's do this. One last time"
     ],
 
     "A50W40": [
@@ -3575,9 +3551,7 @@
 
         "A: Are you ready?",
 
-        "W: I'm ready, one last time.",
-
-        "E: Where are you in this world?"
+        "W: I'm ready, one last time."
     ],
 
     "A50W45": [
@@ -3593,9 +3567,7 @@
 
         "W: Me too. Are you ready?",
 
-        "A: As ready as I'll ever be.",
-
-        "E: Where are you in this world?"
+        "A: As ready as I'll ever be."
     ],
 
     "A50W50": [
@@ -3611,9 +3583,7 @@
 
         "W: Ready for the last round?",
 
-        "A: As ready as I'll ever be.",
-
-        "E: Where are you in this world?"
+        "A: As ready as I'll ever be."
     ],
 
     "T25B25": [

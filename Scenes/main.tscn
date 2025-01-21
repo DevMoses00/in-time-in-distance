@@ -1,4 +1,4 @@
-[gd_scene load_steps=397 format=3 uid="uid://jiuvw2j680ro"]
+[gd_scene load_steps=388 format=3 uid="uid://jiuvw2j680ro"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_jl562"]
 [ext_resource type="Texture2D" uid="uid://b25iomnuufbr1" path="res://Art/Updated/background_animated/Untitled_Artwork-1.png" id="2_ho6qf"]
@@ -9,18 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://bjixrfn7nd6qy" path="res://Art/Updated/background_animated/Untitled_Artwork-3.png" id="4_kpqmr"]
 [ext_resource type="Texture2D" uid="uid://biy74sxo2lbes" path="res://Art/Updated/background_animated/Untitled_Artwork-4.png" id="5_26snd"]
 [ext_resource type="Texture2D" uid="uid://dg6oepelbahth" path="res://Art/Updated/Asriyah/A_25/25.png" id="5_d0ru6"]
-[ext_resource type="Texture2D" uid="uid://b8q1ceubp25tm" path="res://Art/Test/rightbutton.png" id="5_ej1k6"]
-[ext_resource type="Texture2D" uid="uid://6y2pdescnva8" path="res://Art/Test/right_button_down.png" id="6_5qlof"]
 [ext_resource type="Texture2D" uid="uid://brn6tektpajdh" path="res://Art/Updated/Asriyah/A_30/30.png" id="6_jhyyd"]
 [ext_resource type="Script" path="res://Scripts/clock.gd" id="7_roedw"]
-[ext_resource type="Texture2D" uid="uid://bmybrfis11mj8" path="res://Art/Test/middlebutton.png" id="7_u63cj"]
 [ext_resource type="Texture2D" uid="uid://blt87r57j45t5" path="res://Art/Updated/Asriyah/A_35/35.png" id="7_x7sud"]
 [ext_resource type="Texture2D" uid="uid://cxa5sxl673vrl" path="res://Art/Updated/Asriyah/A_40/40.png" id="8_i5udc"]
-[ext_resource type="Texture2D" uid="uid://dwg63ejkv8dsj" path="res://Art/Test/middle_button_down.png" id="8_iw6i6"]
-[ext_resource type="Texture2D" uid="uid://cr2kwgida4ghf" path="res://Art/Test/leftbutton.png" id="9_g3wg8"]
 [ext_resource type="Texture2D" uid="uid://bpvplvlnqqjqn" path="res://Art/Updated/Asriyah/A_45/45.png" id="9_hl14r"]
 [ext_resource type="Texture2D" uid="uid://bm4t0ftavdk6s" path="res://Art/Updated/Asriyah/A_50/50.png" id="10_5jkf7"]
-[ext_resource type="Texture2D" uid="uid://dvqvb8pt5pv8l" path="res://Art/Test/left_button_down.png" id="10_red8a"]
 [ext_resource type="Texture2D" uid="uid://bneup7i6x3p2x" path="res://Art/Updated/Asriyah/A_25/25_eyes_open.png" id="11_nr0kq"]
 [ext_resource type="Texture2D" uid="uid://d0epwbbd575ss" path="res://Art/Updated/Asriyah/A_25/25_eyes_close.png" id="12_d641l"]
 [ext_resource type="Texture2D" uid="uid://chkekxcc6p76a" path="res://Art/Updated/Asriyah/A_30/30_eyes_open.png" id="13_rk35f"]
@@ -984,48 +978,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_yjag7"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_ej1k6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_5qlof")
-}],
-"loop": false,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_8aadh"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("7_u63cj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_iw6i6")
-}],
-"loop": false,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_oyfop"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("9_g3wg8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_red8a")
-}],
-"loop": false,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ahm4o"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_phun2"]
@@ -1906,18 +1858,6 @@ texture = ExtResource("48_madif")
 modulate = Color(1, 1, 1, 0)
 sprite_frames = SubResource("SpriteFrames_ks86y")
 animation = &"50"
-
-[node name="RightButton" type="AnimatedSprite2D" parent="Clock"]
-visible = false
-sprite_frames = SubResource("SpriteFrames_yjag7")
-
-[node name="MiddleButton" type="AnimatedSprite2D" parent="Clock"]
-visible = false
-sprite_frames = SubResource("SpriteFrames_8aadh")
-
-[node name="LeftButton" type="AnimatedSprite2D" parent="Clock"]
-visible = false
-sprite_frames = SubResource("SpriteFrames_oyfop")
 
 [node name="RightButton2" type="Button" parent="Clock"]
 offset_left = 316.364
