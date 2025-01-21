@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="project_clocks"
+config/name="in-time-on-distance"
 run/main_scene="res://Scenes/title.tscn"
 config/features=PackedStringArray("4.3")
 boot_splash/bg_color=Color(0, 0, 0, 1)
